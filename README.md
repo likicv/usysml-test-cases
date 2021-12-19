@@ -164,4 +164,4 @@ python gendocs.py
 ```
 
 This will process all `.md` files and create `test_cases.md`, and
-a PDF file from `test_cases.md` (required `pandoc`).
+the PDF file from `test_cases.md` (requires `pandoc`).
