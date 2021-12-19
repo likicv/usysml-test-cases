@@ -10,7 +10,7 @@ CC BY-SA 4.0   This work is licensed under the Creative Commons Attribution-Sh
 
 To view all test cases click [here](/test_cases.md), and the summary PDF
 document is located in the root GitHub folder. 
-[pdf](/test_cases.md)
+[pdf](/test_cases.pdf)
 
 
 
