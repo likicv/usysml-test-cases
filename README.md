@@ -53,9 +53,20 @@ Henceforth the test cases derived from this work will be referd to as
 developed and maintained by the uSysML team.
 
 
-# Installation
+# uSysML Test Cases notation
 
-## File/folders Layout
+Each uSysML Test Case is associated with a unique number identifier that
+allows it to be referenced later, and is loosely structured around the
+following sections:
+- Title -- a short title of the Test Case together with the number identifier
+- Description -- a description of the Test Case
+- SysML v2 textual notation -- shows SysML v2 textual notation
+ 
+
+
+# uSysML Test Cases local installation
+
+## Project file/folders Layout
 
 - Test cases are written in test_cases/testxxxx folder. 
 - The main file is in markdown format (extension `.md`). SysMLv2 model in
@@ -67,7 +78,7 @@ developed and maintained by the uSysML team.
 {% include "testxxxx.sysml" %}
 ```
 
-## Installation of components
+## Installation steps
 
 To run PDF document generator you need [pandoc](https://pandoc.org/MANUAL.html)
 installed for your operating system.
@@ -88,7 +99,7 @@ activate the environment run:
 source venv/bin/activate
 ```
 
-## Generate documentation
+## Generating documentation
 
 From the project root:
 
