@@ -12,18 +12,18 @@ CC BY-SA 4.0   This work is licensed under the Creative Commons Attribution-Sh
   textual notation for the test case is in `.sysml` file (should be named
   `testxxxx.sysml`).
 - Expected output for the given model is in `testxxxx.output` file.
-- This files may be included in the main `.md` file using the following syntax.
+- These files (or any other file) may be included in the main `.md` file using the following syntax.
 ```
-!include testxxxx.sysml
+{% include "testxxxx.sysml" %}
 ```
 
 # Installation
 
-To run document generator you need [pandoc](https://pandoc.org/MANUAL.html)
+To run PDF document generator you need [pandoc](https://pandoc.org/MANUAL.html)
 installed for your operating system.
 
-Also, we are using [panflute pandoc-include
-filter](https://github.com/DCsunset/pandoc-include) for file inclusion.
+Also, we are using [Jinja2](https://jinja2docs.readthedocs.io/en/stable/) for
+file inclusion.
 
 Install pandoc using your OS package manager and then run:
 
@@ -43,8 +43,20 @@ source venv/bin/activate
 From the project root:
 
 ```
-./gendocs.sh
+./gendocs.py
 ```
 
-This will process all `.md` files and create a PDF `test_cases.pdf`
+or 
+
+``` sh
+python gendocs.py
+```
+
+This will process all `.md` files and create `test_cases.md`.
+
+To produce a PDF file from `test_cases.md` (using pandoc) run:
+
+``` sh
+./genpdf.sh
+```
 
