@@ -49,8 +49,10 @@ The following references have been used for this work:
 - Kernel Modeling Language (KerML) (‘1-Kernel_Modeling_Language.pdf’)
 - OMG Systems Modeling Language (SysML) (‘2-OMG_Systems_Modeling_Language.pdf’)
 - [SysMLv2 Pilot Implementation Prototype](https://github.com/Systems-Modeling/SysML-v2-Pilot-Implementation)
-- Sanford Friedental, “Introduction to the SysML v2 Language Graphical Notation”, Release: 2021-05-21
-- Model Driven Solutions, Inc. “Introduction to the SysML v2 Language Textual Notation”, Release: 2021-05
+- Sanford Friedental, “Introduction to the SysML v2 Language Graphical
+Notation”, Release: 2021-05-21
+- Model Driven Solutions, Inc. “Introduction to the SysML v2 Language
+Textual Notation”, Release: 2021-05
 
 Henceforth the test cases derived from this work will be referd to as
 “uSysML Test Cases”. This document is a “living document” that is being
@@ -106,7 +108,8 @@ of 'Root'. 'Vehicle' is `PartDef` (i.e. the element Cassifier of 'Vehicle' is
 
 **Meaning**:
 
-- ‘vehicle’ is in the namespace of ‘PackageVehicles’ which is in the namspace of ‘Root’
+- ‘vehicle’ is in the namespace of ‘PackageVehicles’ which is in the namspace
+of ‘Root’
 - ‘vehicle’ is `Part` of the type ‘Root.PackageVehicles.Vehicle’
 
 
@@ -119,7 +122,8 @@ of 'Root'. 'Vehicle' is `PartDef` (i.e. the element Cassifier of 'Vehicle' is
   textual notation for the test case is in `.sysml` file (should be named
   `testxxxx.sysml`).
 - Expected output for the given model is in `testxxxx.output` file.
-- These files (or any other file) may be included in the main `.md` file using the following syntax.
+- These files (or any other file) may be included in the main `.md` file
+using the following syntax.
 ```
 {% include "testxxxx.sysml" %}
 ```
