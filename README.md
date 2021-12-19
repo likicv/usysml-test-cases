@@ -163,11 +163,5 @@ or
 python gendocs.py
 ```
 
-This will process all `.md` files and create `test_cases.md`.
-
-To produce a PDF file from `test_cases.md` (using pandoc) run:
-
-``` sh
-./genpdf.sh
-```
-
+This will process all `.md` files and create `test_cases.md`, and
+a PDF file from `test_cases.md` (required `pandoc`).

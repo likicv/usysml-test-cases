@@ -1,12 +1,14 @@
-<!-- Generated on 2021-12-19 18:01:04.142465 from script `gendocs.py`
+<!-- Generated on 2021-12-20 10:00:50.845298 from script `gendocs.py`
      DO NOT EDIT MANUALY! -->
 
 # Test Case #0001: Fully qualified element names (FQEN)
 
 ## Description
 
-Parsing a `*.sysml` file will generate a FQEN for each element, starting with
-`Root` SysMLv2 textual notation.
+Parsing a `*.sysml` file will generate a FQEN for each element, starting
+with `Root`
+
+## SysML v2 textual notation
 
 ```sysml
 package PackageVehicles {
@@ -34,17 +36,21 @@ Root.PackageVehicles [Package]
 
 ## Rules/constraints
 
-1. A `*.sysml` file defines the name space for the elements it contains. The top
-   level name space bounded by the file is assigned to the element `Root`.
+1. A `*.sysml` file defines the name space for the elements it contains.
+The top level name space bounded by the file is assigned to the element
+`Root`.
 2. Each curly braces segment defines a name space.
 3. Within a `*.sysml` file each FQEN must be uniqe.
 
 ## Comments
 
+None.
+
 ## Discussion
 
-This Test Case focuses on the requirement for uniqueness of each FQENs within a
-sysml file. The following example should generate an error:
+This Test Case focuses on the requirement for uniqueness of each
+FQENs within a sysml file. The following example should generate
+an error:
 
 ```sysml
 package PackageVehicles {
@@ -59,9 +65,10 @@ package PackageVehicles {
 }
 ```
 
-because in this case both `part def Wheel` and `part Wheel` have the same FQEN
-`PackageVehicles.Wheel` (even though the two elements are associated with
-different classifiers, `PartDef` and `Part`, respectively).
+because in this case both `part def Wheel` and `part Wheel` have the
+same FQEN `PackageVehicles.Wheel` (even though the two elements are
+associated with different classifiers, `PartDef` and `Part`,
+respectively).
 
 # Test Case #0002: Fully qualified element names (FQEN) (an extension of #0001)
 
