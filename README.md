@@ -4,8 +4,9 @@ uSysML ('micro SysML') Test Cases for SysML v2
 
 CC BY-SA 4.0   This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International license: https://creativecommons.org/licenses/by-sa/4.0/
 
+# Installation
 
-# File/folders Layout
+## File/folders Layout
 
 - Test cases are written in test_cases/testxxxx folder. 
 - The main file is in markdown format (extension `.md`). SysMLv2 model in
@@ -17,7 +18,7 @@ CC BY-SA 4.0   This work is licensed under the Creative Commons Attribution-Sh
 {% include "testxxxx.sysml" %}
 ```
 
-# Installation
+## Installation of components
 
 To run PDF document generator you need [pandoc](https://pandoc.org/MANUAL.html)
 installed for your operating system.
@@ -38,7 +39,7 @@ activate the environment run:
 source venv/bin/activate
 ```
 
-# Generate documentation
+## Generate documentation
 
 From the project root:
 
