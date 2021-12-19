@@ -62,8 +62,8 @@ sections:
 - Description -- a description of the test case
 - SysML v2 textual notation -- shows SysML v2 textual notation
 - Expected output -- shows the expected output of after the parsing of the
-SysML v2 textual notation. Note, the output shown is **in special notation
-developed for uSysML Test Case, this is not SysML v2**. See the explanations
+SysML v2 textual notation. Note, the output shown **in special notation
+developed for uSysML Test Cases, this is not SysML v2**. See the explanations
 section below
 - Rules/constraints -- any rules or constraints that we can derive from the
 test case considerations
@@ -71,6 +71,22 @@ test case considerations
 - Discussion -- discussion of the test case, possibly including some negative
 examples to highlight the points made, expected output, rules or constraints
  
+## The notation used in the “Expected output” section
+
+The Test Case "Expected output" section is not SysML v2 textual notation,
+rather this is a special notation developed for the purpose of uSysML Test
+Cases. More specifically, this is a shorthand notation to specify namespaces
+and possibly additional features of the parsed elements. Some examples:
+
+### Example 1
+
+**Output shown**:
+
+Root.PackageVehicles.Vehicle
+
+**Meaning**:
+
+'Vehicle' is in the namespace of 'PackageVehicles' which is in the namespace of 'Root'.
 
 
 # uSysML Test Cases local installation
