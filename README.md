@@ -2,7 +2,44 @@
 
 uSysML ('micro SysML') Test Cases for SysML v2
 
+© Vladimir Likić <vlad.likic@gmail.com>
+© Igor Dejanović <igor.dejanovic@gmail.com>
+
 CC BY-SA 4.0   This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International license: https://creativecommons.org/licenses/by-sa/4.0/
+
+# Background
+
+SysML v2 is the next generation of the OMG Systems Modeling Language (SysML)
+that is currently under development. The objective of SysML v2 to enable
+more effective model-based systems engineering (MBSE). SysML v2 development
+is governed by the SysML v2 Submission Team (SST), a distributed team of
+individuals from industry, academia and government organizations. The uSysML
+(‘micro SysML’) project is an approach to the development of SysML v2 test
+cases based on the decomposability of SysML v2. The objective of this work
+is (1) to generate issues that may require consideration, clarification, or
+strengthening of the SysML v2 specification; and (2) to assist the wider
+MBSE community in the implementation of the SysML v2 specification.
+
+## uSysML
+
+The uSysML project broadly refers to the specific test cases, associated
+explanations, discussion, and any issues raised. In a more narrow sense,
+uSysML refers to a subset of SysML v2 keywords and behaviours, however
+what exactly is included in this subset depends on the uSysML version
+(see Table 1). The purpose of uSysML versions is to define scope that
+will limit considerations required for the development of robust test
+cases to explore practical issues relevant to the implementation of the
+SysML v2 textual notation. Therefore, the scope of uSysML for each version
+is fixed for the purpose of this work and the development of test cases.
+The currently planned scope/uSysML version is shown in the table below.
+
+
+| uSysML version | Scope | Status |
+| --- | --- | --- |
+| v0.01 | package, part, part def, //-type comments | 8 Test Cases |
+| v0.02 | +attribute, +attribute def | None yet |
+| v0.03 | +redefines, +subsets, +specializes | None yet |
+
 
 # Installation
 
