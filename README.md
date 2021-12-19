@@ -58,9 +58,18 @@ developed and maintained by the uSysML team.
 Each uSysML Test Case is associated with a unique number identifier that
 allows it to be referenced later, and is structured around the following
 sections:
-- Title &ndash a short title of the Test Case together with the number identifier
-- Description -- a description of the Test Case
+- Title -- a short title of the Test Case together with the number identifier
+- Description -- a description of the test case
 - SysML v2 textual notation -- shows SysML v2 textual notation
+- Expected output -- shows the expected output of after the parsing of the
+SysML v2 textual notation. Note, the output shown is **in special notation
+developed for uSysML Test Case, this is not SysML v2**. See the explanations
+section below
+- Rules/constraints -- any rules or constraints that we can derive from the
+test case considerations
+- Comments -- additional comments, if any
+- Discussion -- discussion of the test case, possibly including some negative
+examples to highlight the points made, expected output, rules or constraints
  
 
 
