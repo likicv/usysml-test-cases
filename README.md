@@ -35,7 +35,7 @@ will limit considerations required for the development of robust test
 cases to explore practical issues relevant to the implementation of the
 SysML v2 textual notation. Therefore, the scope of uSysML for each version
 is fixed for the purpose of this work and the development of test cases.
-The currently planned scope/uSysML version is shown in the table below.
+The currently planned scope/uSysML version is shown in the table below:
 
 
 | uSysML version | Scope | Status |
@@ -43,6 +43,7 @@ The currently planned scope/uSysML version is shown in the table below.
 | v0.01 | package, part, part def, //-type comments | 8 Test Cases |
 | v0.02 | +attribute, +attribute def | None yet |
 | v0.03 | +redefines, +subsets, +specializes | None yet |
+
 
 The following references have been used for this work:
 - Kernel Modeling Language (KerML) (‘1-Kernel_Modeling_Language.pdf’)
@@ -65,9 +66,8 @@ sections:
 - Description -- a description of the test case
 - SysML v2 textual notation -- shows SysML v2 textual notation
 - Expected output -- shows the expected output of after the parsing of the
-SysML v2 textual notation. Note, the output shown **in special notation
-developed for uSysML Test Cases, this is not SysML v2**. See the explanations
-below
+SysML v2 textual notation. Note, **this is not SysML v2, but a special
+notation developed for uSysML Test Cases**. See the explanations below
 - Rules/constraints -- any rules or constraints that we can derive from the
 test case considerations
 - Comments -- additional comments, if any
