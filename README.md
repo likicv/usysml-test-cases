@@ -56,9 +56,9 @@ developed and maintained by the uSysML team.
 # uSysML Test Cases notation
 
 Each uSysML Test Case is associated with a unique number identifier that
-allows it to be referenced later, and is loosely structured around the
-following sections:
-- Title -- a short title of the Test Case together with the number identifier
+allows it to be referenced later, and is structured around the following
+sections:
+- Title &ndash a short title of the Test Case together with the number identifier
 - Description -- a description of the Test Case
 - SysML v2 textual notation -- shows SysML v2 textual notation
  
