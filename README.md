@@ -8,9 +8,6 @@ uSysML ('micro SysML') Test Cases for SysML v2
 
 CC BY-SA 4.0   This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International license: https://creativecommons.org/licenses/by-sa/4.0/
 
-To view all test cases click [here](/test_cases.md), or to download the
-summary PDF file click [here](/test_cases.pdf).
-
 
 # Background
 
@@ -22,6 +19,9 @@ based on the decomposability of SysML v2. The objective of this work is
 (1) to generate input that would promote consideration, clarification,
 or strengthening of the SysML v2 specification; and (2) to assist the wider
 MBSE community in the implementation of the SysML v2 specification.
+
+To view all test cases click [here](/test_cases.md), or to download the
+summary PDF file click [here](/test_cases.pdf).
 
 
 ## uSysML
