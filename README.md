@@ -108,8 +108,9 @@ of 'Root'. 'Vehicle' is `PartDef` (i.e. the element Cassifier of 'Vehicle' is
         type=Root.PackageVehicles.Vehicle
 
 **Meaning**:
-    • ‘vehicle’ is in the namespace of ‘PackageVehicles’ which is in the namspace of ‘Root’
-    • ‘vehicle’ is Part of the type ‘Root.PackageVehicles.Vehicle’
+
+- ‘vehicle’ is in the namespace of ‘PackageVehicles’ which is in the namspace of ‘Root’
+- ‘vehicle’ is `Part` of the type ‘Root.PackageVehicles.Vehicle’
 
 
 # uSysML Test Cases local installation
