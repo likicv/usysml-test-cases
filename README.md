@@ -90,7 +90,7 @@ and possibly additional features of the parsed elements. Some examples:
 
 ### Example 2
 
-**Output shown**:
+**Expected output**:
 
     Root.PackageVehicles.Vehicle [PartDef]
 
@@ -102,7 +102,7 @@ of 'Root'. 'Vehicle' is `PartDef` (i.e. the element Cassifier of 'Vehicle' is
 
 ### Example 3
 
-**Output shown**:
+**Expected output**:
 
     Root.PackageVehicles.vehicle [Part]
         type=Root.PackageVehicles.Vehicle
