@@ -44,7 +44,7 @@ The currently planned scope/uSysML version is shown in the table below.
 The following references have been used for this work:
 - Kernel Modeling Language (KerML) (‘1-Kernel_Modeling_Language.pdf’)
 - OMG Systems Modeling Language (SysML) (‘2-OMG_Systems_Modeling_Language.pdf’)
-- [SysMLv2 Pilot Implementation Prototype] (https://github.com/Systems-Modeling/SysML-v2-Pilot-Implementation)
+- [SysMLv2 Pilot Implementation Prototype](https://github.com/Systems-Modeling/SysML-v2-Pilot-Implementation)
 - Sanford Friedental, “Introduction to the SysML v2 Language Graphical Notation”, Release: 2021-05-21
 - Model Driven Solutions, Inc. “Introduction to the SysML v2 Language Textual Notation”, Release: 2021-05
 
