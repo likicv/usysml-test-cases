@@ -76,7 +76,7 @@ test case considerations
 - Discussion -- discussion of the test case, possibly including some negative
 examples to highlight the points made, expected output, rules or constraints
  
-## The notation used in the “Expected output” section
+## The notation used in the Test Cases “Expected output” section
 
 The Test Case "Expected output" section is not SysML v2 textual notation,
 rather this is a special notation developed for the purpose of uSysML Test
