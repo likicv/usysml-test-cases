@@ -3,6 +3,7 @@
 uSysML ('micro SysML') Test Cases for SysML v2
 
 © Vladimir Likić <vlad.likic@gmail.com>
+
 © Igor Dejanović <igor.dejanovic@gmail.com>
 
 CC BY-SA 4.0   This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International license: https://creativecommons.org/licenses/by-sa/4.0/
@@ -26,7 +27,7 @@ The uSysML project broadly refers to the specific test cases, associated
 explanations, discussion, and any issues raised. In a more narrow sense,
 uSysML refers to a subset of SysML v2 keywords and behaviours, however
 what exactly is included in this subset depends on the uSysML version
-(see Table 1). The purpose of uSysML versions is to define scope that
+(see table below). The purpose of uSysML versions is to define scope that
 will limit considerations required for the development of robust test
 cases to explore practical issues relevant to the implementation of the
 SysML v2 textual notation. Therefore, the scope of uSysML for each version
@@ -39,6 +40,17 @@ The currently planned scope/uSysML version is shown in the table below.
 | v0.01 | package, part, part def, //-type comments | 8 Test Cases |
 | v0.02 | +attribute, +attribute def | None yet |
 | v0.03 | +redefines, +subsets, +specializes | None yet |
+
+The following references have been used for this work:
+- Kernel Modeling Language (KerML) (‘1-Kernel_Modeling_Language.pdf’)
+- OMG Systems Modeling Language (SysML) (‘2-OMG_Systems_Modeling_Language.pdf’)
+- [SysMLv2 Pilot Implementation Prototype] (https://github.com/Systems-Modeling/SysML-v2-Pilot-Implementation)
+- Sanford Friedental, “Introduction to the SysML v2 Language Graphical Notation”, Release: 2021-05-21
+- Model Driven Solutions, Inc. “Introduction to the SysML v2 Language Textual Notation”, Release: 2021-05
+
+Henceforth the test cases derived from this work will be referd to as
+“uSysML Test Cases”. This document is a “living document” that is being
+developed and maintained by the uSysML team.
 
 
 # Installation
