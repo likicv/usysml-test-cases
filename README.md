@@ -59,7 +59,7 @@ Henceforth the test cases derived from this work will be referd to as
 developed and maintained by the uSysML team.
 
 
-# uSysML Test Cases notation
+# uSysML test cases notation
 
 Each uSysML Test Case is associated with a unique number identifier that
 allows it to be referenced later, and is structured around the following
@@ -76,7 +76,7 @@ test case considerations
 - Discussion -- discussion of the test case, possibly including some negative
 examples to highlight the points made, expected output, rules or constraints
  
-## The notation used in the Test Cases “Expected output” section
+## The notation used in the Test Case “Expected output” section
 
 The Test Case "Expected output" section is not SysML v2 textual notation,
 rather this is a special notation developed for the purpose of uSysML Test
@@ -113,7 +113,7 @@ of ‘Root’
 - ‘vehicle’ is `Part` of the type ‘Root.PackageVehicles.Vehicle’
 
 
-# uSysML Test Cases local installation
+# Local installation of test cases
 
 ## Project file/folders Layout
 
