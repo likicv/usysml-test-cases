@@ -68,8 +68,9 @@ sections:
 - Description -- a description of the test case
 - SysML v2 textual notation -- shows SysML v2 textual notation
 - Expected output -- shows the expected output of after the parsing of the
-SysML v2 textual notation. **Note, this is not SysML v2, but a special
-notation developed for uSysML Test Cases**. See the explanations below
+SysML v2 textual notation. **Note, this is not a SysML v2 notation, but a
+special notation developed for uSysML Test Cases**. See the explanations
+below
 - Rules/constraints -- any rules or constraints that we can derive from the
 test case considerations
 - Comments -- additional comments, if any
