@@ -53,18 +53,17 @@ specific implementation of the SysML v2 specification. For example,
 the scope corresponding to uSysML v0.01 (spiral 1) includes the
 keywords `package`, `part`, `part def` keywords; and with just
 those three keywords it is possible to create quite complex, fully
-SysML v2 compliant models. An implementation corresponding to uSysML
-spiral 1 would be able to process any SysML v2 model. In other words,
-a uSysML model would be a valid SysML v2 model, paresable by any
-complete SysML v2 implementation; however the reverse is not true
-because the full SysML v2 specification includes many features
-beyond what is implemented in any uSysML verstion. The scope of
-uSysML for each version (or spiral) is fixed for the purpose of
-test cases and exploring practical issues relevant to the
-implementation of the SysML v2 textual notation.
+SysML v2 compliant models. In other words, a uSysML model would be
+a valid SysML v2 model, paresable by any complete SysML v2
+implementation; however the reverse is not true because the full
+SysML v2 specification includes many features beyond what is
+implemented in any uSysML verstion. The scope of uSysML for each
+version (or spiral) is fixed for the purpose of test cases and
+exploring the practical issues relevant to the implementation of
+the SysML v2 textual notation.
 
 
-The following references have been used for this work:
+The following references are used in this work:
 - Kernel Modeling Language (KerML) (‘1-Kernel_Modeling_Language.pdf’)
 - OMG Systems Modeling Language (SysML) (‘2-OMG_Systems_Modeling_Language.pdf’)
 - [SysMLv2 Pilot Implementation Prototype](https://github.com/Systems-Modeling/SysML-v2-Pilot-Implementation)
