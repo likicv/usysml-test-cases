@@ -150,18 +150,24 @@ activate the environment run:
 source venv/bin/activate
 ```
 
-## Generating documentation
+## Generating documentation locally
+
+Download the project from GitHub with `git clone`:
+
+```
+$ git clone https://github.com/likicv/usysml-test-cases
+```
 
 From the project root:
 
 ```
-./gendocs.py
+$ ./gendocs.py
 ```
 
 or 
 
 ``` sh
-python gendocs.py
+$ python gendocs.py
 ```
 
 This will process all `.md` files and create `test_cases.md`, and
