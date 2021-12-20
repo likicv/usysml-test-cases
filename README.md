@@ -77,7 +77,7 @@ maintained by the uSysML team. Henceforth the test cases derived
 from this work will be referd to as “uSysML Test Cases”. 
 
 
-# Understanding what a uSysML Test Case contains
+# Understanding uSysML Test Cases
 
 Each uSysML Test Case is associated with a unique number identifier (Test
 Case ID)that allows it to be referenced later. The Test Case ID is given
