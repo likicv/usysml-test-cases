@@ -22,8 +22,8 @@ clarification, and/or strengthening of the SysML v2 specification; and
 the SysML v2 specification. **The uSysML project aims to generate specific
 test cases, associated discussion, and issues for consideration.**
 
-To view all test cases click [here](/test_cases.md), or to download the
-summary PDF file click [here](/test_cases.pdf).
+To view all current test cases please click [here](/test_cases.md), and
+to download the summary PDF file please click [here](/test_cases.pdf).
 
 
 ## uSysML
@@ -50,17 +50,17 @@ While the objective of this project is to generate test cases and
 associated discussion that will be useful in any SysML v2
 implementation, it is sometimes useful to think of uSysML as a
 specific implementation of the SysML v2 specification. For example,
-the scope corresponding to uSysML v0.01 (spiral 1) includes the
-keywords `package`, `part`, `part def` keywords; and with just
-those three keywords it is possible to create quite complex, fully
-SysML v2 compliant models. In other words, a uSysML model would be
-a valid SysML v2 model, paresable by any complete SysML v2
-implementation; however the reverse is not true because the full
-SysML v2 specification includes many features beyond what is
-implemented in any uSysML verstion. The scope of uSysML for each
-version (or spiral) is fixed for the purpose of test cases and
-exploring the practical issues relevant to the implementation of
-the SysML v2 textual notation.
+such implementation corresponding to uSysML v0.01 (spiral 1) would
+have a limited scope that includes only the keywords `package`, `part`,
+`part def` keywords. With just those three keywords it is possible
+to create quite complex, fully SysML v2 compliant models. In other
+words, any uSysML model would be a valid SysML v2 model, paresable
+by any complete SysML v2 implementation; however the reverse is not
+true because the full SysML v2 specification includes many features
+beyond the scope of uSysML. The scope of uSysML for each version
+(or spiral) is fixed for the purpose of test cases and exploring
+the practical issues relevant to the implementation of the SysML
+v2 textual notation.
 
 
 The following references are used in this work:
