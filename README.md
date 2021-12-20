@@ -53,7 +53,7 @@ specific implementation of the SysML v2 specification. For example,
 such implementation corresponding to uSysML v0.01 (spiral 1) would
 have a limited scope that includes only the keywords `package`, `part`,
 `part def` keywords. With just those three keywords it is possible
-to create quite complex, fully SysML v2 compliant models. In other
+to create quite complex, fully compliant SysML v2 models. In other
 words, any uSysML model would be a valid SysML v2 model, paresable
 by any complete SysML v2 implementation; however the reverse is not
 true because the full SysML v2 specification includes many features
