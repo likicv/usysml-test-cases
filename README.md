@@ -12,8 +12,8 @@ CC BY-SA 4.0   This work is licensed under the Creative Commons Attribution-Sh
 # Background
 
 SysML v2 is the next generation of the OMG Systems Modeling Language (SysML)
-that is currently under development. The objective of SysML v2 to enable
-more effective model-based systems engineering (MBSE). The uSysML (‘micro
+currently under development. The objective of SysML v2 to enable more
+effective model-based systems engineering (MBSE). The uSysML (‘micro
 SysML’) project is an approach to the development of SysML v2 test cases
 based on the decomposability of SysML v2. The objective of this work is
 twofold: (1) to generate input that would promote consideration,
@@ -30,10 +30,10 @@ summary PDF file click [here](/test_cases.pdf).
 
 uSysML refers to a subset of SysML v2 keywords and behaviours, and
 what exactly is included in this subset depends on the uSysML version
-(see the table below). The purpose of each uSysML version is to
-define scope that will limit considerations required for the
-development of test cases. The currently planned uSysML versions
-are shown in the table below:
+(see the table below). The purpose of uSysML versions is to define
+scope that will limit considerations required for the development
+of test cases. The currently planned uSysML versions are shown in
+the table below:
 
 
 | uSysML version | Scope | Status |
@@ -43,26 +43,25 @@ are shown in the table below:
 | v0.03 (spiral 3) | +`redefines`, +`subsets`, +`specializes` | None yet |
 
 
-The idea behind uSysML is that SysML v2 specification is perfectly
-decomposable in the sense that it is possible to create a valid
-SysML v2 models with just a subset of features defined by the SysML
-v2 specification. While the objective of this project is to generate
-test cases and associated discussion that will be useful in any SysML
-v2 implementation, it is sometimes useful to think of uSysML as a
-*specific implementation* of the SysML v2 specification. For example,
+The idea behind uSysML is that SysML v2 is perfectly decomposable
+in the sense that it is possible to create a valid SysML v2 models
+with just a subset of features defined by the SysML v2 specification.
+While the objective of this project is to generate test cases and
+associated discussion that will be useful in any SysML v2
+implementation, it is sometimes useful to think of uSysML as a
+specific implementation of the SysML v2 specification. For example,
 the scope corresponding to uSysML v0.01 (spiral 1) includes the
 keywords `package`, `part`, `part def` keywords; and with just
 those three keywords it is possible to create quite complex, fully
-SysML v2 compliant models. An implementation corresponding to spiral
-1 (uSysML v0.01) would be able to process any SysML v2 model; in
-other words, a uSysML model would be a valid SysML v2 model,
-paresable by any complete SysML v2 implementation; however the
-reverse is not true because the full SysML v2 specification includes
-many features beyond what is implemented in any uSysML verstion.
-The scope of uSysML for each version (or spiral), as shown in the
-table above, is fixed for the purpose of test cases, and exploring
-practical issues relevant to the implementation of the SysML v2
-textual notation.
+SysML v2 compliant models. An implementation corresponding to uSysML
+spiral 1 would be able to process any SysML v2 model. In other words,
+a uSysML model would be a valid SysML v2 model, paresable by any
+complete SysML v2 implementation; however the reverse is not true
+because the full SysML v2 specification includes many features
+beyond what is implemented in any uSysML verstion. The scope of
+uSysML for each version (or spiral) is fixed for the purpose of
+test cases and exploring practical issues relevant to the
+implementation of the SysML v2 textual notation.
 
 
 The following references have been used for this work:
@@ -74,22 +73,22 @@ Notation”, Release: 2021-05-21
 - Model Driven Solutions, Inc. “Introduction to the SysML v2 Language
 Textual Notation”, Release: 2021-05
 
-Henceforth the test cases derived from this work will be referd to as
-“uSysML Test Cases”. This document is a “living document” that is being
-developed and maintained by the uSysML team.
+Henceforth the test cases derived from this work will be referd to
+as “uSysML Test Cases”. This document is a “living document” that
+is being developed and maintained by the uSysML team.
 
 
 # Understanding what a uSysML Test Case contains
 
-Each uSysML Test Case is associated with a unique number identifier that
-allows it to be referenced later. The Test Case ID is given in test case
-title, as well as a short description, and the spiral. The spiral refers
-to the uSysML version (as per the above table), which limits the scope
-SysML v2 implementation that the test case refers to. For example, for
-a Test Case that is marked 'spiral 1', only `package`, `part`, and `part
-def` are expected to be implemented (as per the table above).
+Each uSysML Test Case is associated with a unique number identifier (Test
+Case ID)that allows it to be referenced later. The Test Case ID is given
+in test case title, as well as a short description, and the spiral. The
+spiral refers to the uSysML version as per the above table; this limits
+the scope SysML v2 implementation that the test case refers to. For example,
+for a Test Case that is marked 'spiral 1', only `package`, `part`, and `part
+def` would have been expected to be implemented.
 
-Each test case is structured with the following sections:
+Each test case is structured according to the following sections:
 - Title -- a short title of the Test Case together with the number identifier
 - Description -- a description of the test case
 - SysML v2 textual notation -- shows SysML v2 textual notation
@@ -106,10 +105,11 @@ examples to highlight the points made, expected output, rules or constraints
 
 ## The notation used in the Test Case “Expected output” section
 
-The Test Case "Expected output" section is not SysML v2 textual notation,
-rather this is a special notation developed for the purpose of uSysML Test
-Cases. More specifically, this is a shorthand notation to specify namespaces
-and possibly additional features of the parsed elements. Some examples:
+The Test Case "Expected output" section is not SysML v2 notation, rather
+this is a special notation developed for the purpose of uSysML Test Cases.
+More specifically, this is a shorthand notation to specify namespaces
+and possibly additional features of the parsed elements. Some examples
+are given below.
 
 
 ### Example 1
@@ -118,7 +118,8 @@ and possibly additional features of the parsed elements. Some examples:
 
 **Meaning**:
 
-'Vehicle' is in the namespace of 'PackageVehicles' which is in the namespace of 'Root'.
+'Vehicle' is in the namespace of 'PackageVehicles', and 'PackageVehicles'
+is in the namespace of 'Root'.
 
 
 ### Example 2
@@ -128,8 +129,8 @@ and possibly additional features of the parsed elements. Some examples:
 **Meaning**:
 
 ‘Vehicle' is in the namespace of 'PackageVehicles' which is in the namespace
-of 'Root'. 'Vehicle' is `PartDef` (i.e. the element Cassifier of 'Vehicle' is
-`PartDef`, generated by the SysMLv2 command ‘part def’).
+of 'Root'. 'Vehicle' is `PartDef` (i.e. the SysML v2 Cassifier is `PartDef`,
+meaning that 'Vehicle' was generated by the SysMLv2 ‘part def’ command).
 
 
 ### Example 3
