@@ -80,11 +80,11 @@ from this work will be referd to as “uSysML Test Cases”.
 # Understanding uSysML Test Cases
 
 Each uSysML Test Case is associated with a unique number identifier (Test
-Case ID)that allows it to be referenced later. The Test Case ID is given
-in test case title, as well as a short description, and the spiral. The
-spiral refers to the uSysML version as per the above table; this limits
-the scope SysML v2 implementation that the test case refers to. For example,
-for a Test Case that is marked 'spiral 1', only `package`, `part`, and `part
+Case ID) that allows it to be referenced subsequently. The Test Case ID
+is given in the test case title, as well as a short description and the
+spiral. The spiral refers to the uSysML version as per the above table,
+and this shows the scope that the test case refers to; for example, for
+a test case that is marked 'spiral 1', only `package`, `part`, and `part
 def` would have been expected to be implemented.
 
 Each test case is structured into the following sections:
