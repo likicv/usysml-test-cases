@@ -40,7 +40,7 @@ The currently planned scope/uSysML version is shown in the table below:
 
 | uSysML version | Scope | Status |
 | --- | --- | --- |
-| v0.01 (spiral 1) | package, part, part def, //-type comments | 8 Test Cases |
+| v0.01 (spiral 1) | package, part, part def, //-type comments | 8 test cases |
 | v0.02 (spiral 2) | +attribute, +attribute def | None yet |
 | v0.03 (spiral 3) | +redefines, +subsets, +specializes | None yet |
 
