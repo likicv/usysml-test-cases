@@ -72,9 +72,9 @@ Notation”, Release: 2021-05-21
 - Model Driven Solutions, Inc. “Introduction to the SysML v2 Language
 Textual Notation”, Release: 2021-05
 
-Henceforth the test cases derived from this work will be referd to
-as “uSysML Test Cases”. This document is a “living document” that
-is being developed and maintained by the uSysML team.
+This document is a “living document” that is being developed and
+maintained by the uSysML team. Henceforth the test cases derived
+from this work will be referd to as “uSysML Test Cases”. 
 
 
 # Understanding what a uSysML Test Case contains
@@ -87,7 +87,7 @@ the scope SysML v2 implementation that the test case refers to. For example,
 for a Test Case that is marked 'spiral 1', only `package`, `part`, and `part
 def` would have been expected to be implemented.
 
-Each test case is structured according to the following sections:
+Each test case is structured into the following sections:
 - Title -- a short title of the Test Case together with the number identifier
 - Description -- a description of the test case
 - SysML v2 textual notation -- shows SysML v2 textual notation
@@ -102,7 +102,7 @@ test case considerations
 examples to highlight the points made, expected output, rules or constraints
  
 
-## The notation used in the Test Case “Expected output” section
+## The notation used in the “Expected output” section
 
 The Test Case "Expected output" section is not SysML v2 notation, rather
 this is a special notation developed for the purpose of uSysML Test Cases.
