@@ -42,7 +42,8 @@ with open(MARKDOWN_OUT, 'w') as f:
 
 print(" [ '{:s}' created ]".format(MARKDOWN_OUT))
 
-subprocess.run(["pandoc", MARKDOWN_OUT, "--number-sections", "-o", PDF_OUT])
+subprocess.run(["pandoc", MARKDOWN_OUT, "-V", "geometry:a4paper,margin=2.1cm",
+                "--number-sections", "-o", PDF_OUT])
 
 print(" [ '{:s}' created ]".format(PDF_OUT))
 
