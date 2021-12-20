@@ -170,5 +170,6 @@ or
 $ python gendocs.py
 ```
 
-This will process all `.md` files and create `test_cases.md`, and
-the PDF file from `test_cases.md` (requires `pandoc`).
+This will process all the inidividual test cases and create a cumulative
+test case codument `test_cases.md`, as well as the corresponding PDF file
+(PDF file creation requires `pandoc` to be installed on the system).
