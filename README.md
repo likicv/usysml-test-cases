@@ -20,7 +20,7 @@ twofold: (1) to generate input that would promote consideration,
 clarification, and/or strengthening of the SysML v2 specification; and
 (2) to assist the MBSE community of interest in the implementation of
 the SysML v2 specification. **The uSysML project aims to generate specific
-test cases, associated discussion, and issues for consideration.**
+test cases, associated discussion, and any issues for consideration.**
 
 To view all current test cases please click [here](/test_cases.md), and
 to download the summary PDF file please click [here](/test_cases.pdf).
