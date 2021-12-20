@@ -18,9 +18,9 @@ SysML’) project is an approach to the development of SysML v2 test cases
 based on the decomposability of SysML v2. The objective of this work is
 twofold: (1) to generate input that would promote consideration,
 clarification, and/or strengthening of the SysML v2 specification; and
-(2) to assist the wider MBSE community in the implementation of the SysML
-v2 specification. The uSysML project aims to generate specific test cases,
-associated discussion, and issues for consideration. 
+(2) to assist the MBSE community of interest in the implementation of
+the SysML v2 specification. **The uSysML project aims to generate specific
+test cases, associated discussion, and issues for consideration.**
 
 To view all test cases click [here](/test_cases.md), or to download the
 summary PDF file click [here](/test_cases.pdf).
