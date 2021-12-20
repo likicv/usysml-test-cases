@@ -22,8 +22,8 @@ clarification, and/or strengthening of the SysML v2 specification; and
 the SysML v2 specification. **The uSysML project aims to generate specific
 test cases, associated discussion, and any issues for consideration.**
 
-To view all current test cases please click [here](/test_cases.md), and
-to download the summary PDF file please click [here](/test_cases.pdf).
+To view current test cases please click [here](/test_cases.md), and to
+download the summary PDF file please click [here](/test_cases.pdf).
 
 
 ## uSysML
@@ -31,7 +31,7 @@ to download the summary PDF file please click [here](/test_cases.pdf).
 uSysML refers to a subset of SysML v2 keywords and behaviours, and
 what exactly is included in this subset depends on the uSysML version
 (see the table below). The purpose of uSysML versions is to define
-scope that will limit considerations required for the development
+the scope that will limit considerations required for the development
 of test cases. The currently planned uSysML versions are shown in
 the table below:
 
@@ -43,24 +43,24 @@ the table below:
 | v0.03 (spiral 3) | +`redefines`, +`subsets`, +`specializes` | None yet |
 
 
-The idea behind uSysML is that SysML v2 is perfectly decomposable
-in the sense that it is possible to create a valid SysML v2 models
-with just a subset of features defined by the SysML v2 specification.
-While the objective of this project is to generate test cases and
-associated discussion that will be useful in any SysML v2
-implementation, it is sometimes useful to think of uSysML as a
-specific implementation of the SysML v2 specification. For example,
-such implementation corresponding to uSysML v0.01 (spiral 1) would
-have a limited scope that includes only the keywords `package`, `part`,
-`part def` keywords. With just those three keywords it is possible
+The idea behind uSysML is that SysML v2 behavrious are perfectly
+decomposable, in the sense that it is possible to create a valid
+SysML v2 models with just a subset of features defined by the SysML
+v2 specification. While the objective of this project is to generate
+test cases and associated discussion that will be useful in any
+SysML v2 implementation, it is sometimes useful to think of uSysML
+as a specific implementation of the SysML v2 specification. Then
+the implementation corresponding to uSysML v0.01 (spiral 1) would
+support the behaviours of the keywords `package`, `part`, `part def`
+only. We note that with just those three keywords it is possible
 to create quite complex, fully compliant SysML v2 models. In other
-words, a uSysML model would be a valid SysML v2 model, paresable
-by any complete SysML v2 implementation; however the reverse is not
-true because the full SysML v2 specification includes many features
-beyond the scope of uSysML. The scope of uSysML for each version
-(or spiral) is fixed for the purpose of test cases and exploring
-the practical issues relevant to the implementation of the SysML
-v2 textual notation.
+words, every uSysML model should be a valid SysML v2 model, paresable
+by any complete SysML v2 implementation; however the reverse does
+not hold, because the full SysML v2 specification includes many
+features beyond the scope of uSysML. The scope of uSysML for each
+version (or spiral) is fixed for the purpose of test cases and
+exploring the practical issues relevant to the implementation of
+the SysML v2 textual notation.
 
 
 The following references are used in this work:
@@ -81,11 +81,11 @@ from this work will be referd to as “uSysML Test Cases”.
 
 Each uSysML Test Case is associated with a unique number identifier (Test
 Case ID) that allows it to be referenced subsequently. The Test Case ID
-is given in the test case title, as well as a short description and the
-spiral. The spiral refers to the uSysML version as per the above table,
-and this shows the scope that the test case refers to; for example, for
-a test case that is marked 'spiral 1', only `package`, `part`, and `part
-def` would have been expected to be implemented.
+is given in the test case title, as well as a short description of the
+test case and the spiral. The spiral refers to the uSysML version as per
+the above table, and this shows the scope that the test case refers to;
+for example, for a test case that is marked 'spiral 1', only `package`,
+`part`, and `part def` would have been expected to be implemented.
 
 Each test case is structured into the following sections:
 - Title -- a short title of the Test Case together with the number identifier
@@ -97,7 +97,7 @@ special notation developed for uSysML Test Cases**. See the explanations
 below
 - Rules/constraints -- any rules or constraints that we can derive from the
 test case considerations
-- Comments -- additional comments, if any
+- Comments -- any additional comments
 - Discussion -- discussion of the test case, possibly including some negative
 examples to highlight the points made, expected output, rules or constraints
  
