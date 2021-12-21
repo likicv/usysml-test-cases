@@ -16,11 +16,13 @@ currently under development. The objective of SysML v2 to enable more
 effective model-based systems engineering (MBSE). The uSysML (‘micro
 SysML’) project is an approach to the development of SysML v2 test cases
 based on the decomposability of SysML v2. The objective of this work is
-twofold: (1) to generate input that would promote consideration,
-clarification, and/or strengthening of the SysML v2 specification; and
-(2) to assist the MBSE community of interest in the implementation of
-the SysML v2 specification. **The uSysML project aims to generate specific
-test cases, associated discussion, and any issues for consideration.**
+twofold: (1) to generate input that may require consideration,
+clarification, or strengthening of the SysML v2 specification for
+unambigous SysML v2 implementation; and (2) to provide documented 
+test cases that would assist the MBSE community in the implementation
+of the SysML v2 specification. **The uSysML project aims to generate
+specific test cases, associated discussion, and any issues for
+consideration.**
 
 To view current test cases please click [here](/test_cases.md), and to
 download the summary PDF file please click [here](/test_cases.pdf).
@@ -28,12 +30,13 @@ download the summary PDF file please click [here](/test_cases.pdf).
 
 ## uSysML
 
-uSysML refers to a subset of SysML v2 keywords and behaviours, and
-what exactly is included in this subset depends on the uSysML version
-(see the table below). The purpose of uSysML versions is to define
-the scope that will limit considerations required for the development
-of test cases. The currently planned uSysML versions are shown in
-the table below:
+In the wise sense, uSysML is an approach to the development of test
+cases for SysML v2. In the narrow sense uSysML refers to a subset of
+SysML v2 keywords and behaviours, and what exactly is included in
+this subset depends on the uSysML version (see the table below). The
+purpose of uSysML versions is to define the scope that will limit
+considerations required for the development of Test Cases. The
+currently planned uSysML versions are shown in the table below:
 
 
 | uSysML version | Scope | Status |
