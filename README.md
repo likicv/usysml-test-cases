@@ -30,7 +30,7 @@ download the summary PDF file please click [here](/test_cases.pdf).
 
 ## uSysML
 
-In the wise sense, uSysML is an approach to the development of test
+In the wider sense, uSysML is an approach to the development of test
 cases for SysML v2. In the narrow sense uSysML refers to a subset of
 SysML v2 keywords and behaviours, and what exactly is included in
 this subset depends on the uSysML version (see the table below). The
