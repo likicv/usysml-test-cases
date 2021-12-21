@@ -47,10 +47,10 @@ uSysML versions are shown in the table below:
 
 The idea behind uSysML is that SysML v2 behaviours are perfectly
 decomposable, in the sense that it would possible to create a valid
-SysML v2 model with just a subset of features defined by the full
-SysML v2 specification. We note that with just a subset of the full
-SysML v2 specification it would possible to create quite complex,
-fully compliant SysML v2 models.
+SysML v2 model with a subset of features defined by the full SysML
+v2 specification. We note that with just a subset of the full SysML
+v2 specification it would possible to create quite complex, fully
+compliant SysML v2 models.
 
 While the objective of this project is to generate test cases and
 associated discussion that will be useful in any SysML v2
