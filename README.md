@@ -60,14 +60,15 @@ implementation corresponding to uSysML v0.01 (spiral 1) would
 support the behaviours of the keywords `package`, `part`, `part def`
 in accordance with the SysML v2 specification, and nothing else.
 
-It follows that every model defined by the uSysML scope should
+It follows that every model defined by the uSysML scope muste
 be a valid SysML v2 model, paresable by a complete SysML v2
-implementation. However the reverse does not hold, because the
+implementation. However the reverse does not hold: because the
 uSysML scope is limited, and the full SysML v2 specification
-includes many features beyond this scope. The scope of uSysML
-for each version (or spiral) is fixed for the purpose of test
-cases and exploring the practical issues relevant to the
-implementation of the SysML v2 textual notation.
+includes many features beyond the scope of uSysML. The scope
+of uSysML for each version (or spiral) is fixed for the purpose
+of test cases development and analysis, and exploring the
+practical issues relevant to the implementation of the SysML
+v2 textual notation.
 
 
 The following references are used in this work:
