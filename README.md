@@ -92,6 +92,17 @@ from this work will be referd to as “uSysML Test Cases”.
 
 # Understanding uSysML Test Cases
 
+The test cases are organised under the folder `test_cases`, one test
+case per folder named 'testVXYZ' (where 'VXYZ' is the test case
+unique identifier). Within each test case there are several files,
+of which the following are particularly important:
+
+- \*.sysml file -- contains the test case SysML v2 textual notation
+- \*.output file -- contains the test case output (in the uSysML output
+notation explained below)
+- \*.ipynb file -- Jupyter notebook with test case parsed in the SysML
+v2 Pilot Implementation
+
 Each uSysML Test Case is associated with a unique number identifier (Test
 Case ID) that allows it to be referenced subsequently. The Test Case ID
 is given in the test case title, as well as a short description of the
@@ -113,6 +124,8 @@ test case considerations
 - Comments -- any additional comments
 - Discussion -- discussion of the test case, possibly including some negative
 examples to highlight the points made, expected output, rules or constraints
+
+
  
 
 ## The notation used in the “Expected output” section
