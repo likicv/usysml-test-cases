@@ -100,16 +100,17 @@ of which the following are particularly important:
 - \*.sysml -- contains the test case SysML v2 textual notation
 - \*.output -- contains the test case output (in the uSysML output
 notation explained below)
-- \*.ipynb -- Jupyter notebook with test case parsed in the SysML
+- \*.ipynb -- Jupyter notebook with test case parsed by the SysML
 v2 Pilot Implementation
 
-Each uSysML Test Case is associated with a unique number identifier (Test
-Case ID) that allows it to be referenced subsequently. The Test Case ID
-is given in the test case title, as well as a short description of the
-test case and the spiral. The spiral refers to the uSysML version as per
-the above table, and this shows the scope that the test case refers to;
-for example, for a test case that is marked 'spiral 1', only `package`,
-`part`, and `part def` would have been expected to be implemented.
+Each uSysML Test Case is associated with a unique identifier (Test
+Case ID) that allows it to be referenced subsequently. The Test Case
+ID is given in the test case title, as well as a short description
+of the test case and the spiral. The spiral refers to the uSysML
+version as per the above table, and this shows the scope that the
+test case refers to (for example, for a test case that is marked
+'spiral 1', only `package`, `part`, and `part def` would have been
+expected to be implemented, as per the table above).
 
 Each test case is structured into the following sections:
 - Title -- a short title of the Test Case together with the number identifier
