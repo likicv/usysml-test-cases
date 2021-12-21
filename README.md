@@ -14,14 +14,14 @@ CC BY-SA 4.0   This work is licensed under the Creative Commons Attribution-Sh
 SysML v2 is the next generation of the OMG Systems Modeling Language (SysML),
 currently under development. The objective of SysML v2 to enable more
 effective model-based systems engineering (MBSE). The uSysML (‘micro
-SysML’) project is an approach to the development of SysML v2 test cases
-based on the decomposability of SysML v2. The objective of this work is
-twofold: (1) to generate input that would facilitate consideration,
-clarification, or strengthening of the SysML v2 specification; and (2)
-to provide documented test cases that would assist the MBSE community
-in the implementation of the SysML v2 specification. **The uSysML
-project aims to generate specific test cases, associated discussion,
-and any issues for consideration.**
+SysML’) project is concerned the development of test cases that will
+be useful in the implementation of the SysML v2 specification. The
+objective of this work is twofold: (1) to generate input that would
+facilitate consideration, clarification, or strengthening of the SysML
+v2 specification; and (2) to provide documented test cases that would
+assist the MBSE community in the implementation of the SysML v2
+specification. **The uSysML project aims to generate specific test
+cases, associated discussion, and possibly issues for consideration.**
 
 To view current test cases please click [here](/test_cases.md), and to
 download the summary PDF file please click [here](/test_cases.pdf).
