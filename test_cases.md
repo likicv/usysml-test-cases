@@ -1,4 +1,4 @@
-<!-- Generated on 2021-12-21 17:52:59.709110 from script `gendocs.py`
+<!-- Generated on 2021-12-21 17:57:47.604837 from script `gendocs.py`
      DO NOT EDIT MANUALY! -->
 
 # Test Case #0001: Fully qualified element names (FQEN) (spiral 1)
@@ -494,7 +494,7 @@ N/A
 
 ## Description
 
-This use case addressed //-type comment
+This use case addresses //-type comment
 
 ## SysMLv2 textual notation
 
@@ -535,6 +535,5 @@ in SysML v2, and this test case addresses only a single-line note.
 
 According to the KerML specification: "A single-line note includes
 all the text from the initial characters '//' up to the next line
-terminator or the end of the input text (whichever comes first)"
-
+terminator or the end of the input text (whichever comes first)."
 
