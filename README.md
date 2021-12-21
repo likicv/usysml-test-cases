@@ -32,8 +32,8 @@ download the summary PDF file please click [here](/test_cases.pdf).
 
 The uSysML project is an approach to the development of test cases
 for SysML v2 textual notation. In the narrow sense, uSysML refers
-to a subset of SysML v2 keywords and behaviours, and what exactly is
-included in this subset depends on the uSysML version (see the
+to a subset of SysML v2 keywords and behaviours, and what exactly
+is included in this subset depends on the uSysML version (see the
 table below). The purpose of uSysML versions is to define the scope
 that will limit considerations required for the development of the
 test cases. The currently planned uSysML versions are shown in the
