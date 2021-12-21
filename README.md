@@ -35,24 +35,24 @@ for SysML v2 textual notation. In the narrow sense, uSysML refers
 to a subset of SysML v2 keywords and behaviours, and what exactly is
 included in this subset depends on the uSysML version (see the
 table below). The purpose of uSysML versions is to define the scope
-that will limit considerations required for the development of Test
-Cases. The currently planned uSysML versions are shown in the table
-below:
+that will limit considerations required for the development of the
+test cases. The currently planned uSysML versions are shown in the
+table below:
 
 
 | uSysML version | Scope | Status |
 | --- | --- | --- |
-| v0.01 (spiral 1) | `package`, `part`, `part def`, //-type comments | 8 test cases |
+| v0.01 (spiral 1) | `package`, `part`, `part def`, //-type comments | 9 test cases |
 | v0.02 (spiral 2) | +`attribute`, +`attribute def` | None yet |
 | v0.03 (spiral 3) | +`redefines`, +`subsets`, +`specializes` | None yet |
 
 
 The idea behind uSysML is that SysML v2 behaviours are perfectly
-decomposable, in the sense that it would possible to create a valid
+decomposable in the sense that it would possible to create a valid
 SysML v2 model with only a subset of features defined by the full
 SysML v2 specification. We note that with just a subset of the
 full SysML v2 specification it would possible to create quite
-complex model. And furthermore, such models would be fully
+complex models; and furthermore, such models would be fully
 compliant with the SysML v2 specification.
 
 While the objective of this project is to generate test cases
