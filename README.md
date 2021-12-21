@@ -97,10 +97,10 @@ case per folder named 'testVXYZ' (where 'VXYZ' is the test case
 unique identifier). Within each test case there are several files,
 of which the following are particularly important:
 
-- \*.sysml file -- contains the test case SysML v2 textual notation
-- \*.output file -- contains the test case output (in the uSysML output
+- \*.sysml -- contains the test case SysML v2 textual notation
+- \*.output -- contains the test case output (in the uSysML output
 notation explained below)
-- \*.ipynb file -- Jupyter notebook with test case parsed in the SysML
+- \*.ipynb -- Jupyter notebook with test case parsed in the SysML
 v2 Pilot Implementation
 
 Each uSysML Test Case is associated with a unique number identifier (Test
