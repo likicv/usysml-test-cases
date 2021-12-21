@@ -157,7 +157,7 @@ of ‘Root’
 - ‘vehicle’ is `Part` of the type ‘Root.PackageVehicles.Vehicle’
 
 
-# Local installation of test cases
+# Local installation of uSysML test cases
 
 ## Project file/folders Layout
 
