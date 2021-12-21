@@ -127,7 +127,6 @@ test case considerations
 - Discussion -- discussion of the test case, possibly including some negative
 examples to highlight the points made, expected output, rules or constraints
 
-
  
 
 ## The notation used in the “Expected output” section
