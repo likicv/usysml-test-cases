@@ -1,4 +1,4 @@
-# Test Case #0003: Element Classifiers (spiral 1)
+# Test Case #01.003: Element Classifiers
 
 ## Description
 
@@ -7,13 +7,13 @@ Every element is associated with a Classifier SysMLv2 textual notation.
 ## SysML v2 textual notation
 
 ```sysml
-{% include "test0003.sysml" %}
+{% include "test_01.003.sysml" %}
 ```
 
 ## Expected output
 
 ```
-{% include "test0003.output" %}
+{% include "test_01.003.output" %}
 ```
 
 ## Comments

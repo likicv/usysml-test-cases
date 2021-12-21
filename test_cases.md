@@ -1,7 +1,7 @@
-<!-- Generated on 2021-12-21 18:02:50.665007 from script `gendocs.py`
+<!-- Generated on 2021-12-21 21:17:12.565404 from script `gendocs.py`
      DO NOT EDIT MANUALY! -->
 
-# Test Case #0001: Fully qualified element names (FQEN) (spiral 1)
+# Test Case #01.001: Fully qualified element names (FQEN)
 
 ## Description
 
@@ -70,7 +70,7 @@ same FQEN `PackageVehicles.Wheel` (even though the two elements are
 associated with different classifiers, `PartDef` and `Part`,
 respectively).
 
-# Test Case #0002: Fully qualified element names (FQEN) (an extension of #0001) (spiral 1)
+# Test Case #01.002: Fully qualified element names (FQEN)
 
 ## Description
 
@@ -123,11 +123,14 @@ A potential issue arises when multiple `*.sysml` files are processed.
 Let’s assume two files, `Vehicles1.sysml` and `Vehicles2.sysml` with
 the following content:
 
+*file Vehicles1.sysml*
 ```
-file Vehicles1.sysml
-file Vehicles2.sysml
 part def Vehicle;
 part def Wheel;
+```
+
+*file Vehicles1.sysml*
+```
 part def Vehicle;
 ```
 
@@ -155,7 +158,8 @@ $ sysmlv2 Vehicles1.sysml Vehicles2.sysml
 
 the FQENs for the element `Root.Vehicle` will create a name clash.
 
-# Test Case #0003: Element Classifiers (spiral 1)
+
+# Test Case #01.003: Element Classifiers
 
 ## Description
 
@@ -204,7 +208,7 @@ the element `Root.PackageVehicles` is associated with a Classifer
 
 Every processed element is associated with a Classifier.
 
-# Test Case #0004: ‘Part’ element type (spiral 1)
+# Test Case #01.004: ‘Part’ element type
 
 ## Description
 
@@ -251,7 +255,7 @@ specified, while `Part w` is of type `Wheel`, which itself is `PartDef`.
 2. If `Part` element has type specified, the type must be an existing
 `PartDef` element
 
-# Test Case #0005: `Part` element syntactical forms (spiral 1)
+# Test Case #01.005: `Part` element syntactical forms
 
 ## Description
 
@@ -337,14 +341,14 @@ and with type specified.
 and with type specified.
 
 When a `Part` element has a specified type, the type must be a defined
-`PartDef` element as per Test Case #0004.
+`PartDef` element as per Test Case #01.004.
 
 ## Rules/constraints
 
 An implementation of `part` and `part def` SysMLv2 keywords must support
 all seven syntactical forms shown in this Test Case.
 
-# Test Case #0006: Namespace search rules (spiral 1)
+# Test Case #01.006: Namespace search rules
 
 ## Description
 
@@ -392,7 +396,7 @@ namespace.
 The namespace search starts from its own namespace, then proceeds into
 the parent namespaces in the order until the Root namespace is reached.
 
-# Test Case #0007: Namespace search rules (spiral 1)
+# Test Case #01.007: Namespace search rules
 
 ## Description
 
@@ -436,10 +440,10 @@ is being searched to find PartDef `Wheel`.
 
 The namespace search starts from its own namespace, then proceeds into
 the parent namespaces in the order until the Root namespace is reached.
-Compare to Test Case #0006.
+Compare to Test Case #01.006.
 
 
-# Test Case #0008: `Part` with no type specified (spiral 1)
+# Test Case #01.008: `Part` with no type specified
 
 ## Description
 
@@ -487,10 +491,9 @@ the type of such element after parsing?
 
 ## Rules/constraints
 
-N/A
+None.
 
-
-# Test Case #0009: A single line note ("//"-type comment) (spiral 2)
+# Test Case #02.001: A single line note ("//"-type comment)
 
 ## Description
 

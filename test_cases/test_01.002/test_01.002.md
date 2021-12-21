@@ -1,4 +1,4 @@
-# Test Case #0002: Fully qualified element names (FQEN) (an extension of #0001) (spiral 1)
+# Test Case #01.002: Fully qualified element names (FQEN)
 
 ## Description
 
@@ -8,13 +8,13 @@ with `Root` SysMLv2 textual notation.
 ## SysML v2 textual notation
 
 ```sysml
-{% include "test0002.sysml" %}
+{% include "test_01.002.sysml" %}
 ```
 
 ## Expected output
 
 ```
-{% include "test0002.output" %}
+{% include "test_01.002.output" %}
 ```
 
 ## Rules/constraints
@@ -31,11 +31,14 @@ A potential issue arises when multiple `*.sysml` files are processed.
 Let’s assume two files, `Vehicles1.sysml` and `Vehicles2.sysml` with
 the following content:
 
+*file Vehicles1.sysml*
 ```
-file Vehicles1.sysml
-file Vehicles2.sysml
 part def Vehicle;
 part def Wheel;
+```
+
+*file Vehicles1.sysml*
+```
 part def Vehicle;
 ```
 
@@ -62,3 +65,4 @@ $ sysmlv2 Vehicles1.sysml Vehicles2.sysml
 ```
 
 the FQENs for the element `Root.Vehicle` will create a name clash.
+

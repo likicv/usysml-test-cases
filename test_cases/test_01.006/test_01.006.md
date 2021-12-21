@@ -1,4 +1,4 @@
-# Test Case #0006: Namespace search rules (spiral 1)
+# Test Case #01.006: Namespace search rules
 
 ## Description
 
@@ -7,13 +7,13 @@ Illustrates the namespace search rules.
 ## SysML v2 textual notation
 
 ```sysml
-{% include "test0006.sysml" %}
+{% include "test_01.006.sysml" %}
 ```
 
 ## Expected output
 
 ```
-{% include "test0006.output" %}
+{% include "test_01.006.output" %}
 ```
 
 ## Comments

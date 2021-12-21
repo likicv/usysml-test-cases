@@ -1,4 +1,4 @@
-# Test Case #0005: `Part` element syntactical forms (spiral 1)
+# Test Case #01.005: `Part` element syntactical forms
 
 ## Description
 
@@ -7,12 +7,12 @@ Syntactically, `Part` element may appear in several different forms.
 ## SysML v2 textual notation
 
 ```sysml
-{% include "test0005.sysml" %}
+{% include "test_01.005.sysml" %}
 ```
 ## Expected output
 
 ```
-{% include "test0005.output" %}
+{% include "test_01.005.output" %}
 ```
 
 ## Comments
@@ -36,7 +36,7 @@ and with type specified.
 and with type specified.
 
 When a `Part` element has a specified type, the type must be a defined
-`PartDef` element as per Test Case #0004.
+`PartDef` element as per Test Case #01.004.
 
 ## Rules/constraints
 

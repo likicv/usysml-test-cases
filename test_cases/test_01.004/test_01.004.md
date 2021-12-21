@@ -1,4 +1,4 @@
-# Test Case #0004: ‘Part’ element type (spiral 1)
+# Test Case #01.004: ‘Part’ element type
 
 ## Description
 
@@ -7,13 +7,13 @@ A `Part` element may have type.
 ## SysML v2 textual notation
 
 ```sysml
-{% include "test0004.sysml" %}
+{% include "test_01.004.sysml" %}
 ```
 
 ## Expected output
 
 ```
-{% include "test0004.output" %}
+{% include "test_01.004.output" %}
 ```
 
 ## Comments

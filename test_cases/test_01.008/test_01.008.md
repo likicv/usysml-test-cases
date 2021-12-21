@@ -1,4 +1,4 @@
-# Test Case #0008: `Part` with no type specified (spiral 1)
+# Test Case #01.008: `Part` with no type specified
 
 ## Description
 
@@ -7,13 +7,13 @@ A `Part` element with no type may be specified.
 ## SysML v2 textual notation
 
 ```sysml
-{% include "test0008.sysml" %}
+{% include "test_01.008.sysml" %}
 ```
 
 ## Expected output
 
 ```
-{% include "test0008.output" %}
+{% include "test_01.008.output" %}
 ```
 
 ## Comments
@@ -25,5 +25,4 @@ the type of such element after parsing?
 
 ## Rules/constraints
 
-N/A
-
+None.
