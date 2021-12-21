@@ -1,4 +1,4 @@
-<!-- Generated on 2021-12-21 17:57:47.604837 from script `gendocs.py`
+<!-- Generated on 2021-12-21 18:02:50.665007 from script `gendocs.py`
      DO NOT EDIT MANUALY! -->
 
 # Test Case #0001: Fully qualified element names (FQEN) (spiral 1)
@@ -77,7 +77,7 @@ respectively).
 Parsing of the `*.sysml` file will generate a FQEN for each element, starting
 with `Root` SysMLv2 textual notation.
 
-## SysMLv2 textual notation
+## SysML v2 textual notation
 
 ```sysml
 package PackageVehicles {
@@ -161,7 +161,7 @@ the FQENs for the element `Root.Vehicle` will create a name clash.
 
 Every element is associated with a Classifier SysMLv2 textual notation.
 
-## SysMLv2 textual notation
+## SysML v2 textual notation
 
 ```sysml
 package PackageVehicles {
@@ -210,7 +210,7 @@ Every processed element is associated with a Classifier.
 
 A `Part` element may have type.
 
-## SysMLv2 textual notation
+## SysML v2 textual notation
 
 ```sysml
 package PackageVehicles {
@@ -257,7 +257,7 @@ specified, while `Part w` is of type `Wheel`, which itself is `PartDef`.
 
 Syntactically, `Part` element may appear in several different forms.
 
-## SysMLv2 textual notation
+## SysML v2 textual notation
 
 ```sysml
 package PackageVehicles {
@@ -350,7 +350,7 @@ all seven syntactical forms shown in this Test Case.
 
 Illustrates the namespace search rules.
 
-## SysMLv2 textual notation
+## SysML v2 textual notation
 
 ```sysml
 package PackageVehicles {
@@ -398,7 +398,7 @@ the parent namespaces in the order until the Root namespace is reached.
 
 Illustrates the namespace search rules.
 
-## SysMLv2 textual notation
+## SysML v2 textual notation
 
 ```sysml
 package PackageVehicles {
@@ -445,7 +445,7 @@ Compare to Test Case #0006.
 
 A `Part` element with no type may be specified.
 
-## SysMLv2 textual notation
+## SysML v2 textual notation
 
 ```sysml
 package PackageVehicles {
@@ -490,13 +490,13 @@ the type of such element after parsing?
 N/A
 
 
-# Test Case #0009: A single line note ("//"-type comment) (spiral 1)
+# Test Case #0009: A single line note ("//"-type comment) (spiral 2)
 
 ## Description
 
 This use case addresses //-type comment
 
-## SysMLv2 textual notation
+## SysML v2 textual notation
 
 ```sysml
 package PackageVehicles {
