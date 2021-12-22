@@ -1,8 +1,8 @@
-# Test Case #01.004: ‘Part’ element type
+# Test Case #01.004: ‘Part’ element type specification
 
 ## Description
 
-A `Part` element may have type.
+A `Part` element may have type specified.
 
 ## SysML v2 textual notation
 
@@ -18,12 +18,15 @@ A `Part` element may have type.
 
 ## Comments
 
-In the expected outpout types of `Part` elements are shown explicitely
-with `type= ...`. In the above example `Part c` doesn’t have a type
-specified, while `Part w` is of type `Wheel`, which itself is `PartDef`.
+In the expected outpout types of `Part` elements are shown with
+`type= ...`.
+
+In the above example `Part c` doesn’t have a type specified, while
+`Part w` is of type `Wheel`, which itself is `PartDef`.
 
 ## Rules/constraints
 
-1. `Part` elements may optionally have type specified
-2. If `Part` element has type specified, the type must be an existing
+1. `Part` elements may optionally have a type specified
+2. If `Part` element has a type specified, the type must be an existing
 `PartDef` element
+
