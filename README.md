@@ -67,8 +67,8 @@ specified by uSysML v0.01 would be a valid SysML v2 model, and
 paresable by the full SysML v2 implementation. The reverse is
 not true: because uSysML implementation is limited, the full
 SysML v2 specification includes many features outside of the
-scope of uSysML. It follows that more complete SysML v2 models
-would not be necessarily parseable by the uSysML implementation.
+scope of uSysML, general SysML v2 models would not be necessarily
+parseable by the uSysML implementation.
 
 The following references are used in this work:
 - Kernel Modeling Language (KerML) (‘1-Kernel_Modeling_Language.pdf’)
