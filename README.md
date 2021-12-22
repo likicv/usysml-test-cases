@@ -86,7 +86,7 @@ from this work will be referd to as “uSysML Test Cases”.
 # Understanding uSysML Test Cases
 
 The test cases are organised under the folder `test_cases`, one test
-case per folder named 'testVXYZ' (where 'VXYZ' is the test case
+case per folder named 'test_XY.ABC' (where 'XY.ABC' is the test case
 unique identifier). Within each test case there are several files,
 of which the following are particularly important:
 
@@ -96,18 +96,18 @@ notation explained below)
 - \*.ipynb -- Jupyter notebook with test case parsed by the SysML
 v2 Pilot Implementation
 
-Each uSysML Test Case is associated with a unique identifier (Test
-Case ID) that allows it to be referenced subsequently. The Test Case
-ID is built in the folder and file names, and is also given in the
-test case title. The title also contains a short description of
-the test case and the spiral. The spiral refers to the uSysML
-version (as per the above table). The spiral shows the scope that
-the test case refers to; for example, for a test case that is marked
-'spiral 1', only `package`, `part`, and `part def` would have been
+The title of the test case contains a short description of the test
+case, and a unique identifier (Test Case ID) which allows it to be
+referenced subsequently. The Test Case ID is of the form 'XY.ABC'
+where 'XY' refers to the spiral, and 'ABC' is the unique test case
+number within a spiral. The spiral shows the scope that the test
+case refers to; for example, for a test case that is marked 'spiral 1'
+('XY' = 01), only `package`, `part`, and `part def` would have been
 expected to be implemented.
 
 Each test case is structured into the following sections:
-- Title -- a short title of the Test Case together with the number identifier
+- Title -- a short title of the test case together with the number
+identifier
 - Description -- a description of the test case
 - SysML v2 textual notation -- shows SysML v2 textual notation
 - Expected output -- shows the expected output of after the parsing of the
@@ -125,9 +125,10 @@ examples to highlight the points made, expected output, rules or constraints
 ## The notation used in the “Expected output” section
 
 The Test Case "Expected output" section is not SysML v2 notation, rather
-this uses a special shorthand notation to specify namespaces and possibly
-additional features of the parsed elements. The examples are given below
-with the explanations.
+this uses a special notation development only for this purpose. The
+purpose of the notation is to specify namespaces and possibly additional
+features of the parsed elements. The examples are given below with the
+explanations.
 
 
 ### Example 1
