@@ -49,27 +49,26 @@ The currently planned uSysML versions are shown in the table below:
 The idea behind uSysML is that SysML v2 keywords and behaviours
 are perfectly decomposable in the sense that it would possible
 to create a valid SysML v2 model with only a subset of features
-defined by the full SysML v2 specification. And furthermore,
-with just a subset of the full SysML v2 specification it would
-possible to create quite complex models that would be fully
-compliant with the SysML v2 specification.
-
-The scope of uSysML for each version (or spiral) is fixed for the
-purpose of test cases development and analysis, and exploring the
-practical issues relevant to the implementation of the SysML v2
-textual notation. While the objective of this project is to generate
+defined by the full SysML v2 specification. The scope of uSysML
+for each version (or spiral) is fixed for the purpose of exploring
+the practical issues relevant to the implementation of the SysML
+v2 specification. While the objective of this work is to generate
 test cases that will be useful in any SysML v2 implementation, it
 is sometimes useful to think of uSysML as a limited implementation
-of the SysML v2 specification. For example, such an implementation
-corresponding to uSysML v0.01 (spiral 1) would support the
-SysML v2 behaviours of the keywords `package`, `part`, `part def`
-and nothing else. It follows that every model specified by
-uSysML must be a valid SysML v2 model, and furthermore, must
-be paresable by a complete SysML v2 implementation. However
-the reverse does not hold: because the full SysML v2 specification
-includes many features outside of the scope of uSysML, general
-SysML v2 models would not be necessarily parseable by the uSysML
-implementation.
+of the SysML v2 specification. Such an implementation corresponding
+to uSysML v0.01 (spiral 1) would support the SysML v2 behaviours
+of the keywords `package`, `part`, `part def` and nothing else
+(see the table above). Furthermore, every model specified by uSysML
+must be a valid SysML v2 model and must be paresable by a complete
+SysML v2 implementation. However the reverse does not hold: because
+the full SysML v2 specification includes many features outside of
+the scope of uSysML, general SysML v2 models would not be
+necessarily parseable by the uSysML implementation.
+
+We note that with just a subset of the full SysML v2 specification
+(for example the keywords `package`, `part`, `part def`) it would
+possible to create quite complex models that are fully compliant
+with the SysML v2 specification.  
 
 
 The following references are used in this work:
