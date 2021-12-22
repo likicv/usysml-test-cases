@@ -1,4 +1,4 @@
-<!-- Generated on 2021-12-23 10:11:07.594622 from script `gendocs.py`
+<!-- Generated on 2021-12-23 10:42:10.912712 from script `gendocs.py`
      DO NOT EDIT MANUALY! -->
 
 # Test Case #01.001: Fully qualified element names (FQEN)
@@ -123,13 +123,13 @@ A potential issue arises when multiple `*.sysml` files are processed.
 Let’s assume two files, `Vehicles1.sysml` and `Vehicles2.sysml` with
 the following content:
 
-*file Vehicles1.sysml*
+*--file Vehicles1.sysml--*
 ```
 part def Vehicle;
 part def Wheel;
 ```
 
-*file Vehicles1.sysml*
+*--file Vehicles1.sysml--*
 ```
 part def Vehicle;
 ```
@@ -309,8 +309,8 @@ None.
 
 ## Discussion
 
-The possibility that a `Part` element has no type specified opens
-the question how to handle this situation in the implementation.
+A `Part` element may have no type specified. This opens the question
+how to handle this situation in the implementation.
 
 
 # Test Case #01.006: Namespace search rules

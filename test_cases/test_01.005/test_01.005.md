@@ -28,6 +28,6 @@ None.
 
 ## Discussion
 
-The possibility that a `Part` element has no type specified opens
-the question how to handle this situation in the implementation.
+A `Part` element may have no type specified. This opens the question
+how to handle this situation in the implementation.
 
