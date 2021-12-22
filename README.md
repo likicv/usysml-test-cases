@@ -18,11 +18,10 @@ uSysML (‘micro SysML’) project is developing test cases relevant
 for the implementation of the SysML v2 specification. The objective
 of this work is two-fold: (1) to provide documented test cases that
 would assist the MBSE community in the implementation of the SysML
-v2 specification; and (2) to generate input that would facilitate
-consideration, clarification, or strengthening of the SysML v2
-specification. **The uSysML project aims to generate specific test
-cases, associated discussion, and possibly raise any issues for
-consideration.**
+v2 specification; and (2) to generate input that would assist in
+the clarification or strengthening of the SysML v2 specification.
+**The uSysML project aims to generate specific test cases, associated
+discussion, and possibly raise any issues for consideration.**
 
 To view the test cases please click [here](/test_cases.md), and to
 download the summary PDF file please click [here](/test_cases.pdf).
