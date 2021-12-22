@@ -1,4 +1,4 @@
-<!-- Generated on 2021-12-23 09:19:27.215207 from script `gendocs.py`
+<!-- Generated on 2021-12-23 09:56:52.585183 from script `gendocs.py`
      DO NOT EDIT MANUALY! -->
 
 # Test Case #01.001: Fully qualified element names (FQEN)
@@ -202,7 +202,7 @@ Root.PackageStations [Package]
 (`Package`, `PartDef`, and `Part`)
 2. The following development in notation is adoped: instead of saying
 the element `Root.PackageVehicles` is associated with a Classifer
-`Package`, it can be said the element `Root.PackageVehicles` is `Package`.
+`Package`, it can be said the element 'Root.PackageVehicles' is `Package`.
 
 ## Rules/constraints
 
