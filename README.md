@@ -56,17 +56,19 @@ v2 specification.
 
 The scope of uSysML for each version (or spiral) is fixed for
 the purpose of exploring the practical issues relevant to the
-SysML v2 implementation. It is sometimes useful to image uSysML
-being a limited implementation of the SysML v2 specification.
-Such an implementation corresponding to uSysML v0.01 (spiral 1)
-would support the SysML v2 behaviours of the keywords `package`,
-`part`, `part def` and nothing else (see the table above).
-Furthermore, every model specified by uSysML v0.01 would be
-a valid SysML v2 model, and paresable by a complete SysML v2
-implementation. The reverse does not hold: because the full
+SysML v2 implementation. It is sometimes useful to think of
+uSysML as of a limited implementation of the SysML v2 specification.
+Consider how this would contrast to a full implementation of the
+SysML v2 specification. An implementation corresponding to uSysML
+v0.01 (spiral 1) would support only the SysML v2 behaviours
+associated with the keywords `package`, `part`, `part def` and
+nothing else (see the table above). Furthermore, every model
+specified by uSysML v0.01 would be a valid SysML v2 model, and
+paresable by the full SysML v2 implementation. The reverse is
+not true: because uSysML implementation is limited, the full
 SysML v2 specification includes many features outside of the
-scope of uSysML, general SysML v2 models would not be
-necessarily parseable by the uSysML implementation.
+scope of uSysML. It follows that more complete SysML v2 models
+would not be necessarily parseable by the uSysML implementation.
 
 The following references are used in this work:
 - Kernel Modeling Language (KerML) (‘1-Kernel_Modeling_Language.pdf’)
