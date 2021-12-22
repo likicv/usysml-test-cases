@@ -26,7 +26,7 @@ In the above example `Part c` doesn’t have a type specified, while
 
 ## Rules/constraints
 
-1. `Part` elements may optionally have a type specified
-2. If `Part` element has a type specified, the type must be an existing
+1. A `Part` element may optionally have a type specified
+2. If `Part` element has type specified, the type must be an existing
 `PartDef` element
 

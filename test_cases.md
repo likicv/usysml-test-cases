@@ -1,4 +1,4 @@
-<!-- Generated on 2021-12-23 10:05:11.101212 from script `gendocs.py`
+<!-- Generated on 2021-12-23 10:11:07.594622 from script `gendocs.py`
      DO NOT EDIT MANUALY! -->
 
 # Test Case #01.001: Fully qualified element names (FQEN)
@@ -253,12 +253,12 @@ In the above example `Part c` doesn’t have a type specified, while
 
 ## Rules/constraints
 
-1. `Part` elements may optionally have a type specified
-2. If `Part` element has a type specified, the type must be an existing
+1. A `Part` element may optionally have a type specified
+2. If `Part` element has type specified, the type must be an existing
 `PartDef` element
 
 
-# Test Case #01.005: `Part` with no type specified
+# Test Case #01.005: A `Part` element with no type specified
 
 ## Description
 
@@ -299,8 +299,8 @@ Root.PackageVehicles [Package]
 
 ## Comments
 
-A `Part` element may have no type, as shown above for the elements
-`partnotype1` and `partnotype2`.
+A `Part` element may have no type specified, as shown above for the
+elements `partnotype1` and `partnotype2`.
 
 
 ## Rules/constraints
@@ -309,8 +309,8 @@ None.
 
 ## Discussion
 
-If a `Part` element is not specified, this opens the question,
-how to handle this situation in the implementation.
+The possibility that a `Part` element has no type specified opens
+the question how to handle this situation in the implementation.
 
 
 # Test Case #01.006: Namespace search rules

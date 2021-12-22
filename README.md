@@ -107,7 +107,8 @@ case refers to; for example, for a test case that is marked 'spiral 1'
 ('XY' = 01), only `package`, `part`, and `part def` would have been
 expected to be implemented.
 
-Each test case is structured into the following sections:
+Each test case is structured according to the following sections:
+
 - Title -- a short title of the test case together with the number
 identifier
 - Description -- a description of the test case
@@ -116,12 +117,11 @@ identifier
 SysML v2 textual notation. **Note: what is listed as "output" is not a
 SysML v2 notation, but a special notation developed for uSysML Test Cases**.
 See the explanations below
+- Comments -- any additional comments
 - Rules/constraints -- any rules or constraints that we can derive from the
 test case considerations
-- Comments -- any additional comments
-- Discussion -- discussion of the test case, possibly including some negative
-examples to highlight the points made, expected output, rules or constraints
-
+- Discussion -- This section is optional, and give a discussion of the
+test case if needed
  
 
 ## The notation used in the “Expected output” section
