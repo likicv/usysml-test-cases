@@ -1,4 +1,4 @@
-<!-- Generated on 2021-12-23 09:56:52.585183 from script `gendocs.py`
+<!-- Generated on 2021-12-23 10:00:38.175623 from script `gendocs.py`
      DO NOT EDIT MANUALY! -->
 
 # Test Case #01.001: Fully qualified element names (FQEN)
@@ -208,11 +208,11 @@ the element `Root.PackageVehicles` is associated with a Classifer
 
 Every processed element is associated with a Classifier.
 
-# Test Case #01.004: ‘Part’ element type
+# Test Case #01.004: ‘Part’ element type specification
 
 ## Description
 
-A `Part` element may have type.
+A `Part` element may have type specified.
 
 ## SysML v2 textual notation
 
@@ -245,15 +245,18 @@ Root.PackageVehicles [Package]
 
 ## Comments
 
-In the expected outpout types of `Part` elements are shown explicitely
-with `type= ...`. In the above example `Part c` doesn’t have a type
-specified, while `Part w` is of type `Wheel`, which itself is `PartDef`.
+In the expected outpout types of `Part` elements are shown with
+`type= ...`.
+
+In the above example `Part c` doesn’t have a type specified, while
+`Part w` is of type `Wheel`, which itself is `PartDef`.
 
 ## Rules/constraints
 
-1. `Part` elements may optionally have type specified
-2. If `Part` element has type specified, the type must be an existing
+1. `Part` elements may optionally have a type specified
+2. If `Part` element has a type specified, the type must be an existing
 `PartDef` element
+
 
 # Test Case #01.005: `Part` element syntactical forms
 
