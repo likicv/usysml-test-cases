@@ -58,15 +58,15 @@ SysML v2 implementation. It is sometimes useful to think of
 uSysML as a limited implementation of the SysML v2 specification.
 Consider how this would contrast with a full implementation of the
 SysML v2 specification. An implementation corresponding to uSysML
-v0.01 (spiral 1) would support only the SysML v2 behaviors
-associated with the keywords `package`, `part`, `part def` and
-nothing else (see the table above). Furthermore, every model
-specified by uSysML would be a valid SysML v2 model, and
-paresable by the full SysML v2 implementation. The reverse is
-not true: because uSysML implementation is limited and the
-full SysML v2 specification includes many features outside of the
-scope of uSysML, general SysML v2 models would not be necessarily
-parseable by uSysML implementation.
+v0.01 would support only the SysML v2 behaviors associated with
+the keywords `package`, `part`, `part def` and nothing else (see
+the table above). Furthermore, every model specified by uSysML
+would be a valid SysML v2 model, and paresable by the full SysML
+v2 implementation. The reverse is not true: because uSysML
+implementation is limited and the full SysML v2 specification
+includes many features outside of the scope of uSysML, general
+SysML v2 models would not be necessarily parseable by uSysML
+implementation.
 
 The following references are used in this work:
 - Kernel Modeling Language (KerML) (‘1-Kernel_Modeling_Language.pdf’)
