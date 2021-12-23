@@ -18,8 +18,8 @@ uSysML (‘micro SysML’) project aims develop test cases relevant
 for the implementation of the SysML v2 specification. The objective
 of this work is two-fold: (1) to provide documented test cases that
 would assist the MBSE community in the implementation of the SysML
-v2 specification; and (2) to generate input that would help to
-clarify or strengthen the SysML v2 specification. **The uSysML
+v2 specification; and (2) to generate input that would be helpful
+in clarifying or strengthening the SysML v2 specification. **The uSysML
 project aims to generate specific test cases, associated discussion,
 and potentially raise any issues for consideration.**
 
@@ -31,7 +31,7 @@ download the summary PDF file please click [here](/test_cases.pdf).
 
 The uSysML project is an approach to the development of test cases
 for the SysML v2 textual notation. In the narrow sense, uSysML
-refers to a subset of SysML v2 keywords and behaviours, however
+refers to a subset of SysML v2 keywords and behaviors, however
 what exactly is included in this subset depends on the uSysML
 version (see the table below). The purpose of uSysML versioning is
 to define the scope that will limit considerations required for
@@ -46,7 +46,7 @@ versions are shown in the table below:
 | v0.03 (spiral 3) | +`redefines`, +`subsets`, +`specializes` | None yet |
 
 
-The idea behind uSysML is that SysML v2 behaviours are decomposable
+The idea behind uSysML is that SysML v2 behaviors are decomposable
 in the sense that it would possible to create a valid SysML v2
 model with only a subset of features defined by the full SysML v2
 specification. In fact, with just a subset of the full SysML v2
@@ -60,7 +60,7 @@ SysML v2 implementation. It is sometimes useful to think of
 uSysML as a limited implementation of the SysML v2 specification.
 Consider how this would contrast to a full implementation of the
 SysML v2 specification. An implementation corresponding to uSysML
-v0.01 (spiral 1) would support only the SysML v2 behaviours
+v0.01 (spiral 1) would support only the SysML v2 behaviors
 associated with the keywords `package`, `part`, `part def` and
 nothing else (see the table above). Furthermore, every model
 specified by uSysML would be a valid SysML v2 model, and
@@ -81,7 +81,7 @@ Textual Notation”, Release: 2021-05
 
 This document is a “living document” that is being developed and
 maintained by the uSysML team. Henceforth the test cases derived
-from this work will be referd to as “uSysML Test Cases”. 
+from this work will be referred to as “uSysML Test Cases”. 
 
 
 # Understanding uSysML Test Cases
@@ -222,6 +222,7 @@ or
 $ python gendocs.py
 ```
 
-This will process all the inidividual test cases and create a cumulative
-test case codument `test_cases.md`, as well as the corresponding PDF file
-(PDF file creation requires `pandoc` to be installed on the system).
+This will process all the individual test cases and create a cumulative
+test case document `test_cases.md`, as well as the corresponding PDF file.
+Note that the PDF file creation requires `pandoc` to be installed on your 
+system.
