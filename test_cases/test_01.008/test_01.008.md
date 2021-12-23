@@ -1,15 +1,14 @@
-# Test Case #01.008: `Part` with no type specified
+# Test Case #01.008: `Part` element syntactical forms
 
 ## Description
 
-A `Part` element with no type may be specified.
+Syntactically, `Part` element may appear in several different forms.
 
 ## SysML v2 textual notation
 
 ```sysml
 {% include "test_01.008.sysml" %}
 ```
-
 ## Expected output
 
 ```
@@ -18,11 +17,28 @@ A `Part` element with no type may be specified.
 
 ## Comments
 
-A `Part` element may have no type, as shown above for the elements
-`partnotype1` and `partnotype2`. This opens the question, what is
-the type of such element after parsing?
+Several syntactical forms of Part element are illustrated in the above
+example:
 
+1. `part parking_space;` — Part without multiplicity, without body,
+and without type specified.
+2. `part vehicle_shed[4];` — Part with multiplicity, without body,
+and without type specified.
+3. `part repair_shop[2] { ... }` — Part with multiplicity, with body,
+and without type specified.
+4. `part test_vehicle:Vehicle;` — Part without multiplicity, without
+body, and type specified.
+5. `part vehicle:Vehicle { ... }` — Part without multiplicity, with
+body, and with type specified.
+6. `part a:WheelAxle[2];` — Part with multiplicity, without body,
+and with type specified.
+7. `part w:Wheel[4] { ... }` — Part with multiplicity, with body,
+and with type specified.
+
+When a `Part` element has a specified type, the type must be a defined
+`PartDef` element as per Test Case #01.004.
 
 ## Rules/constraints
 
-None.
+An implementation of `part` and `part def` SysMLv2 keywords must support
+all seven syntactical forms shown in this Test Case.

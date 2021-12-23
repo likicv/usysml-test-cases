@@ -31,13 +31,13 @@ A potential issue arises when multiple `*.sysml` files are processed.
 Let’s assume two files, `Vehicles1.sysml` and `Vehicles2.sysml` with
 the following content:
 
-*file Vehicles1.sysml*
+*--file Vehicles1.sysml--*
 ```
 part def Vehicle;
 part def Wheel;
 ```
 
-*file Vehicles1.sysml*
+*--file Vehicles1.sysml--*
 ```
 part def Vehicle;
 ```

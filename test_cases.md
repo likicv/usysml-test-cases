@@ -1,4 +1,4 @@
-<!-- Generated on 2021-12-21 21:17:12.565404 from script `gendocs.py`
+<!-- Generated on 2021-12-23 12:41:55.154968 from script `gendocs.py`
      DO NOT EDIT MANUALY! -->
 
 # Test Case #01.001: Fully qualified element names (FQEN)
@@ -123,13 +123,13 @@ A potential issue arises when multiple `*.sysml` files are processed.
 Let’s assume two files, `Vehicles1.sysml` and `Vehicles2.sysml` with
 the following content:
 
-*file Vehicles1.sysml*
+*--file Vehicles1.sysml--*
 ```
 part def Vehicle;
 part def Wheel;
 ```
 
-*file Vehicles1.sysml*
+*--file Vehicles1.sysml--*
 ```
 part def Vehicle;
 ```
@@ -202,17 +202,17 @@ Root.PackageStations [Package]
 (`Package`, `PartDef`, and `Part`)
 2. The following development in notation is adoped: instead of saying
 the element `Root.PackageVehicles` is associated with a Classifer
-`Package`, it can be said the element `Root.PackageVehicles` is `Package`.
+`Package`, it can be said the element 'Root.PackageVehicles' is `Package`.
 
 ## Rules/constraints
 
 Every processed element is associated with a Classifier.
 
-# Test Case #01.004: ‘Part’ element type
+# Test Case #01.004: ‘Part’ element type specification
 
 ## Description
 
-A `Part` element may have type.
+A `Part` element may have type specified.
 
 ## SysML v2 textual notation
 
@@ -245,21 +245,24 @@ Root.PackageVehicles [Package]
 
 ## Comments
 
-In the expected outpout types of `Part` elements are shown explicitely
-with `type= ...`. In the above example `Part c` doesn’t have a type
-specified, while `Part w` is of type `Wheel`, which itself is `PartDef`.
+In the expected outpout types of `Part` elements are shown with
+`type= ...`.
+
+In the above example `Part c` doesn’t have a type specified, while
+`Part w` is of type `Wheel`, which itself is `PartDef`.
 
 ## Rules/constraints
 
-1. `Part` elements may optionally have type specified
+1. A `Part` element may optionally have a type specified
 2. If `Part` element has type specified, the type must be an existing
 `PartDef` element
 
-# Test Case #01.005: `Part` element syntactical forms
+
+# Test Case #01.005: A `Part` element with no type specified
 
 ## Description
 
-Syntactically, `Part` element may appear in several different forms.
+A `Part` element with no type may be specified.
 
 ## SysML v2 textual notation
 
@@ -268,85 +271,48 @@ package PackageVehicles {
 
     part def Vehicle;
     part def Wheel;
-    part def WheelAxle;
-
-    part test_vehicle:Vehicle;
+    part partnotype1;
 
     part vehicle:Vehicle {
-        part a:WheelAxle[2];
-        part w:Wheel[4] {
-            part def LugBolt;
-        }
-    }
-}
-
-package SupportComponents {
-
-    part parking_space;
-    part vehicle_shed[4];
-
-    part repair_shop[2] {
-        part def VehicleLift;
+        part w:Wheel[4];
+        part partnotype2;
     }
 }
 ```
+
 ## Expected output
 
 ```
 Root.PackageVehicles [Package]
  Root.PackageVehicles.Vehicle [PartDef]
  Root.PackageVehicles.Wheel [PartDef]
- Root.PackageVehicles.WheelAxle [PartDef]
- Root.PackageVehicles.test_vehicle [Part]
-    type=Root.PackageVehicles.Vehicle
+ Root.PackageVehicles.partnotype1 [Part]
+    type=None
  Root.PackageVehicles.vehicle [Part]
     type=Root.PackageVehicles.Vehicle
-  Root.PackageVehicles.vehicle.a [Part]
-      multiplicity=2
-      type=Root.PackageVehicles.WheelAxle
   Root.PackageVehicles.vehicle.w [Part]
       multiplicity=4
       type=Root.PackageVehicles.Wheel
-   Root.PackageVehicles.vehicle.w.LugBolt [PartDef]
-Root.SupportComponents [Package]
- Root.SupportComponents.parking_space [Part]
-    type=None
- Root.SupportComponents.vehicle_shed [Part]
-    multiplicity=4
-    type=None
- Root.SupportComponents.repair_shop [Part]
-    multiplicity=2
-    type=None
-  Root.SupportComponents.repair_shop.VehicleLift [PartDef]
+  Root.PackageVehicles.vehicle.partnotype2 [Part]
+      type=None
 ```
 
 ## Comments
 
-Several syntactical forms of Part element are illustrated in the above
-example:
+A `Part` element may have no type specified, as shown above for the
+elements `partnotype1` and `partnotype2`.
 
-1. `part parking_space;` — Part without multiplicity, without body,
-and without type specified.
-2. `part vehicle_shed[4];` — Part with multiplicity, without body,
-and without type specified.
-3. `part repair_shop[2] { ... }` — Part with multiplicity, with body,
-and without type specified.
-4. `part test_vehicle:Vehicle;` — Part without multiplicity, without
-body, and type specified.
-5. `part vehicle:Vehicle { ... }` — Part without multiplicity, with
-body, and with type specified.
-6. `part a:WheelAxle[2];` — Part with multiplicity, without body,
-and with type specified.
-7. `part w:Wheel[4] { ... }` — Part with multiplicity, with body,
-and with type specified.
-
-When a `Part` element has a specified type, the type must be a defined
-`PartDef` element as per Test Case #01.004.
 
 ## Rules/constraints
 
-An implementation of `part` and `part def` SysMLv2 keywords must support
-all seven syntactical forms shown in this Test Case.
+None.
+
+## Discussion
+
+A `Part` element may have no type specified. This opens the question
+how to handle this situation in the implementation so it is consistent
+across different implementations.
+
 
 # Test Case #01.006: Namespace search rules
 
@@ -443,11 +409,11 @@ the parent namespaces in the order until the Root namespace is reached.
 Compare to Test Case #01.006.
 
 
-# Test Case #01.008: `Part` with no type specified
+# Test Case #01.008: `Part` element syntactical forms
 
 ## Description
 
-A `Part` element with no type may be specified.
+Syntactically, `Part` element may appear in several different forms.
 
 ## SysML v2 textual notation
 
@@ -456,42 +422,85 @@ package PackageVehicles {
 
     part def Vehicle;
     part def Wheel;
-    part partnotype1;
+    part def WheelAxle;
+
+    part test_vehicle:Vehicle;
 
     part vehicle:Vehicle {
-        part w:Wheel[4];
-        part partnotype2;
+        part a:WheelAxle[2];
+        part w:Wheel[4] {
+            part def LugBolt;
+        }
+    }
+}
+
+package SupportComponents {
+
+    part parking_space;
+    part vehicle_shed[4];
+
+    part repair_shop[2] {
+        part def VehicleLift;
     }
 }
 ```
-
 ## Expected output
 
 ```
 Root.PackageVehicles [Package]
  Root.PackageVehicles.Vehicle [PartDef]
  Root.PackageVehicles.Wheel [PartDef]
- Root.PackageVehicles.partnotype1 [Part]
-    type=None
+ Root.PackageVehicles.WheelAxle [PartDef]
+ Root.PackageVehicles.test_vehicle [Part]
+    type=Root.PackageVehicles.Vehicle
  Root.PackageVehicles.vehicle [Part]
     type=Root.PackageVehicles.Vehicle
+  Root.PackageVehicles.vehicle.a [Part]
+      multiplicity=2
+      type=Root.PackageVehicles.WheelAxle
   Root.PackageVehicles.vehicle.w [Part]
       multiplicity=4
       type=Root.PackageVehicles.Wheel
-  Root.PackageVehicles.vehicle.partnotype2 [Part]
-      type=None
+   Root.PackageVehicles.vehicle.w.LugBolt [PartDef]
+Root.SupportComponents [Package]
+ Root.SupportComponents.parking_space [Part]
+    type=None
+ Root.SupportComponents.vehicle_shed [Part]
+    multiplicity=4
+    type=None
+ Root.SupportComponents.repair_shop [Part]
+    multiplicity=2
+    type=None
+  Root.SupportComponents.repair_shop.VehicleLift [PartDef]
 ```
 
 ## Comments
 
-A `Part` element may have no type, as shown above for the elements
-`partnotype1` and `partnotype2`. This opens the question, what is
-the type of such element after parsing?
+Several syntactical forms of Part element are illustrated in the above
+example:
 
+1. `part parking_space;` — Part without multiplicity, without body,
+and without type specified.
+2. `part vehicle_shed[4];` — Part with multiplicity, without body,
+and without type specified.
+3. `part repair_shop[2] { ... }` — Part with multiplicity, with body,
+and without type specified.
+4. `part test_vehicle:Vehicle;` — Part without multiplicity, without
+body, and type specified.
+5. `part vehicle:Vehicle { ... }` — Part without multiplicity, with
+body, and with type specified.
+6. `part a:WheelAxle[2];` — Part with multiplicity, without body,
+and with type specified.
+7. `part w:Wheel[4] { ... }` — Part with multiplicity, with body,
+and with type specified.
+
+When a `Part` element has a specified type, the type must be a defined
+`PartDef` element as per Test Case #01.004.
 
 ## Rules/constraints
 
-None.
+An implementation of `part` and `part def` SysMLv2 keywords must support
+all seven syntactical forms shown in this Test Case.
 
 # Test Case #02.001: A single line note ("//"-type comment)
 

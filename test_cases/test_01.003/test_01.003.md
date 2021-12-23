@@ -21,7 +21,7 @@ Every element is associated with a Classifier SysMLv2 textual notation.
 (`Package`, `PartDef`, and `Part`)
 2. The following development in notation is adoped: instead of saying
 the element `Root.PackageVehicles` is associated with a Classifer
-`Package`, it can be said the element `Root.PackageVehicles` is `Package`.
+`Package`, it can be said the element 'Root.PackageVehicles' is `Package`.
 
 ## Rules/constraints
 
