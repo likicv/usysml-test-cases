@@ -1,12 +1,14 @@
-<!-- Generated on 2021-12-24 10:13:54.872086 from script `gendocs.py`
+<!-- Generated on 2021-12-24 10:18:18.857633 from script `gendocs.py`
      DO NOT EDIT MANUALY! -->
 
 # Test Case 01-001: Fully qualified element names (FQEN)
+
 
 ## Description
 
 Parsing a `*.sysml` file will generate a FQEN for each element, starting
 with `Root`.
+
 
 ## SysML v2 textual notation
 
@@ -22,6 +24,7 @@ package PackageVehicles {
 }
 ```
 
+
 ## Expected output
 
 ```
@@ -34,6 +37,7 @@ Root.PackageVehicles [Package]
       type=Root.PackageVehicles.Wheel
 ```
 
+
 ## Rules/constraints
 
 1. A `*.sysml` file defines the name space for the elements it contains.
@@ -42,9 +46,11 @@ The top level name space bounded by the file is assigned to the element
 2. Each curly braces segment defines a name space.
 3. Within a `*.sysml` file each FQEN must be unique.
 
+
 ## Comments
 
 None.
+
 
 ## Discussion
 
@@ -72,10 +78,12 @@ respectively).
 
 # Test Case 01-002: Fully qualified element names (FQEN)
 
+
 ## Description
 
 Parsing of the `*.sysml` file will generate a FQEN for each element, starting
 with `Root` SysMLv2 textual notation.
+
 
 ## SysML v2 textual notation
 
@@ -95,6 +103,7 @@ package PackageStations {
 }
 ```
 
+
 ## Expected output
 
 ```
@@ -109,6 +118,7 @@ Root.PackageStations [Package]
  Root.PackageStations.VehicleStation [PartDef]
 ```
 
+
 ## Rules/constraints
 
 1. A \*.sysml file defines the name space for the elements it contains.
@@ -116,6 +126,7 @@ The top level name space bounded by the file is assigned to the
 element “Root”
 2. Any valid element can be nested under the “Root” element (in this
 example there are two Package elements)
+
 
 ## Discussion
 
@@ -161,9 +172,11 @@ the FQENs for the element `Root.Vehicle` will create a name clash.
 
 # Test Case 01-003: Element Classifiers
 
+
 ## Description
 
 Every element is associated with a Classifier SysMLv2 textual notation.
+
 
 ## SysML v2 textual notation
 
@@ -183,6 +196,7 @@ package PackageStations {
 }
 ```
 
+
 ## Expected output
 
 ```
@@ -197,6 +211,7 @@ Root.PackageStations [Package]
  Root.PackageStations.VehicleStation [PartDef]
 ```
 
+
 ## Comments
 1. In output above the element Cassifiers are shown in square brackets
 (`Package`, `PartDef`, and `Part`)
@@ -204,15 +219,18 @@ Root.PackageStations [Package]
 the element `Root.PackageVehicles` is associated with a Classifer
 `Package`, it can be said the element 'Root.PackageVehicles' is `Package`.
 
+
 ## Rules/constraints
 
 Every processed element is associated with a Classifier.
 
 # Test Case 01-004: ‘Part’ element type specification
 
+
 ## Description
 
 A `Part` element may have type specified.
+
 
 ## SysML v2 textual notation
 
@@ -229,6 +247,7 @@ package PackageVehicles {
 }
 ```
 
+
 ## Expected output
 
 ```
@@ -243,6 +262,7 @@ Root.PackageVehicles [Package]
       type=Root.PackageVehicles.Wheel
 ```
 
+
 ## Comments
 
 In the expected outpout types of `Part` elements are shown with
@@ -250,6 +270,7 @@ In the expected outpout types of `Part` elements are shown with
 
 In the above example `Part c` doesn’t have a type specified, while
 `Part w` is of type `Wheel`, which itself is `PartDef`.
+
 
 ## Rules/constraints
 
@@ -259,9 +280,11 @@ In the above example `Part c` doesn’t have a type specified, while
 
 # Test Case 01-005: A `Part` element with no type specified
 
+
 ## Description
 
 A `Part` element with no type may be specified.
+
 
 ## SysML v2 textual notation
 
@@ -278,6 +301,7 @@ package PackageVehicles {
     }
 }
 ```
+
 
 ## Expected output
 
@@ -296,6 +320,7 @@ Root.PackageVehicles [Package]
       type=None
 ```
 
+
 ## Comments
 
 A `Part` element may have no type specified, as shown above for the
@@ -306,6 +331,7 @@ elements `partnotype1` and `partnotype2`.
 
 None.
 
+
 ## Discussion
 
 A `Part` element may have no type specified. This opens the question
@@ -315,9 +341,11 @@ across different implementations.
 
 # Test Case 01-006: Namespace search rules
 
+
 ## Description
 
 Illustrates the namespace search rules.
+
 
 ## SysML v2 textual notation
 
@@ -334,6 +362,7 @@ package PackageVehicles {
 }
 ```
 
+
 ## Expected output
 
 ```
@@ -348,6 +377,7 @@ Root.PackageVehicles [Package]
       type=Root.PackageVehicles.vehicle.Wheel
 ```
 
+
 ## Comments
 
 In this example `part def Wheel` exists both withing the `PackageVehicles`
@@ -355,6 +385,7 @@ and `part vehicle` namespaces (and furthermore, `part vehicle` namespace
 is nested within the `PackageVehicles` namespace). In this case, Part
 `w` id typed by PartDef that is within the inner (`part vehicle`)
 namespace.
+
 
 ## Rules/constraints
 
@@ -418,9 +449,11 @@ Compare to [Test Case 01-006](#test-case-01006-namespace-search-rules)
 
 # Test Case 01-008: `Part` element syntactical forms
 
+
 ## Description
 
 Syntactically, `Part` element may appear in several different forms.
+
 
 ## SysML v2 textual notation
 
@@ -451,6 +484,8 @@ package SupportComponents {
     }
 }
 ```
+
+
 ## Expected output
 
 ```
@@ -481,6 +516,7 @@ Root.SupportComponents [Package]
   Root.SupportComponents.repair_shop.VehicleLift [PartDef]
 ```
 
+
 ## Comments
 
 Several syntactical forms of Part element are illustrated in the above
@@ -504,16 +540,20 @@ and with type specified.
 When a `Part` element has a specified type, the type must be a defined
 `PartDef` element as per Test Case #01.004.
 
+
 ## Rules/constraints
 
 An implementation of `part` and `part def` SysMLv2 keywords must support
 all seven syntactical forms shown in this Test Case.
 
+
 # Test Case 02-001: A single line note ("//"-type comment)
+
 
 ## Description
 
 This use case addresses //-type comment
+
 
 ## SysML v2 textual notation
 
@@ -531,6 +571,7 @@ package PackageVehicles {
 // a comment taking the entire line
 ```
 
+
 ## Expected output
 
 ```
@@ -543,6 +584,7 @@ Root.PackageVehicles [Package]
       multiplicity=4
       type=Root.PackageVehicles.Wheel
 ```
+
 
 ## Comments
 
@@ -560,9 +602,11 @@ This test case addresses only *note*, and furthermore of the two
 kind of notes (*singe line note* and *multiline note*) addressed
 only a single-line note.
 
+
 ## Rules/constraints
 
 KerML 7.1.2.3: "A single-line note includes all the text from the
 initial characters '//' up to the next line terminator or the end
 of the input text (whichever comes first)."
+
 
