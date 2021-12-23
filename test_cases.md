@@ -1,4 +1,4 @@
-<!-- Generated on 2021-12-23 12:41:55.154968 from script `gendocs.py`
+<!-- Generated on 2021-12-23 18:55:10.090960 from script `gendocs.py`
      DO NOT EDIT MANUALY! -->
 
 # Test Case #01.001: Fully qualified element names (FQEN)
@@ -94,6 +94,10 @@ package PackageStations {
     part def VehicleStation;
 }
 ```
+
+This is a [test of link to other file/test](#test-case-01.006-namespace-search-rules)
+
+This is a [test of link to a section](#expected-output-2)
 
 ## Expected output
 

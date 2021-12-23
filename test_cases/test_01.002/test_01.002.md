@@ -11,6 +11,10 @@ with `Root` SysMLv2 textual notation.
 {% include "test_01.002.sysml" %}
 ```
 
+This is a [test of link to other file/test](../test_01.006/test_01.006.md)
+
+This is a [test of link to a section](../test_01.003/test_01.003.md#expected-output)
+
 ## Expected output
 
 ```
