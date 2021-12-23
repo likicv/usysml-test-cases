@@ -1,4 +1,4 @@
-<!-- Generated on 2021-12-24 09:51:53.132749 from script `gendocs.py`
+<!-- Generated on 2021-12-24 10:01:45.281134 from script `gendocs.py`
      DO NOT EDIT MANUALY! -->
 
 # Test Case #01-001: Fully qualified element names (FQEN)
@@ -405,7 +405,7 @@ is being searched to find PartDef `Wheel`.
 
 The namespace search starts from its own namespace, then proceeds into
 the parent namespaces in the order until the Root namespace is reached.
-Compare to Test Case #01-006.
+Compare to [Test Case #01-006](#test-case-01006-namespace-search-rules).
 
 
 # Test Case #01-008: `Part` element syntactical forms
