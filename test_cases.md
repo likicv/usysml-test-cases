@@ -1,4 +1,4 @@
-<!-- Generated on 2021-12-24 07:38:42.819536 from script `gendocs.py`
+<!-- Generated on 2021-12-24 08:14:40.912553 from script `gendocs.py`
      DO NOT EDIT MANUALY! -->
 
 # Test Case #01.001: Fully qualified element names (FQEN)
@@ -541,11 +541,21 @@ Root.PackageVehicles [Package]
 
 A comment embedded within the SysML v2 textual notation is used to
 annotate the textual notation. There are multiple types of comments
-in SysML v2, and this test case addresses only a single-line note.
+in SysML v2 (see KerML 7.1.2.3), and specifically KerML distingushes
+*notes* and *comments*, where
+
+* *notes* are used to annotate the SysML textual notation and are
+discarded during parsing
+* *comments* are parsed and into to Comment elements and are stored
+as part of the model
+
+This test case addresses only *note*, and furthermore of the two
+kind of notes (*singe line note* and *multiline note*) addressed
+only a single-line note.
 
 ## Rules/constraints
 
-According to the KerML specification: "A single-line note includes
-all the text from the initial characters '//' up to the next line
-terminator or the end of the input text (whichever comes first)."
+KerML 7.1.2.3: "A single-line note includes all the text from the
+initial characters '//' up to the next line terminator or the end
+of the input text (whichever comes first)."
 
