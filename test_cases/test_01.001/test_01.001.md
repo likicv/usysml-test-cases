@@ -23,7 +23,7 @@ with `Root`.
 The top level name space bounded by the file is assigned to the element
 `Root`.
 2. Each curly braces segment defines a name space.
-3. Within a `*.sysml` file each FQEN must be uniqe.
+3. Within a `*.sysml` file each FQEN must be unique.
 
 ## Comments
 
