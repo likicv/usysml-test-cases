@@ -1,7 +1,7 @@
-<!-- Generated on 2021-12-24 08:23:55.900303 from script `gendocs.py`
+<!-- Generated on 2021-12-24 09:51:53.132749 from script `gendocs.py`
      DO NOT EDIT MANUALY! -->
 
-# Test Case #01.001: Fully qualified element names (FQEN)
+# Test Case #01-001: Fully qualified element names (FQEN)
 
 ## Description
 
@@ -70,7 +70,7 @@ same FQEN `PackageVehicles.Wheel` (even though the two elements are
 associated with different classifiers, `PartDef` and `Part`,
 respectively).
 
-# Test Case #01.002: Fully qualified element names (FQEN)
+# Test Case #01-002: Fully qualified element names (FQEN)
 
 ## Description
 
@@ -159,7 +159,7 @@ $ sysmlv2 Vehicles1.sysml Vehicles2.sysml
 the FQENs for the element `Root.Vehicle` will create a name clash.
 
 
-# Test Case #01.003: Element Classifiers
+# Test Case #01-003: Element Classifiers
 
 ## Description
 
@@ -208,7 +208,7 @@ the element `Root.PackageVehicles` is associated with a Classifer
 
 Every processed element is associated with a Classifier.
 
-# Test Case #01.004: ‘Part’ element type specification
+# Test Case #01-004: ‘Part’ element type specification
 
 ## Description
 
@@ -257,8 +257,7 @@ In the above example `Part c` doesn’t have a type specified, while
 2. If `Part` element has type specified, the type must be an existing
 `PartDef` element
 
-
-# Test Case #01.005: A `Part` element with no type specified
+# Test Case #01-005: A `Part` element with no type specified
 
 ## Description
 
@@ -314,7 +313,7 @@ how to handle this situation in the implementation so it is consistent
 across different implementations.
 
 
-# Test Case #01.006: Namespace search rules
+# Test Case #01-006: Namespace search rules
 
 ## Description
 
@@ -362,7 +361,7 @@ namespace.
 The namespace search starts from its own namespace, then proceeds into
 the parent namespaces in the order until the Root namespace is reached.
 
-# Test Case #01.007: Namespace search rules
+# Test Case #01-007: Namespace search rules
 
 ## Description
 
@@ -406,10 +405,10 @@ is being searched to find PartDef `Wheel`.
 
 The namespace search starts from its own namespace, then proceeds into
 the parent namespaces in the order until the Root namespace is reached.
-Compare to Test Case #01.006.
+Compare to Test Case #01-006.
 
 
-# Test Case #01.008: `Part` element syntactical forms
+# Test Case #01-008: `Part` element syntactical forms
 
 ## Description
 
@@ -502,7 +501,7 @@ When a `Part` element has a specified type, the type must be a defined
 An implementation of `part` and `part def` SysMLv2 keywords must support
 all seven syntactical forms shown in this Test Case.
 
-# Test Case #02.001: A single line note ("//"-type comment)
+# Test Case #02-001: A single line note ("//"-type comment)
 
 ## Description
 
