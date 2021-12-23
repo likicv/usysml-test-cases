@@ -65,7 +65,7 @@ would be a valid SysML v2 model, and paresable by the full SysML
 v2 implementation. The reverse is not true: because uSysML
 implementation is limited and the full SysML v2 specification
 includes many features outside of the scope of uSysML, general
-SysML v2 models would not be necessarily parseable by uSysML
+SysML v2 models would not be necessarily parseable by an uSysML
 implementation.
 
 The following references are used in this work:
