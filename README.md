@@ -12,16 +12,16 @@ CC BY-SA 4.0   This work is licensed under the Creative Commons Attribution-Sh
 # Background
 
 SysML v2 is the next generation of the OMG Systems Modeling Language
-(SysML), currently under development. The objective of SysML v2 to
+(SysML) currently under development. The objective of SysML v2 to
 enable more effective model-based systems engineering (MBSE). The
-uSysML (‘micro SysML’) project is developing test cases relevant
+uSysML (‘micro SysML’) project aims develop test cases relevant
 for the implementation of the SysML v2 specification. The objective
 of this work is two-fold: (1) to provide documented test cases that
 would assist the MBSE community in the implementation of the SysML
-v2 specification; and (2) to generate input that would assist in
-the clarification or strengthening of the SysML v2 specification.
-**The uSysML project aims to generate specific test cases, associated
-discussion, and possibly raise any issues for consideration.**
+v2 specification; and (2) to generate input that would help to
+clarify or strengthen the SysML v2 specification. **The uSysML
+project aims to generate specific test cases, associated discussion,
+and potentially raise any issues for consideration.**
 
 To view the test cases please click [here](/test_cases.md), and to
 download the summary PDF file please click [here](/test_cases.pdf).
@@ -30,12 +30,12 @@ download the summary PDF file please click [here](/test_cases.pdf).
 ## uSysML
 
 The uSysML project is an approach to the development of test cases
-for SysML v2 textual notation. In the narrow sense, uSysML refers
-to a subset of SysML v2 keywords and behaviours, however what
-exactly is included in this subset depends on the uSysML version
-(see the table below). The purpose of uSysML versioning is to
-define the scope that will limit considerations required for the
-development of the test cases. The currently planned uSysML
+for the SysML v2 textual notation. In the narrow sense, uSysML
+refers to a subset of SysML v2 keywords and behaviours, however
+what exactly is included in this subset depends on the uSysML
+version (see the table below). The purpose of uSysML versioning is
+to define the scope that will limit considerations required for
+the development of the test cases. The currently planned uSysML
 versions are shown in the table below:
 
 
@@ -46,14 +46,13 @@ versions are shown in the table below:
 | v0.03 (spiral 3) | +`redefines`, +`subsets`, +`specializes` | None yet |
 
 
-The idea behind uSysML is that SysML v2 behaviours are perfectly
-decomposable in the sense that it would possible to create a
-valid SysML v2 model with only a subset of features defined by
-the full SysML v2 specification. In fact, with just a subset of
-the full SysML v2 specification, for example the keywords
-`package`, `part`, `part def`, it would possible to create
-quite complex models that are fully compliant with the SysML
-v2 specification.  
+The idea behind uSysML is that SysML v2 behaviours are decomposable
+in the sense that it would possible to create a valid SysML v2
+model with only a subset of features defined by the full SysML v2
+specification. In fact, with just a subset of the full SysML v2
+specification, for example the keywords `package`, `part`, `part def`,
+it would possible to create quite complex models that are fully
+compliant with the SysML v2 specification.  
 
 The scope of uSysML for each version (or spiral) is fixed for
 the purpose of exploring the practical issues relevant to the
