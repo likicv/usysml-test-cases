@@ -1,4 +1,4 @@
-<!-- Generated on 2021-12-24 11:54:13.673266 from script `gendocs.py`
+<!-- Generated on 2021-12-24 12:03:04.382934 from script `gendocs.py`
      DO NOT EDIT MANUALY! -->
 
 # Test Case 01-001: Fully qualified element names (FQEN)
@@ -40,10 +40,10 @@ Root.PackageVehicles [Package]
 
 ## Rules/constraints
 
-1. A `*.sysml` file defines the name space for the elements it contains.
-The top level name space bounded by the file is assigned to the element
+1. A `*.sysml` file defines the namespace for the elements it contains.
+The top level namespace bounded by the file is assigned to the element
 `Root`.
-2. Each curly braces segment defines a name space.
+2. Each curly braces segment defines a namespace.
 3. Within a `*.sysml` file each FQEN must be unique.
 
 
@@ -121,8 +121,8 @@ Root.PackageStations [Package]
 
 ## Rules/constraints
 
-1. A \*.sysml file defines the name space for the elements it contains.
-The top level name space bounded by the file is assigned to the
+1. A \*.sysml file defines the namespace for the elements it contains.
+The top level namespace bounded by the file is assigned to the
 element “Root”
 2. Any valid element can be nested under the “Root” element (in this
 example there are two Package elements)
