@@ -6,7 +6,9 @@ uSysML ('micro SysML') Test Cases for SysML v2
 
 © Igor Dejanović <igor.dejanovic@gmail.com>
 
-CC BY-SA 4.0   This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International license: https://creativecommons.org/licenses/by-sa/4.0/
+CC BY-SA 4.0   This work is licensed under the Creative Commons
+Attribution-ShareAlike 4.0 International license:
+https://creativecommons.org/licenses/by-sa/4.0/
 
 
 # Background
@@ -85,7 +87,7 @@ from this work will be referred to as “uSysML Test Cases”.
 # Understanding uSysML Test Cases
 
 The test cases are organised under the folder `test_cases`, one test
-case per folder named 'test_XY.ABC' (where 'XY.ABC' is the test case
+case per folder named 'test_XY-ABC' (where 'XY-ABC' is the test case
 unique identifier). Within each test case there are several files,
 of which the following are particularly important:
 
@@ -97,7 +99,7 @@ v2 Pilot Implementation
 
 The title of the test case contains a short description of the test
 case, and a unique identifier (Test Case ID) which allows it to be
-referenced subsequently. The Test Case ID is of the form 'XY.ABC'
+referenced subsequently. The Test Case ID is of the form 'XY-ABC'
 where 'XY' refers to the spiral, and 'ABC' is the unique test case
 number within a spiral. The spiral shows the scope that the test
 case refers to; for example, for a test case that is marked 'spiral 1'
