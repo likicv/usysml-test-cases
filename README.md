@@ -182,6 +182,29 @@ Root.PackageStations [Package]
  Root.PackageStations.VehicleStation [PartDef]
 ```
 
+Here the indendation indicates the namespace level. The indentation level can
+be read from the actual output, however the indendation helps guide the eye.
+Specifically:
+
+```
+Root.PackageVehicles [Package]
+```
+
+and 
+
+```
+Root.PackageStations [Package]
+```
+
+are at the same namespace level, just under the 'Root'. Furthermore, the
+element:
+
+
+```
+Root.PackageVehicles.vehicle.w [Part]
+```
+
+Is the only element that is in the namespace that is three levels deep.
 
 
 # Local installation of uSysML test cases
