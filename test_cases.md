@@ -1,4 +1,4 @@
-<!-- Generated on 2021-12-24 12:03:04.382934 from script `gendocs.py`
+<!-- Generated on 2021-12-24 12:04:35.509739 from script `gendocs.py`
      DO NOT EDIT MANUALY! -->
 
 # Test Case 01-001: Fully qualified element names (FQEN)
@@ -444,7 +444,7 @@ the parent namespaces in the order until the Root namespace is reached.
 
 TESTING LINK TO OTHER TEST CASE
 
-Compare to [Test Case 01-006](#test-case-01006-namespace-search-rules)
+Compare to [Test Case 01-006](#test-case-01-006-namespace-search-rules)
 
 
 # Test Case 01-008: `Part` element syntactical forms
