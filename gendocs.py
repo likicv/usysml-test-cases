@@ -38,7 +38,7 @@ def make_section_anchor(section):
     non alphanumerics/spaces/dots to dashes.
     """
     section = section.strip()
-    return re.sub(r'\s+', '-', re.sub(r'[^a-zA-Z0-9 \t.]+', '', section)).lower()
+    return re.sub(r'\s+', '-', re.sub(r'[^a-zA-Z0-9 \t.-]+', '', section)).lower()
 
 
 def localize_links(md_content, md_file_dir):
