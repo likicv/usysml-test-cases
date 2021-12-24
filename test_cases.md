@@ -1,4 +1,4 @@
-<!-- Generated on 2021-12-24 10:18:18.857633 from script `gendocs.py`
+<!-- Generated on 2021-12-24 11:54:13.673266 from script `gendocs.py`
      DO NOT EDIT MANUALY! -->
 
 # Test Case 01-001: Fully qualified element names (FQEN)
@@ -82,7 +82,7 @@ respectively).
 ## Description
 
 Parsing of the `*.sysml` file will generate a FQEN for each element, starting
-with `Root` SysMLv2 textual notation.
+with `Root`.
 
 
 ## SysML v2 textual notation
