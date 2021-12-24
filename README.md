@@ -166,6 +166,24 @@ of ‘Root’
 - ‘vehicle’ is `Part` of the type ‘Root.PackageVehicles.Vehicle’
 
 
+### Example 4
+
+Consider a more complex example:
+
+```
+Root.PackageVehicles [Package]
+ Root.PackageVehicles.Vehicle [PartDef]
+ Root.PackageVehicles.Wheel [PartDef]
+ Root.PackageVehicles.vehicle [Part]
+    type=Root.PackageVehicles.Vehicle
+  Root.PackageVehicles.vehicle.w [Part]
+      type=Root.PackageVehicles.Wheel
+Root.PackageStations [Package]
+ Root.PackageStations.VehicleStation [PartDef]
+```
+
+
+
 # Local installation of uSysML test cases
 
 ## Project file/folders Layout
