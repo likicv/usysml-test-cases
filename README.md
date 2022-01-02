@@ -17,11 +17,11 @@ The objective of the OMG Systems Modeling Language v2 (SysML v2)
 is to enable more effective model-based systems engineering (MBSE).
 The uSysML (‘micro SysML’) project aims to develop test cases
 relevant for the implementation of the SysML v2 specification.
-The objective of this work is two-fold: (1) to provide documented
-test cases that would assist the MBSE community in the implementation
-of the SysML v2 specification; and (2) to generate input that
-would be helpful for clarifying or strengthening of the SysML
-v2 specification.
+The objective of the uSysML project is two-fold: (1) to provide
+documented test cases that would assist the MBSE community in
+the implementation of the SysML v2 specification; and (2) to
+generate input that would be helpful for clarifying or
+strengthening of the SysML v2 specification.
 
 To view the test cases please click [here](/test_cases.md), and to
 download the summary PDF file please click [here](/test_cases.pdf).
