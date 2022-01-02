@@ -1,4 +1,4 @@
-<!-- Generated on 2021-12-31 09:22:05.981131 from script `gendocs.py`
+<!-- Generated on 2022-01-03 09:33:25.851865 from script `gendocs.py`
      DO NOT EDIT MANUALY! -->
 
 # Test Case 01-001: Fully qualified element names (FQEN)
@@ -49,7 +49,27 @@ The top level namespace bounded by the file is assigned to the element
 
 ## Comments
 
-None.
+In the KerML nomenclature, the element names ('Vehicle', 'Wheel' 'vehicle',
+and 'w') are `humanId`. KerML p28:
+
+*However, one of the aliasIds, the humanId, may be entered by the modeler.
+If given, the humanId for an Element has the lexical form of a name.
+However, an Element may be given different names relative to different
+Namespaces (see 7.2.4), while the humanId for an Element is the same
+in all contexts. Any humanIds of the ownedElements of a Namespace must
+be unique (see 7.2.4), but it is otherwise the responsibility of the
+modeler to maintain other structural or uniqueness properties for
+humanIds as appropriate to the model being created.*
+
+
+The following statement requires that no two elements can have the same
+`humanId`:
+
+
+*Any humanIds of the ownedElements of a Namespace must be unique*
+
+This can be restated as follows: no two model elements can have the
+same FQEN.
 
 
 ## Discussion
