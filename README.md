@@ -13,15 +13,15 @@ https://creativecommons.org/licenses/by-sa/4.0/
 
 # Background
 
-SysML v2 is the next generation of the OMG Systems Modeling Language
-(SysML) currently under development. The objective of SysML v2 to
-enable more effective model-based systems engineering (MBSE). The
-uSysML (‘micro SysML’) project aims to develop test cases relevant
-for the implementation of the SysML v2 specification. The objective
-of this work is two-fold: (1) to provide documented test cases that
-would assist the MBSE community in the implementation of the SysML
-v2 specification; and (2) to generate input that would be helpful
-for clarifying or strengthening of the SysML v2 specification.
+The objective of the OMG Systems Modeling Language v2 (SysML v2)
+is to enable more effective model-based systems engineering (MBSE).
+The uSysML (‘micro SysML’) project aims to develop test cases
+relevant for the implementation of the SysML v2 specification.
+The objective of this work is two-fold: (1) to provide documented
+test cases that would assist the MBSE community in the implementation
+of the SysML v2 specification; and (2) to generate input that
+would be helpful for clarifying or strengthening of the SysML
+v2 specification.
 
 To view the test cases please click [here](/test_cases.md), and to
 download the summary PDF file please click [here](/test_cases.pdf).
@@ -34,9 +34,9 @@ for the SysML v2 textual notation. In the narrow sense, uSysML
 refers to a subset of SysML v2 keywords and behaviors, however
 what exactly is included in this subset depends on the uSysML
 version (see the table below). The purpose of uSysML versioning is
-to define the scope that will limit considerations required for
+to define a scope that will limit considerations required for
 the development of test cases. The currently planned uSysML
-versions are shown in the table below:
+versions and their scope are shown in the table below:
 
 
 | uSysML version | Scope | Status |
@@ -46,29 +46,29 @@ versions are shown in the table below:
 | v0.03 (spiral 3) | +`redefines`, +`subsets`, +`specializes` | None yet |
 
 
-The idea behind uSysML is that SysML v2 behaviors are decomposable
+The key idea behind uSysML is that SysML v2 behaviors are decomposable
 in the sense that it would possible to create valid SysML v2 models
-with only a subset of features defined by the full SysML v2
-specification. In fact, with just a subset of the SysML v2 features,
-for example the keywords `package`, `part`, `part def`, it would
-possible to create quite complex models that are fully
-compliant with the SysML v2 specification.  
+with only a subset of the features defined by the full SysML v2
+specification (in fact, with just a small subset of the SysML v2
+features, for example the keywords `package`, `part`, `part def`,
+it would possible to create quite complex models that are fully
+compliant with the SysML v2 specification).
 
 The scope of uSysML for each version (or spiral) is fixed for
-the purpose of exploring the practical issues relevant to the
-SysML v2 implementation. It is sometimes useful to think of
-uSysML as a limited implementation of the SysML v2 specification.
-Consider how this would contrast with a full implementation of the
-SysML v2 specification. An implementation corresponding to uSysML
-v0.01 would support only the SysML v2 behaviors associated with
-the keywords `package`, `part`, `part def` and nothing else (see
-the table above). Furthermore, every model specified by uSysML
-would be a valid SysML v2 model, and paresable by the full SysML
-v2 implementation. The reverse is not true: because uSysML
-implementation is limited and the full SysML v2 specification
-includes many features outside of the scope of uSysML, general
-SysML v2 models would not be necessarily parseable by an uSysML
-implementation.
+the purpose of exploring practical issues relevant to the SysML
+v2 implementation. While the uSysML project is independent of
+any specific implementation, it is sometimes useful to think of
+uSysML as being a limited implementation of the SysML v2
+specification. Consider the following: an implementation
+corresponding to uSysML v0.01 would support only the SysML v2
+behaviors associated with the keywords `package`, `part`,
+`part def` and nothing else (see the table above). Furthermore,
+every model specified by uSysML would be a valid SysML v2 model,
+and paresable by the full SysML v2 implementation. The reverse
+is not true: because uSysML implementation is limited and the
+full SysML v2 specification includes many features outside of
+the scope of uSysML, general SysML v2 models would not be
+necessarily parseable by an uSysML implementation.
 
 The following references are used in this work:
 - Kernel Modeling Language (KerML) (‘1-Kernel_Modeling_Language.pdf’)
