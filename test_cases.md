@@ -1,4 +1,4 @@
-<!-- Generated on 2022-01-03 13:53:05.780479 from script `gendocs.py`
+<!-- Generated on 2022-01-03 13:55:13.041792 from script `gendocs.py`
      DO NOT EDIT MANUALY! -->
 
 # Test Case 01-001: Fully qualified element names (FQEN)
@@ -661,13 +661,13 @@ package 'My Vehicles' {
 ## Expected output
 
 ```
-Root.PackageVehicles [Package]
- Root.PackageVehicles.Vehicle [PartDef]
- Root.PackageVehicles.Wheel [PartDef]
- Root.PackageVehicles.vehicle [Part]
-    type=Root.PackageVehicles.Vehicle
-  Root.PackageVehicles.vehicle.w [Part]
-      type=Root.PackageVehicles.Wheel
+Root.'My Vehicles' [Package]
+ Root.'My Vehicles'.Vehicle [PartDef]
+ Root.'My Vehicles'.Wheel [PartDef]
+ Root.'My Vehicles'.vehicle [Part]
+    type=Root.'My Vehicles'.Vehicle
+  Root.'My Vehicles'.vehicle.w [Part]
+      type=Root.'My Vehicles'.Wheel
 ```
 
 
