@@ -1,0 +1,9 @@
+package 'My Vehicles' {
+
+    part def 'Vehicle';
+    part def Wheel;
+
+    part 'vehicle':Vehicle {
+        part w:Wheel[4];
+    }
+}
