@@ -1,4 +1,4 @@
-<!-- Generated on 2022-01-03 09:36:33.534921 from script `gendocs.py`
+<!-- Generated on 2022-01-03 13:53:05.780479 from script `gendocs.py`
      DO NOT EDIT MANUALY! -->
 
 # Test Case 01-001: Fully qualified element names (FQEN)
@@ -49,8 +49,8 @@ The top level namespace bounded by the file is assigned to the element
 
 ## Comments
 
-In the KerML nomenclature, the element names ('Vehicle', 'Wheel' 'vehicle',
-and 'w') are `humanId`. KerML p28:
+In the KerML nomenclature the element names ('Vehicle', 'Wheel' 'vehicle',
+and 'w') are `humanId`. Per KerML p28:
 
 ```
 However, one of the aliasIds, the humanId, may be entered by the modeler.
@@ -632,5 +632,77 @@ only a single-line note.
 KerML 7.1.2.3: "A single-line note includes all the text from the
 initial characters '//' up to the next line terminator or the end
 of the input text (whichever comes first)."
+
+
+# Test Case 02-002: Unrestricted names (basic form)
+
+
+## Description
+
+Unrestricted element names can contain spaces, and are enclosed by
+single quotes.
+
+
+## SysML v2 textual notation
+
+```sysml
+package 'My Vehicles' {
+
+    part def 'Vehicle';
+    part def Wheel;
+
+    part 'vehicle':Vehicle {
+        part w:Wheel[4];
+    }
+}
+```
+
+
+## Expected output
+
+```
+Root.PackageVehicles [Package]
+ Root.PackageVehicles.Vehicle [PartDef]
+ Root.PackageVehicles.Wheel [PartDef]
+ Root.PackageVehicles.vehicle [Part]
+    type=Root.PackageVehicles.Vehicle
+  Root.PackageVehicles.vehicle.w [Part]
+      type=Root.PackageVehicles.Wheel
+```
+
+
+## References
+
+The spiral 1 test cases use basic names. This test case tests use of
+unrestricted names, but only in the basic form without the use of escape
+sequences.
+
+As per KerML p20, there are two kinds of names:
+
+
+```
+1. A basic name is one that can be lexically distinguish in itself from
+other kinds of tokens. The initial character of a basic name must be one
+of a lowercase letter, an uppercase letter or an underscore. The remaining
+characters of a basic name are allowed to be any character allowed as an
+initial character plus any digit. However, a reserved keyword may not be
+used as a name, even though it has the form of a basic name (see 7.1.2.7),
+including the Boolean literals true and false.
+
+2. An unrestricted name provides a way to represent a name that contains
+any character. It is represented as a non-empty sequence of characters
+surrounded by single quotes. The characters within the single quotes may
+not include non-printable characters (including backspace, tab and newline).
+However, these characters may be included as part of the name itself
+through use of an escape sequence. In addition, the single quote character
+or the backslash character may only be included by using an escape sequence.
+```
+
+
+## Comments
+
+
+## Rules/constraints
+
 
 
