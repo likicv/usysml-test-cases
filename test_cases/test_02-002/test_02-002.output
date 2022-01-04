@@ -1,7 +1,0 @@
-Root.'My Vehicles' [Package]
- Root.'My Vehicles'.Vehicle [PartDef]
- Root.'My Vehicles'.Wheel [PartDef]
- Root.'My Vehicles'.vehicle [Part]
-    type=Root.'My Vehicles'.Vehicle
-  Root.'My Vehicles'.vehicle.w [Part]
-      type=Root.'My Vehicles'.Wheel
