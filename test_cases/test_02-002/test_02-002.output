@@ -1,0 +1,7 @@
+Root.'My PackageVehicles' [Package]
+ Root.'My PackageVehicles'.Vehicle [PartDef]
+ Root.'My PackageVehicles'.Wheel [PartDef]
+ Root.'My PackageVehicles'.vehicle [Part]
+    type=Root.'My PackageVehicles'.Vehicle
+  Root.'My PackageVehicles'.vehicle.w [Part]
+      type=Root.'My PackageVehicles'.Wheel
