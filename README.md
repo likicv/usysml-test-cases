@@ -28,7 +28,7 @@ download the summary PDF file please click [here](/test_cases.pdf).
 
 **NOTE: the uSysML project isn't a SysML v2 implementation, rather
 it is a collection of test cases that are intended to be useful
-for creating a SysML v2 implementation.**
+for creating SysML v2 implementation.**
 
 
 ## uSysML
