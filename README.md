@@ -18,8 +18,8 @@ is to enable more effective model-based systems engineering (MBSE).
 The uSysML (‘micro SysML’) project aims to develop test cases
 relevant for the implementation of the SysML v2 specification.
 The objective of the uSysML project is two-fold: (1) to provide
-documented test cases that would assist the MBSE community in
-the implementation of the SysML v2 specification; and (2) to
+documented test cases that would be useful to the MBSE community
+in implementations of the SysML v2 specification; and (2) to
 generate input that would be helpful for clarifying or
 strengthening of the SysML v2 specification.
 
