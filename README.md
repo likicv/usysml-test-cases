@@ -26,7 +26,9 @@ strengthening of the SysML v2 specification.
 To view the test cases please click [here](/test_cases.md), and to
 download the summary PDF file please click [here](/test_cases.pdf).
 
-**Note: the uSysML project isn't a SysML v2 implementation.**
+**NOTE: the uSysML project isn't a SysML v2 implementation. It's
+a collection of Use Cases that are intended to be useful in developing
+a SysML v2 implementation**
 
 ## uSysML
 
