@@ -11,6 +11,12 @@ Attribution-ShareAlike 4.0 International license:
 https://creativecommons.org/licenses/by-sa/4.0/
 
 
+# Links
+
+To view the test cases please click [here](/test_cases.md), and to
+download the summary PDF file please click [here](/test_cases.pdf).
+
+
 # Background
 
 The objective of the OMG Systems Modeling Language v2 (SysML v2)
@@ -23,8 +29,6 @@ in implementations of the SysML v2 specification; and (2) to
 generate input that would be helpful for clarifying or
 strengthening of the SysML v2 specification.
 
-To view the test cases please click [here](/test_cases.md), and to
-download the summary PDF file please click [here](/test_cases.pdf).
 
 **NOTE: the uSysML project isn't a SysML v2 implementation, rather
 it is a collection of test cases that are intended to be useful
