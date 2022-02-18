@@ -1,4 +1,4 @@
-<!-- Generated on 2022-02-19 10:20:17.804267 from script `gendocs.py`
+<!-- Generated on 2022-02-19 10:32:58.364617 from script `gendocs.py`
      DO NOT EDIT MANUALY! -->
 
 # Test Case 01-001: Fully qualified element names (FQEN)
@@ -164,8 +164,9 @@ part def Wheel;
 part def Vehicle;
 ```
 
-Let’s assume a SysMLv2 processor `sysmlv2`, then processing the first
-file will result in:
+Let’s assume a SysMLv2 processor `sysmlv2` which can take one or more
+`*.sysml` files on the input. Then processing the first file will
+result in:
 
 ```
 $ sysmlv2 Vehicles1.sysml
