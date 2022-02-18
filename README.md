@@ -38,7 +38,6 @@ for the SysML v2 textual notation. It refers to two things: in
 the narrow sense, 'uSysML' refers to a subset of SysML v2 keywords
 and behaviors; in the broader sense, 'uSysML' refers to the
 collection of test cases developed under this GitHub project.
-
 The purpose of uSysML versioning is to define a scope that will
 limit considerations required for the development of test cases.
 The currently planned uSysML versions and their scope are shown
