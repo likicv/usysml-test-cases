@@ -64,14 +64,14 @@ the purpose of exploring practical issues relevant to the SysML
 v2 implementation. While the uSysML project is independent of
 any specific implementation, it is sometimes useful to think of
 uSysML as being a limited implementation of the SysML v2
-specification. Consider the following: an implementation
-corresponding to uSysML v0.01 would support only the SysML v2
-behaviors associated with the keywords `package`, `part`,
-`part def` and nothing else (see the table above). Furthermore,
-every model specified by uSysML would be a valid SysML v2 model,
-and paresable by the full SysML v2 implementation. The reverse
-is not true: because uSysML implementations are limited general
-SysML v2 models would not be necessarily parseable by an uSysML
+specification. Consider an implementation corresponding to
+uSysML v0.01. This would support only the SysML v2 behaviors
+associated with the keywords `package`, `part`, `part def` and
+nothing else (see the table above). Furthermore, every model
+specified by uSysML would be a valid SysML v2 model, and paresable
+by the full SysML v2 implementation. The reverse is not true:
+because uSysML implementations are limited general SysML v2
+models would not be necessarily parseable by an uSysML
 implementation.
 
 
