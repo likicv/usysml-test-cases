@@ -1,4 +1,4 @@
-<!-- Generated on 2022-02-19 13:14:10.203182 from script `gendocs.py`
+<!-- Generated on 2022-02-19 14:17:14.733597 from script `gendocs.py`
      DO NOT EDIT MANUALY! -->
 
 # Test Case 01-001: Fully qualified element names (FQEN)
@@ -628,7 +628,7 @@ initial characters '//' up to the next line terminator or the end
 of the input text (whichever comes first)."
 
 
-# Test Case 03-001: `attribute def` use with simple element names
+# Test Case 03-001: `attribute def` use
 
 
 ## Description
@@ -671,9 +671,8 @@ Root.PackageVehicles [Package]
 
 ## Comments
 
-Shows the use of `attribute def` statement within the `part def` block.
-
-A simple element name is used.
+This Test Case shows the use of `attribute def` statement within the `part def`
+block.
 
 
 ## Rules/constraints
