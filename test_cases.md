@@ -1,4 +1,4 @@
-<!-- Generated on 2022-02-19 13:05:36.669277 from script `gendocs.py`
+<!-- Generated on 2022-02-19 13:14:10.203182 from script `gendocs.py`
      DO NOT EDIT MANUALY! -->
 
 # Test Case 01-001: Fully qualified element names (FQEN)
@@ -644,6 +644,7 @@ package PackageVehicles {
     part def Vehicle {
         attribute def Color;
     }
+
     part def Wheel;
 
     part vehicle:Vehicle {
