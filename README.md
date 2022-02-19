@@ -56,13 +56,13 @@ in the table below:
 | v0.04 (spiral 4) | +`redefines`, +`subsets`, +`specializes` | None yet |
 
 
-The key idea behind uSysML is that SysML v2 behaviors are fully
-decomposable. For example, it would possible to create valid SysML
-v2 models with only a small subset of the features defined by the
-SysML v2 specification. Furthermore, by using just a small subset
-of the SysML v2 (for example the keywords `package`, `part`, `part def`
-corresponding to v0.01) it would possible to create quite complex
-models that are fully SysML v2 compliant.
+The key idea behind uSysML is that SysML v2 behaviors corresponding
+to differnt spirals are fully decomposable. For example, it would
+possible to create valid SysML v2 models with only a subset of the
+SysML v2 features defined by the uSysML spiral 1. Furthermore, by
+using just a the SysMLv2 subset defined by the the spiral 1 (the
+keywords `package`, `part`, `part def`) it would possible to create
+complex models that are fully SysML v2 compliant.
 
 The scope of uSysML for each version (or spiral) is fixed for
 the purpose of exploring practical issues relevant to the SysML
