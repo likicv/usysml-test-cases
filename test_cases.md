@@ -1,4 +1,4 @@
-<!-- Generated on 2022-02-19 14:21:42.099936 from script `gendocs.py`
+<!-- Generated on 2022-02-19 14:23:29.813294 from script `gendocs.py`
      DO NOT EDIT MANUALY! -->
 
 # Test Case 01-001: Fully qualified element names (FQEN)
@@ -50,7 +50,7 @@ The top level namespace bounded by the file is assigned to the element
 ## Comments
 
 In the KerML nomenclature the element names ('Vehicle', 'Wheel' 'vehicle',
-and 'w') are `humanId`. Per KerML p28:
+and 'w') are `humanId`. Per KerML 7.2.2.1:
 
 > However, one of the aliasIds, the humanId, may be entered by the modeler.
 > If given, the humanId for an Element has the lexical form of a name.
