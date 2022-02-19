@@ -1,4 +1,4 @@
-<!-- Generated on 2022-02-19 10:38:29.262560 from script `gendocs.py`
+<!-- Generated on 2022-02-19 12:58:01.442325 from script `gendocs.py`
      DO NOT EDIT MANUALY! -->
 
 # Test Case 01-001: Fully qualified element names (FQEN)
@@ -627,4 +627,55 @@ KerML 7.1.2.3: "A single-line note includes all the text from the
 initial characters '//' up to the next line terminator or the end
 of the input text (whichever comes first)."
 
+
+# Test Case 03-001: 'attribute def' use with simple element name
+
+
+## Description
+
+Shows the use of 'attribute def' statement within the 'part def' block.
+
+
+## SysML v2 textual notation
+
+```sysml
+package PackageVehicles {
+
+    part def Vehicle {
+        attribute def Color;
+    }
+    part def Wheel;
+
+    part vehicle:Vehicle {
+        part w:Wheel[4];
+    }
+}
+```
+
+
+## Expected output
+
+```
+Root.PackageVehicles [Package]
+ Root.PackageVehicles.Vehicle [PartDef]
+  Root.PackageVehicles.Vehicle.Color [AttributeDef]
+ Root.PackageVehicles.Wheel [PartDef]
+ Root.PackageVehicles.vehicle [Part]
+    type=Root.PackageVehicles.Vehicle
+  Root.PackageVehicles.vehicle.w [Part]
+      multiplicity=4
+      type=Root.PackageVehicles.Wheel
+```
+
+
+## Comments/discussion
+
+Shows the use of 'attribute def' statement within the 'part def' block.
+
+A simple element name is used.
+
+
+## Rules/constraints
+
+None yet.
 
