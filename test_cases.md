@@ -1,4 +1,4 @@
-<!-- Generated on 2022-02-19 13:01:05.069652 from script `gendocs.py`
+<!-- Generated on 2022-02-19 13:04:40.319586 from script `gendocs.py`
      DO NOT EDIT MANUALY! -->
 
 # Test Case 01-001: Fully qualified element names (FQEN)
@@ -668,7 +668,7 @@ Root.PackageVehicles [Package]
 ```
 
 
-## Comments/discussion
+## Comments
 
 Shows the use of `attribute def` statement within the `part def` block.
 
