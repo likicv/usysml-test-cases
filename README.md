@@ -51,8 +51,9 @@ in the table below:
 | uSysML version | Scope | Status |
 | --- | --- | --- |
 | v0.01 (spiral 1) | `package`, `part`, `part def` | 8 test cases |
-| v0.02 (spiral 2) | +`attribute`, +`attribute def`, +//-type comments, +unrestricted element names | 1 test case |
-| v0.03 (spiral 3) | +`redefines`, +`subsets`, +`specializes` | None yet |
+| v0.02 (spiral 2) | +//-type comments, +unrestricted element names | 1 test case |
+| v0.03 (spiral 3) | +`attribute`, +`attribute def` | None yet |
+| v0.04 (spiral 4) | +`redefines`, +`subsets`, +`specializes` | None yet |
 
 
 The key idea behind uSysML is that SysML v2 behaviors are fully
