@@ -1,4 +1,4 @@
-<!-- Generated on 2022-02-19 12:58:01.442325 from script `gendocs.py`
+<!-- Generated on 2022-02-19 13:01:05.069652 from script `gendocs.py`
      DO NOT EDIT MANUALY! -->
 
 # Test Case 01-001: Fully qualified element names (FQEN)
@@ -628,12 +628,12 @@ initial characters '//' up to the next line terminator or the end
 of the input text (whichever comes first)."
 
 
-# Test Case 03-001: 'attribute def' use with simple element name
+# Test Case 03-001: `attribute def` use with a simple element name
 
 
 ## Description
 
-Shows the use of 'attribute def' statement within the 'part def' block.
+Shows the use of `attribute def` statement within the `part def` block.
 
 
 ## SysML v2 textual notation
@@ -670,7 +670,7 @@ Root.PackageVehicles [Package]
 
 ## Comments/discussion
 
-Shows the use of 'attribute def' statement within the 'part def' block.
+Shows the use of `attribute def` statement within the `part def` block.
 
 A simple element name is used.
 
