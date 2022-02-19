@@ -1,4 +1,4 @@
-<!-- Generated on 2022-02-19 14:18:03.817033 from script `gendocs.py`
+<!-- Generated on 2022-02-19 14:21:42.099936 from script `gendocs.py`
      DO NOT EDIT MANUALY! -->
 
 # Test Case 01-001: Fully qualified element names (FQEN)
@@ -623,9 +623,11 @@ only a single-line note.
 
 ## Rules/constraints
 
-KerML 7.1.2.3: "A single-line note includes all the text from the
-initial characters '//' up to the next line terminator or the end
-of the input text (whichever comes first)."
+As per KerML 7.1.2.3:
+
+>"A single-line note includes all the text from the initial
+>characters '//' up to the next line terminator or the end
+>of the input text (whichever comes first)."
 
 
 # Test Case 03-001: `attribute def` example use
