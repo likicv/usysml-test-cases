@@ -1,4 +1,4 @@
-<!-- Generated on 2022-02-19 14:23:38.960501 from script `gendocs.py`
+<!-- Generated on 2022-03-12 11:52:12.684976 from script `gendocs.py`
      DO NOT EDIT MANUALY! -->
 
 # Test Case 01-001: Fully qualified element names (FQEN)
@@ -147,7 +147,7 @@ element “Root”
 example there are two Package elements)
 
 
-## Discussion
+## Issues
 
 A potential issue arises when multiple `*.sysml` files are processed.
 Let’s assume two files, `Vehicles1.sysml` and `Vehicles2.sysml` with
@@ -630,12 +630,93 @@ As per KerML 7.1.2.3:
 >of the input text (whichever comes first)."
 
 
+# Test Case 02-002: Unrestricted names (basic form)
+
+
+## Description
+
+Element names can contain spaces when enclosed by single quotes.
+
+
+## SysML v2 textual notation
+
+```sysml
+package 'My PackageVehicles' {
+
+    part def 'Vehicle';
+    part def Wheel;
+
+    part 'vehicle':Vehicle {
+        part w:Wheel[4];
+    }
+}
+```
+
+
+## Expected output
+
+```
+Root.'My PackageVehicles' [Package]
+ Root.'My PackageVehicles'.Vehicle [PartDef]
+ Root.'My PackageVehicles'.Wheel [PartDef]
+ Root.'My PackageVehicles'.vehicle [Part]
+    type=Root.'My PackageVehicles'.Vehicle
+  Root.'My PackageVehicles'.vehicle.w [Part]
+      multiplicity=4
+      type=Root.'My PackageVehicles'.Wheel
+```
+
+
+## References
+
+The spiral 1 test cases use basic names. This test case tests use of
+unrestricted names, but only in the basic form without the use of escape
+sequences.
+
+As per KerML p20, there are two kinds of names:
+
+
+> 1. A basic name is one that can be lexically distinguish in itself from
+> other kinds of tokens. The initial character of a basic name must be one
+> of a lowercase letter, an uppercase letter or an underscore. The remaining
+> characters of a basic name are allowed to be any character allowed as an
+> initial character plus any digit. However, a reserved keyword may not be
+> used as a name, even though it has the form of a basic name (see 7.1.2.7),
+> including the Boolean literals true and false.
+> 
+> 2. An unrestricted name provides a way to represent a name that contains
+> any character. It is represented as a non-empty sequence of characters
+> surrounded by single quotes. The characters within the single quotes may
+> not include non-printable characters (including backspace, tab and newline).
+> However, these characters may be included as part of the name itself
+> through use of an escape sequence. In addition, the single quote character
+> or the backslash character may only be included by using an escape sequence.
+
+
+## Issues
+
+The SysML v2 example shown in [Test Case 02-002](#test-case-02-002-unrestricted-names-basic-form)
+works fine fine in the Pilot implementation, however the visualisation with
+'%viz' fails:
+
+
+'''jupyter
+%viz --view=tree 'My PackageVehicles'
+
+ERROR:Couldn't resolve reference to Element ''My'
+'''
+
+
+## Rules/constraints
+
+None.
+
 # Test Case 03-001: `attribute def` example use
 
 
 ## Description
 
-Shows the use of `attribute def` statement within the `part def` block.
+Use of `attribute def` statement within the `part def` block.
 
 
 ## SysML v2 textual notation
@@ -673,8 +754,8 @@ Root.PackageVehicles [Package]
 
 ## Comments
 
-This Test Case shows the use of `attribute def` statement within the `part def`
-block.
+This Test Case shows a simple use of `attribute def` statement within
+the `part def` block.
 
 
 ## Rules/constraints
