@@ -1,4 +1,4 @@
-<!-- Generated on 2022-03-12 11:52:12.684976 from script `gendocs.py`
+<!-- Generated on 2022-03-12 11:54:42.736586 from script `gendocs.py`
      DO NOT EDIT MANUALY! -->
 
 # Test Case 01-001: Fully qualified element names (FQEN)
@@ -700,11 +700,11 @@ works fine fine in the Pilot implementation, however the visualisation with
 '%viz' fails:
 
 
-'''jupyter
+```jupyter
 %viz --view=tree 'My PackageVehicles'
 
 ERROR:Couldn't resolve reference to Element ''My'
-'''
+```
 
 
 ## Rules/constraints
