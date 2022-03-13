@@ -1,4 +1,4 @@
-<!-- Generated on 2022-03-13 13:57:34.651891 from script `gendocs.py`
+<!-- Generated on 2022-03-13 13:59:06.621341 from script `gendocs.py`
      DO NOT EDIT MANUALY! -->
 
 # Test Case 01-001: Fully qualified element names (FQEN)
@@ -696,8 +696,8 @@ As per KerML p20, there are two kinds of names:
 ## Issues
 
 The SysML v2 example shown in [Test Case 02-002](#test-case-02-002-unrestricted-names-basic-form)
-works in the Pilot implementation, however the visualisation with `%viz`
-fails:
+works in the SysMl v2 Pilot implementation, however the visualisation
+with `%viz` is unable to handle unrestricted names:
 
 
 ```jupyter
