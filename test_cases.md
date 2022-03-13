@@ -1,4 +1,4 @@
-<!-- Generated on 2022-03-12 11:56:03.161339 from script `gendocs.py`
+<!-- Generated on 2022-03-13 13:48:54.441755 from script `gendocs.py`
      DO NOT EDIT MANUALY! -->
 
 # Test Case 01-001: Fully qualified element names (FQEN)
@@ -716,21 +716,41 @@ None.
 
 ## Description
 
-Use of `attribute def` statement within the `part def` block.
+Possible placement of the `attribute def` statement
 
 
 ## SysML v2 textual notation
 
 ```sysml
+// 'attribute def' within the sysml file scope, outside any packages
+attribute def ModeuleId;
+
 package PackageVehicles {
 
+    // 'attribute def' within a top level package
+    attribute def PackageVehiclesID;
+
+    package VehicleAccessories {
+
+        // 'attribute def' within a nested package
+        attribute def AccessoryID;
+
+        package SeatCover {
+            // 'attribute def' within a second nested package-- no limit to possible nesting
+            attribute def SeatCoverColor;
+        }
+    }
+
     part def Vehicle {
+        // 'attribute def' within 'part def'
         attribute def Color;
     }
 
     part def Wheel;
 
     part vehicle:Vehicle {
+        // 'attribute def' within 'part'
+        attribute def RegistrationNumber;
         part w:Wheel[4];
     }
 }
@@ -740,12 +760,19 @@ package PackageVehicles {
 ## Expected output
 
 ```
+Root.ModeuleId [AttributeDef]
 Root.PackageVehicles [Package]
+ Root.PackageVehicles.PackageVehiclesID [AttributeDef]
+ Root.PackageVehicles.VehicleAccessories [Package]
+  Root.PackageVehicles.VehicleAccessories.AccessoryID [AttributeDef]
+  Root.PackageVehicles.VehicleAccessories.SeatCover [Package]
+   Root.PackageVehicles.VehicleAccessories.SeatCover.SeatCoverColor [AttributeDef]
  Root.PackageVehicles.Vehicle [PartDef]
   Root.PackageVehicles.Vehicle.Color [AttributeDef]
  Root.PackageVehicles.Wheel [PartDef]
  Root.PackageVehicles.vehicle [Part]
     type=Root.PackageVehicles.Vehicle
+  Root.PackageVehicles.vehicle.RegistrationNumber [AttributeDef]
   Root.PackageVehicles.vehicle.w [Part]
       multiplicity=4
       type=Root.PackageVehicles.Wheel
@@ -754,11 +781,16 @@ Root.PackageVehicles [Package]
 
 ## Comments
 
-This Test Case shows a simple use of `attribute def` statement within
-the `part def` block.
+This Test Case shows `attribute def` when placed:
+1. Within the sysml file scope, outside any packages
+2. Top level 'package'
+3. Within a nested package
+4. Within a second nested package
+5. Within 'part def'
+6. Within 'part'
 
 
 ## Rules/constraints
 
-None yet.
+None.
 
