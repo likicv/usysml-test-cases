@@ -1,4 +1,4 @@
-Root.ModeuleId [AttributeDef]
+Root.ModuleId [AttributeDef]
 Root.PackageVehicles [Package]
  Root.PackageVehicles.PackageVehiclesID [AttributeDef]
  Root.PackageVehicles.VehicleAccessories [Package]

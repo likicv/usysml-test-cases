@@ -1,5 +1,5 @@
 // 'attribute def' within the sysml file scope, outside any packages
-attribute def ModeuleId;
+attribute def ModuleId;
 
 package PackageVehicles {
 

@@ -1,4 +1,4 @@
-<!-- Generated on 2022-03-13 13:59:06.621341 from script `gendocs.py`
+<!-- Generated on 2022-03-13 15:47:03.690266 from script `gendocs.py`
      DO NOT EDIT MANUALY! -->
 
 # Test Case 01-001: Fully qualified element names (FQEN)
@@ -723,7 +723,7 @@ Shows possible placement of the `attribute def` statement.
 
 ```sysml
 // 'attribute def' within the sysml file scope, outside any packages
-attribute def ModeuleId;
+attribute def ModuleId;
 
 package PackageVehicles {
 
@@ -760,7 +760,7 @@ package PackageVehicles {
 ## Expected output
 
 ```
-Root.ModeuleId [AttributeDef]
+Root.ModuleId [AttributeDef]
 Root.PackageVehicles [Package]
  Root.PackageVehicles.PackageVehiclesID [AttributeDef]
  Root.PackageVehicles.VehicleAccessories [Package]
