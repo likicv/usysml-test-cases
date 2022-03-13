@@ -1,4 +1,4 @@
-<!-- Generated on 2022-03-13 13:56:29.869083 from script `gendocs.py`
+<!-- Generated on 2022-03-13 13:57:10.820467 from script `gendocs.py`
      DO NOT EDIT MANUALY! -->
 
 # Test Case 01-001: Fully qualified element names (FQEN)
@@ -793,5 +793,5 @@ This Test Case shows `attribute def` when placed:
 ## Rules/constraints
 
 Within the scope of uSysML v0.03 there are no constraints where `attribute def`
-might be used.
+can be used.
 
