@@ -1,4 +1,4 @@
-<!-- Generated on 2022-03-13 13:57:10.820467 from script `gendocs.py`
+<!-- Generated on 2022-03-13 13:57:34.651891 from script `gendocs.py`
      DO NOT EDIT MANUALY! -->
 
 # Test Case 01-001: Fully qualified element names (FQEN)
@@ -716,7 +716,7 @@ None.
 
 ## Description
 
-Possible placement of the `attribute def` statement
+Shows possible placement of the `attribute def` statement.
 
 
 ## SysML v2 textual notation
