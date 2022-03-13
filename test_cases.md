@@ -1,4 +1,4 @@
-<!-- Generated on 2022-03-13 13:48:54.441755 from script `gendocs.py`
+<!-- Generated on 2022-03-13 13:56:29.869083 from script `gendocs.py`
      DO NOT EDIT MANUALY! -->
 
 # Test Case 01-001: Fully qualified element names (FQEN)
@@ -783,14 +783,15 @@ Root.PackageVehicles [Package]
 
 This Test Case shows `attribute def` when placed:
 1. Within the sysml file scope, outside any packages
-2. Top level 'package'
+2. Top level `package`
 3. Within a nested package
 4. Within a second nested package
-5. Within 'part def'
-6. Within 'part'
+5. Within `part def`
+6. Within `part`
 
 
 ## Rules/constraints
 
-None.
+Within the scope of uSysML v0.03 there are no constraints where `attribute def`
+might be used.
 
