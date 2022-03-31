@@ -1,4 +1,4 @@
-<!-- Generated on 2022-03-31 20:52:37.646653 from script `gendocs.py`
+<!-- Generated on 2022-03-31 20:55:16.119517 from script `gendocs.py`
      DO NOT EDIT MANUALY! -->
 
 # Test Case 01-001: Fully qualified element names (FQEN)
@@ -352,10 +352,7 @@ None.
 
 ## Discussion
 
-A `Part` element may have no type specified. This opens the question
-how to handle this situation in the implementation so it is consistent
-across different implementations.
-
+None.
 
 # Test Case 01-006: Namespace search rules
 
