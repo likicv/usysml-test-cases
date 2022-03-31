@@ -1,4 +1,4 @@
-<!-- Generated on 2022-03-13 15:47:03.690266 from script `gendocs.py`
+<!-- Generated on 2022-03-31 15:40:46.994098 from script `gendocs.py`
      DO NOT EDIT MANUALY! -->
 
 # Test Case 01-001: Fully qualified element names (FQEN)
@@ -195,7 +195,7 @@ the FQENs for the element `Root.Vehicle` will create a name clash.
 
 ## Description
 
-Every element is associated with a Classifier SysMLv2 textual notation.
+Every element is associated with a Classifier.
 
 
 ## SysML v2 textual notation
@@ -233,11 +233,11 @@ Root.PackageStations [Package]
 
 
 ## Comments
-1. In output above the element Cassifiers are shown in square brackets
-(`Package`, `PartDef`, and `Part`)
-2. The following development in notation is adoped: instead of saying
-the element `Root.PackageVehicles` is associated with a Classifer
-`Package`, it can be said the element 'Root.PackageVehicles' is `Package`.
+In output above the element Cassifiers are shown in square brackets
+(`Package`, `PartDef`, and `Part`). The following development in
+notation is adoped: instead of saying the element `Root.PackageVehicles`
+is associated with a Classifer `Package`, it can be said the element
+'Root.PackageVehicles' is `Package`.
 
 
 ## Rules/constraints
