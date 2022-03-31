@@ -1,4 +1,4 @@
-<!-- Generated on 2022-03-31 15:44:31.566732 from script `gendocs.py`
+<!-- Generated on 2022-03-31 20:52:37.646653 from script `gendocs.py`
      DO NOT EDIT MANUALY! -->
 
 # Test Case 01-001: Fully qualified element names (FQEN)
@@ -52,20 +52,20 @@ The top level namespace bounded by the file is assigned to the element
 In the KerML nomenclature the element names ('Vehicle', 'Wheel' 'vehicle',
 and 'w') are `humanId`. Per KerML 7.2.2.1:
 
-> However, one of the aliasIds, the humanId, may be entered by the modeler.
+> "However, one of the aliasIds, the humanId, may be entered by the modeler.
 > If given, the humanId for an Element has the lexical form of a name.
 > However, an Element may be given different names relative to different
 > Namespaces (see 7.2.4), while the humanId for an Element is the same
 > in all contexts. Any humanIds of the ownedElements of a Namespace must
 > be unique (see 7.2.4), but it is otherwise the responsibility of the
 > modeler to maintain other structural or uniqueness properties for
-> humanIds as appropriate to the model being created.
+> humanIds as appropriate to the model being created."
 
 
 The following statement requires that no two elements can have the same
 `humanId`:
 
-> Any humanIds of the ownedElements of a Namespace must be unique
+> "Any humanIds of the ownedElements of a Namespace must be unique"
 
 This can be restated as follows: no two model elements can have the
 same FQEN.
@@ -90,10 +90,8 @@ package PackageVehicles {
 }
 ```
 
-because in this case both `part def Wheel` and `part Wheel` have the
-same FQEN `PackageVehicles.Wheel` (even though the two elements are
-associated with different classifiers, `PartDef` and `Part`,
-respectively).
+In this case both `part def Wheel` and `part Wheel` have the same
+FQEN `PackageVehicles.Wheel`.
 
 # Test Case 01-002: Fully qualified element names (FQEN)
 
