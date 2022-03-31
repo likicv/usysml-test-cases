@@ -1,4 +1,4 @@
-<!-- Generated on 2022-03-31 15:40:46.994098 from script `gendocs.py`
+<!-- Generated on 2022-03-31 15:44:31.566732 from script `gendocs.py`
      DO NOT EDIT MANUALY! -->
 
 # Test Case 01-001: Fully qualified element names (FQEN)
@@ -303,7 +303,7 @@ In the above example `Part c` doesn’t have a type specified, while
 
 ## Description
 
-A `Part` element with no type may be specified.
+A `Part` element may have no type specified.
 
 
 ## SysML v2 textual notation
