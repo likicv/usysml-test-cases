@@ -1,4 +1,4 @@
-<!-- Generated on 2022-04-03 07:22:36.492571 from script `gendocs.py`
+<!-- Generated on 2022-04-03 07:35:18.910200 from script `gendocs.py`
      DO NOT EDIT MANUALY! -->
 
 # Test Case 01-001: Fully qualified element names (FQEN)
@@ -71,7 +71,7 @@ This can be restated as follows: no two model elements can have the
 same FQEN.
 
 
-## Discussion
+## Discussion and notes
 
 This Test Case focuses on the requirement for uniqueness of each
 FQENs within a sysml file. The following example should generate
@@ -91,7 +91,12 @@ package PackageVehicles {
 ```
 
 In this case both `part def Wheel` and `part Wheel` have the same
-FQEN `PackageVehicles.Wheel`.
+FQEN `PackageVehicles.Wheel`. Currently, the Pilot implementation
+would process the above with no errors but would issue a warning:
+
+```sysml
+WARNING:Duplicate owned member name (1.sysml line : 4 column : 14)
+```
 
 # Test Case 01-002: Fully qualified element names (FQEN)
 
