@@ -1,4 +1,4 @@
-<!-- Generated on 2022-03-31 21:01:23.593565 from script `gendocs.py`
+<!-- Generated on 2022-04-03 07:22:36.492571 from script `gendocs.py`
      DO NOT EDIT MANUALY! -->
 
 # Test Case 01-001: Fully qualified element names (FQEN)
@@ -52,7 +52,7 @@ The top level namespace bounded by the file is assigned to the element
 In the KerML nomenclature the element names ('Vehicle', 'Wheel' 'vehicle',
 and 'w') are `humanId`. Per KerML 7.2.2.1:
 
-> "However, one of the aliasIds, the humanId, may be entered by the modeler.
+> "one of the aliasIds, the humanId, may be entered by the modeler.
 > If given, the humanId for an Element has the lexical form of a name.
 > However, an Element may be given different names relative to different
 > Namespaces (see 7.2.4), while the humanId for an Element is the same
@@ -552,7 +552,6 @@ and with type specified.
 
 When a `Part` element has a specified type, the type must be a defined
 `PartDef` element as per [Test Case 01-004](#test-case-01-004-part-element-type-specification).
-
 
 
 ## Rules/constraints
