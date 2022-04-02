@@ -58,7 +58,7 @@ in the table below:
 
 
 The key idea behind uSysML is that SysML v2 behaviors corresponding
-to differnt spirals are fully decomposable, and uSysML focuses only
+to different spirals are fully decomposable, and uSysML focuses only
 on a small subset of the full SysML v2 language. This idea could
 be explained by using a simple calculator language. Let's assume
 a simple calculator language that implements only addition and
