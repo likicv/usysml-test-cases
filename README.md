@@ -65,9 +65,9 @@ a simple calculator language that implements only addition and
 multiplication of two positive integers. Complex computing
 environments, for example [R](https://www.r-project.org/),
 [GNU Octave](https://www.gnu.org/software/octave/index) and many
-others, implement a superset of such simple calculator language
-(and many additional features). In other words, the following
-concrete syntax would be supported by the simple calculator language:
+others, implement a superset of such simple calculator language.
+In other words, the following concrete syntax would be supported
+by the simple calculator language:
 
 
 ```
@@ -83,20 +83,20 @@ concrete syntax would be supported by the simple calculator language:
 
 And also by [R](https://www.r-project.org/) and
 [GNU Octave](https://www.gnu.org/software/octave/index). It could
-be said that the simple calculator language is a subset of the
+be said that the 'simple calculator language' is a subset of the
 [R](https://www.r-project.org/) and
 [GNU Octave](https://www.gnu.org/software/octave/index) language.
-Thus every simple calculator command could run in [R](https://www.r-project.org/)
+Thus every 'simple calculator' command could run in [R](https://www.r-project.org/)
 or [GNU Octave](https://www.gnu.org/software/octave/index), but the
-other way around isn't true.
+other way around doesn't hold.
 
-In the similar way uSysML relates to the full SysML v2 language
-feature set. By using just a the SysMLv2 subset defined by the
-the spiral 1 (the keywords `package`, `part`, `part def`) it
-would possible to create complex models that are fully SysML v2
-compliant.  everthelesss, it would possible to create valid
-SysML v2 models with the subset of the SysML v2 features defined
-by the uSysML spiral 1.
+In a similar way uSysML relates to the full SysML v2 language
+feature set. Thus it would possible to create valid SysML v2
+models with the subset of the SysML v2 features defined by the
+uSysML spiral 1 (the keywords `package`, `part`, `part def`).
+And furthermore, by using just a the SysMLv2 subset
+defined by the spiral 1 it would possible to create complex
+SysML v2 models.
 
 The scope of uSysML for each version (or spiral) is fixed for
 the purpose of exploring practical issues relevant to the SysML
