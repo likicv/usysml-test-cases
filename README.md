@@ -228,8 +228,8 @@ Root.PackageStations [Package]
  Root.PackageStations.VehicleStation [PartDef]
 ```
 
-Here the indendation indicates the namespace level. The namespace level
-can be read from the actual textual output, however the indendation helps
+Here the indentation indicates the namespace level. The namespace level
+can be read from the actual textual output, however the indentation helps
 guide the eye. Specifically:
 
 ```
