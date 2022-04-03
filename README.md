@@ -94,7 +94,7 @@ In a similar way uSysML relates to the full SysML v2 language
 feature set. Thus it would possible to create valid SysML v2
 models with the subset of the SysML v2 features defined by the
 uSysML spiral 1 (the keywords `package`, `part`, `part def`).
-And furthermore, by using just a the SysMLv2 subset
+And furthermore, by using just the SysMLv2 subset
 defined by the spiral 1 it would possible to create complex
 SysML v2 models.
 
