@@ -1,4 +1,4 @@
-<!-- Generated on 2022-04-03 07:35:18.910200 from script `gendocs.py`
+<!-- Generated on 2022-04-03 16:09:35.474308 from script `gendocs.py`
      DO NOT EDIT MANUALY! -->
 
 # Test Case 01-001: Fully qualified element names (FQEN)
@@ -31,10 +31,10 @@ package PackageVehicles {
 Root.PackageVehicles [Package]
  Root.PackageVehicles.Vehicle [PartDef]
  Root.PackageVehicles.Wheel [PartDef]
- Root.PackageVehicles.vehicle [Part]
-    type=Root.PackageVehicles.Vehicle
-  Root.PackageVehicles.vehicle.w [Part]
-      type=Root.PackageVehicles.Wheel
+ Root.PackageVehicles.vehicle [PartUsage]
+    typed by=Root.PackageVehicles.Vehicle
+  Root.PackageVehicles.vehicle.w [PartUsage]
+      typed by=Root.PackageVehicles.Wheel
 ```
 
 
@@ -132,10 +132,10 @@ package PackageStations {
 Root.PackageVehicles [Package]
  Root.PackageVehicles.Vehicle [PartDef]
  Root.PackageVehicles.Wheel [PartDef]
- Root.PackageVehicles.vehicle [Part]
-    type=Root.PackageVehicles.Vehicle
-  Root.PackageVehicles.vehicle.w [Part]
-      type=Root.PackageVehicles.Wheel
+ Root.PackageVehicles.vehicle [PartUsage]
+    typed by=Root.PackageVehicles.Vehicle
+  Root.PackageVehicles.vehicle.w [PartUsage]
+      typed by=Root.PackageVehicles.Wheel
 Root.PackageStations [Package]
  Root.PackageStations.VehicleStation [PartDef]
 ```
@@ -226,10 +226,10 @@ package PackageStations {
 Root.PackageVehicles [Package]
  Root.PackageVehicles.Vehicle [PartDef]
  Root.PackageVehicles.Wheel [PartDef]
- Root.PackageVehicles.vehicle [Part]
-    type=Root.PackageVehicles.Vehicle
-  Root.PackageVehicles.vehicle.w [Part]
-      type=Root.PackageVehicles.Wheel
+ Root.PackageVehicles.vehicle [PartUsage]
+    typed by=Root.PackageVehicles.Vehicle
+  Root.PackageVehicles.vehicle.w [PartUsage]
+      typed by=Root.PackageVehicles.Wheel
 Root.PackageStations [Package]
  Root.PackageStations.VehicleStation [PartDef]
 ```
@@ -277,12 +277,12 @@ package PackageVehicles {
 Root.PackageVehicles [Package]
  Root.PackageVehicles.Vehicle [PartDef]
  Root.PackageVehicles.Wheel [PartDef]
- Root.PackageVehicles.vehicle [Part]
-    type=Root.PackageVehicles.Vehicle
-  Root.PackageVehicles.vehicle.c [Part]
-      type=None
-  Root.PackageVehicles.vehicle.w [Part]
-      type=Root.PackageVehicles.Wheel
+ Root.PackageVehicles.vehicle [PartUsage]
+    typed by=Root.PackageVehicles.Vehicle
+  Root.PackageVehicles.vehicle.c [PartUsage]
+      typed by=None
+  Root.PackageVehicles.vehicle.w [PartUsage]
+      typed by=Root.PackageVehicles.Wheel
 ```
 
 
@@ -332,15 +332,15 @@ package PackageVehicles {
 Root.PackageVehicles [Package]
  Root.PackageVehicles.Vehicle [PartDef]
  Root.PackageVehicles.Wheel [PartDef]
- Root.PackageVehicles.partnotype1 [Part]
-    type=None
- Root.PackageVehicles.vehicle [Part]
-    type=Root.PackageVehicles.Vehicle
-  Root.PackageVehicles.vehicle.w [Part]
+ Root.PackageVehicles.partnotype1 [PartUsage]
+    typed by=None
+ Root.PackageVehicles.vehicle [PartUsage]
+    typed by=Root.PackageVehicles.Vehicle
+  Root.PackageVehicles.vehicle.w [PartUsage]
       multiplicity=4
-      type=Root.PackageVehicles.Wheel
-  Root.PackageVehicles.vehicle.partnotype2 [Part]
-      type=None
+      typed by=Root.PackageVehicles.Wheel
+  Root.PackageVehicles.vehicle.partnotype2 [PartUsage]
+      typed by=None
 ```
 
 
@@ -389,12 +389,12 @@ package PackageVehicles {
 Root.PackageVehicles [Package]
  Root.PackageVehicles.Vehicle [PartDef]
  Root.PackageVehicles.Wheel [PartDef]
- Root.PackageVehicles.vehicle [Part]
-    type=Root.PackageVehicles.Vehicle
+ Root.PackageVehicles.vehicle [PartUsage]
+    typed by=Root.PackageVehicles.Vehicle
   Root.PackageVehicles.vehicle.Wheel [PartDef]
-  Root.PackageVehicles.vehicle.w [Part]
+  Root.PackageVehicles.vehicle.w [PartUsage]
       multiplicity=4
-      type=Root.PackageVehicles.vehicle.Wheel
+      typed by=Root.PackageVehicles.vehicle.Wheel
 ```
 
 
@@ -441,11 +441,11 @@ package PackageVehicles {
 Root.PackageVehicles [Package]
  Root.PackageVehicles.Vehicle [PartDef]
  Root.PackageVehicles.Wheel [PartDef]
- Root.PackageVehicles.vehicle [Part]
-    type=Root.PackageVehicles.Vehicle
-  Root.PackageVehicles.vehicle.w [Part]
+ Root.PackageVehicles.vehicle [PartUsage]
+    typed by=Root.PackageVehicles.Vehicle
+  Root.PackageVehicles.vehicle.w [PartUsage]
       multiplicity=4
-      type=Root.PackageVehicles.Wheel
+      typed by=Root.PackageVehicles.Wheel
 ```
 
 
@@ -511,26 +511,26 @@ Root.PackageVehicles [Package]
  Root.PackageVehicles.Vehicle [PartDef]
  Root.PackageVehicles.Wheel [PartDef]
  Root.PackageVehicles.WheelAxle [PartDef]
- Root.PackageVehicles.test_vehicle [Part]
-    type=Root.PackageVehicles.Vehicle
- Root.PackageVehicles.vehicle [Part]
-    type=Root.PackageVehicles.Vehicle
-  Root.PackageVehicles.vehicle.a [Part]
+ Root.PackageVehicles.test_vehicle [PartUsage]
+    typed by=Root.PackageVehicles.Vehicle
+ Root.PackageVehicles.vehicle [PartUsage]
+    typed by=Root.PackageVehicles.Vehicle
+  Root.PackageVehicles.vehicle.a [PartUsage]
       multiplicity=2
-      type=Root.PackageVehicles.WheelAxle
-  Root.PackageVehicles.vehicle.w [Part]
+      typed by=Root.PackageVehicles.WheelAxle
+  Root.PackageVehicles.vehicle.w [PartUsage]
       multiplicity=4
-      type=Root.PackageVehicles.Wheel
+      typed by=Root.PackageVehicles.Wheel
    Root.PackageVehicles.vehicle.w.LugBolt [PartDef]
 Root.SupportComponents [Package]
- Root.SupportComponents.parking_space [Part]
-    type=None
- Root.SupportComponents.vehicle_shed [Part]
+ Root.SupportComponents.parking_space [PartUsage]
+    typed by=None
+ Root.SupportComponents.vehicle_shed [PartUsage]
     multiplicity=4
-    type=None
- Root.SupportComponents.repair_shop [Part]
+    typed by=None
+ Root.SupportComponents.repair_shop [PartUsage]
     multiplicity=2
-    type=None
+    typed by=None
   Root.SupportComponents.repair_shop.VehicleLift [PartDef]
 ```
 
@@ -596,11 +596,11 @@ package PackageVehicles {
 Root.PackageVehicles [Package]
  Root.PackageVehicles.Vehicle [PartDef]
  Root.PackageVehicles.Wheel [PartDef]
- Root.PackageVehicles.vehicle [Part]
-    type=Root.PackageVehicles.Vehicle
-  Root.PackageVehicles.vehicle.w [Part]
+ Root.PackageVehicles.vehicle [PartUsage]
+    typed by=Root.PackageVehicles.Vehicle
+  Root.PackageVehicles.vehicle.w [PartUsage]
       multiplicity=4
-      type=Root.PackageVehicles.Wheel
+      typed by=Root.PackageVehicles.Wheel
 ```
 
 
@@ -659,11 +659,11 @@ package 'My PackageVehicles' {
 Root.'My PackageVehicles' [Package]
  Root.'My PackageVehicles'.Vehicle [PartDef]
  Root.'My PackageVehicles'.Wheel [PartDef]
- Root.'My PackageVehicles'.vehicle [Part]
-    type=Root.'My PackageVehicles'.Vehicle
-  Root.'My PackageVehicles'.vehicle.w [Part]
+ Root.'My PackageVehicles'.vehicle [PartUsage]
+    typed by=Root.'My PackageVehicles'.Vehicle
+  Root.'My PackageVehicles'.vehicle.w [PartUsage]
       multiplicity=4
-      type=Root.'My PackageVehicles'.Wheel
+      typed by=Root.'My PackageVehicles'.Wheel
 ```
 
 
@@ -770,12 +770,12 @@ Root.PackageVehicles [Package]
  Root.PackageVehicles.Vehicle [PartDef]
   Root.PackageVehicles.Vehicle.Color [AttributeDef]
  Root.PackageVehicles.Wheel [PartDef]
- Root.PackageVehicles.vehicle [Part]
-    type=Root.PackageVehicles.Vehicle
+ Root.PackageVehicles.vehicle [PartUsage]
+    typed by=Root.PackageVehicles.Vehicle
   Root.PackageVehicles.vehicle.RegistrationNumber [AttributeDef]
-  Root.PackageVehicles.vehicle.w [Part]
+  Root.PackageVehicles.vehicle.w [PartUsage]
       multiplicity=4
-      type=Root.PackageVehicles.Wheel
+      typed by=Root.PackageVehicles.Wheel
 ```
 
 
