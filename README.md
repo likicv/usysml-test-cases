@@ -203,7 +203,7 @@ command).
 ### Example 3
 
     Root.PackageVehicles.vehicle [Part]
-        type=Root.PackageVehicles.Vehicle
+        typed by=Root.PackageVehicles.Vehicle
 
 **Meaning**:
 
@@ -220,10 +220,10 @@ Consider a more complex example:
 Root.PackageVehicles [Package]
  Root.PackageVehicles.Vehicle [PartDef]
  Root.PackageVehicles.Wheel [PartDef]
- Root.PackageVehicles.vehicle [Part]
-    type=Root.PackageVehicles.Vehicle
-  Root.PackageVehicles.vehicle.w [Part]
-      type=Root.PackageVehicles.Wheel
+ Root.PackageVehicles.vehicle [PartUsage]
+    typed by=Root.PackageVehicles.Vehicle
+  Root.PackageVehicles.vehicle.w [PartUsage]
+      typed by=Root.PackageVehicles.Wheel
 Root.PackageStations [Package]
  Root.PackageStations.VehicleStation [PartDef]
 ```
@@ -235,7 +235,7 @@ guide the eye. Specifically:
 ```
 Root.PackageVehicles [Package]
 ```
-
+:w
 and 
 
 ```
@@ -247,7 +247,7 @@ element:
 
 
 ```
-Root.PackageVehicles.vehicle.w [Part]
+Root.PackageVehicles.vehicle.w [PartUsage]
 ```
 
 Is the only element that is in the namespace that is three levels deep.
