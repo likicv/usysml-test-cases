@@ -1,4 +1,4 @@
-<!-- Generated on 2022-04-04 14:31:33.794237 from script `gendocs.py`
+<!-- Generated on 2022-04-04 22:12:31.901457 from script `gendocs.py`
      DO NOT EDIT MANUALY! -->
 
 # Test Case 01-001: Fully qualified element names (FQEN)
@@ -38,39 +38,6 @@ Root.PackageVehicles [Package]
 ```
 
 
-## Rules/constraints
-
-1. A `*.sysml` file defines the namespace for the elements it contains.
-The top level namespace bounded by the file is assigned to the element
-`Root`.
-2. Each curly braces segment defines a namespace.
-3. Within a `*.sysml` file each FQEN must be unique.
-
-
-## Comments
-
-In the KerML nomenclature the element names ('Vehicle', 'Wheel' 'vehicle',
-and 'w') are `humanId`. Per KerML 7.2.2.1:
-
-> "one of the aliasIds, the humanId, may be entered by the modeler.
-> If given, the humanId for an Element has the lexical form of a name.
-> However, an Element may be given different names relative to different
-> Namespaces (see 7.2.4), while the humanId for an Element is the same
-> in all contexts. Any humanIds of the ownedElements of a Namespace must
-> be unique (see 7.2.4), but it is otherwise the responsibility of the
-> modeler to maintain other structural or uniqueness properties for
-> humanIds as appropriate to the model being created."
-
-
-The following statement requires that no two elements can have the same
-`humanId`:
-
-> "Any humanIds of the ownedElements of a Namespace must be unique"
-
-This can be restated as follows: no two model elements can have the
-same FQEN.
-
-
 ## Discussion and notes
 
 This Test Case focuses on the requirement for uniqueness of each
@@ -92,11 +59,28 @@ package PackageVehicles {
 
 In this case both `part def Wheel` and `part Wheel` have the same
 FQEN `PackageVehicles.Wheel`. Currently, the Pilot implementation
-would process the above with no errors but would issue a warning:
+pocesses the above with no errors but issues a warning:
 
 ```sysml
 WARNING:Duplicate owned member name (1.sysml line : 4 column : 14)
 ```
+
+
+## Rules/constraints
+
+1. A `*.sysml` file defines the namespace for the elements it contains.
+The top level namespace bounded by the file is assigned to the element
+`Root`.
+2. Each curly braces segment defines a namespace.
+3. Within a `*.sysml` file each FQEN must be unique.
+
+
+> "Any humanIds of the ownedElements of a Namespace must be unique"
+
+This can be restated as follows: no two model elements can have the
+same FQEN.
+
+
 
 # Test Case 01-002: Fully qualified element names (FQEN)
 
