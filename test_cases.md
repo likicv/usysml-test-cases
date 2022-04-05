@@ -1,4 +1,4 @@
-<!-- Generated on 2022-04-06 09:13:42.309905 from script `gendocs.py`
+<!-- Generated on 2022-04-06 09:14:35.908355 from script `gendocs.py`
      DO NOT EDIT MANUALY! -->
 
 # Test Case 01-001: Fully qualified element names (FQEN)
@@ -201,7 +201,7 @@ with a body which defines its namespace, and declares another
 
 The nested elements within `part def` are referred to as its features.
 Thus in the above example `Wheel` is *PartDefinition* with one feature,
-`Lugbolt` which is also *PartDefinition*.
+`Lugbolt` (also *PartDefinition*).
 
 
 ## Notes
