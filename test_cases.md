@@ -1,4 +1,4 @@
-<!-- Generated on 2022-04-05 21:54:03.198206 from script `gendocs.py`
+<!-- Generated on 2022-04-05 21:55:32.726262 from script `gendocs.py`
      DO NOT EDIT MANUALY! -->
 
 # Test Case 01-001: Fully qualified element names (FQEN)
@@ -263,7 +263,11 @@ Root.PackageStations [Package]
 
 ## Discussion and notes
 
+TBA
 
+## Notes
+
+None.
 
 # Test Case 01-004: ‘Part’ element type specification
 
