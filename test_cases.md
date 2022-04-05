@@ -1,4 +1,4 @@
-<!-- Generated on 2022-04-06 09:15:45.836725 from script `gendocs.py`
+<!-- Generated on 2022-04-06 09:16:12.859741 from script `gendocs.py`
      DO NOT EDIT MANUALY! -->
 
 # Test Case 01-001: Fully qualified element names (FQEN)
@@ -190,7 +190,7 @@ The purpose of definition elements is to type appropriate usage elements.
 The usage element that can be typed by *PartDefinition* is *PartUsage*,
 declared with the keyword `part`. *PartUsage* is a usage element that
 represent usage of a part definition.
-See [Test Case 01-003](#test-case-01-003-partusage-element) ).
+See [Test Case 01-003](#test-case-01-003-partusage-element).
 
 In the textual notation example given above, the following elements are
 *PartDefinition*:
