@@ -1,4 +1,4 @@
-<!-- Generated on 2022-04-05 15:17:34.415663 from script `gendocs.py`
+<!-- Generated on 2022-04-05 15:36:13.504852 from script `gendocs.py`
      DO NOT EDIT MANUALY! -->
 
 # Test Case 01-001: Fully qualified element names (FQEN)
@@ -44,7 +44,7 @@ Root.PackageVehicles [Package]
 ```
 
 
-## Discussion and notes
+## Discussion
 
 Within a sysml file all fully qualified element names (FQENs)
 must be uniqe. The following example should generate an error,
@@ -66,20 +66,9 @@ package PackageVehicles {
 ```
 
 
-NOTE 1: It is is assumed that `*.sysml` file defines the namespace for
-the elements it contains. The top level namespace bounded by the file
-is assigned to the element `Root`.
-
-NOTE 2: Currently, the Pilot implementation pocesses the above example
-with no errors, but issues a warning:
-
-```sysml
-WARNING:Duplicate owned member name (1.sysml line : 4 column : 14)
-```
-
-NOTE 3: A potential issue arises when multiple `*.sysml` files are
-processed. Let’s assume two files, `Vehicles1.sysml` and `Vehicles2.sysml`
-with the following content:
+A potential issue arises when multiple `*.sysml` files are processed.
+Let’s assume two files, `Vehicles1.sysml` and `Vehicles2.sysml` with
+the following content:
 
 
 *--file Vehicles1.sysml--*
@@ -125,12 +114,89 @@ $ sysmlv2 Vehicles1.sysml Vehicles2.sysml
 
 the FQENs for the element `Root.Vehicle` will create a name clash.
 
-# Test Case 01-003: Element Classifiers
+
+## Notes
+
+
+NOTE 1: It is is assumed that `*.sysml` file defines the namespace for
+the elements it contains. The top level namespace bounded by the file
+is assigned to the element `Root`.
+
+NOTE 2: Currently, the Pilot implementation pocesses the last example
+above with no errors, but issues a warning:
+
+```sysml
+WARNING:Duplicate owned member name (1.sysml line : 4 column : 14)
+```
+
+
+
+# Test Case 01-002: PartDefinition declaration
 
 
 ## Description
 
-Every element is associated with a Classifier.
+The keyword `part def` declares a PartDefinition element.
+
+
+## Scope
+
+The scope of this Test Case is uSysML v0.01. The applicable keywords
+are: `package`, `part def`, and `part`.
+
+
+## SysML v2 textual notation
+
+```sysml
+package PackageVehicles {
+  
+    part def Vehicle;
+
+    part def Wheel {
+        part def Lugbolt;
+    }
+
+    part vehicle:Vehicle {
+        part w:Wheel;
+    }
+}
+```
+
+
+## Expected output
+
+```
+Root.PackageVehicles [Package]
+ Root.PackageVehicles.Vehicle [PartDef]
+ Root.PackageVehicles.Wheel [PartDef]
+  Root.PackageVehicles.Wheel.Lugbolt [PartDef]
+ Root.PackageVehicles.vehicle [PartUsage]
+    typed by=Root.PackageVehicles.Vehicle
+  Root.PackageVehicles.vehicle.w [PartUsage]
+      typed by=Root.PackageVehicles.Wheel
+```
+
+
+## Discussion
+
+
+## Notes
+
+
+
+# Test Case 01-003: PartDefinition and PartUsage declarations
+
+
+## Description
+
+The keywords `part def` and `part` declare PartDefinition and PartUsage
+elements, respectively.
+
+
+## Scope
+
+The scope of this Test Case is uSysML v0.01. The applicable keywords
+are: `package`, `part def`, and `part`.
 
 
 ## SysML v2 textual notation
@@ -167,17 +233,16 @@ Root.PackageStations [Package]
 ```
 
 
-## Comments
+## Discussion and notes
+
+
 In output above the element Cassifiers are shown in square brackets
-(`Package`, `PartDef`, and `Part`). The following development in
+(`Package`, `PartDef`, and `Part`).
+
+NOTE: The following development in
 notation is adoped: instead of saying the element `Root.PackageVehicles`
 is associated with a Classifer `Package`, it can be said the element
 'Root.PackageVehicles' is `Package`.
-
-
-## Rules/constraints
-
-Every processed element is associated with a Classifier.
 
 # Test Case 01-004: ‘Part’ element type specification
 
