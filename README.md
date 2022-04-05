@@ -26,7 +26,7 @@ relevant for the implementation of the SysML v2 specification.
 The objective of the uSysML project is two-fold: (1) to provide
 documented test cases that would be useful to the MBSE community
 in implementations of the SysML v2 specification; and (2) to
-generate input that would be helpful for clarifying or
+generate examples that would be helpful for clarifying or
 strengthening of the SysML v2 specification.
 
 
@@ -64,10 +64,11 @@ be explained by using a simple calculator language. Let's assume
 a simple calculator language that implements only addition and
 multiplication of two positive integers. Complex computing
 environments, for example [R](https://www.r-project.org/),
-[GNU Octave](https://www.gnu.org/software/octave/index) and many
-others, implement a superset of such simple calculator language.
-In other words, the following concrete syntax would be supported
-by the simple calculator language:
+[GNU Octave](https://www.gnu.org/software/octave/index), implement
+a superset of such simple calculator language. In other words, the
+following concrete syntax would be supported by the simple calculator
+language, and would work in both [R](https://www.r-project.org/)
+and [GNU Octave](https://www.gnu.org/software/octave/index):
 
 
 ```
@@ -81,22 +82,24 @@ by the simple calculator language:
 2
 ```
 
-And also by [R](https://www.r-project.org/) and
-[GNU Octave](https://www.gnu.org/software/octave/index). It could
-be said that the 'simple calculator language' is a subset of the
-[R](https://www.r-project.org/) and
-[GNU Octave](https://www.gnu.org/software/octave/index) language.
-Thus every 'simple calculator' command could run in [R](https://www.r-project.org/)
-or [GNU Octave](https://www.gnu.org/software/octave/index), but the
-other way around doesn't hold.
+In fact, every 'simple calculator' command could run in
+[R](https://www.r-project.org/) or
+[GNU Octave](https://www.gnu.org/software/octave/index) with
+the predictable outcome. However the other way around doesn't
+hold: [R](https://www.r-project.org/) and
+[GNU Octave](https://www.gnu.org/software/octave/index)
+can handle much more complex command input. It could be
+said that the 'simple calculator language' is small a subset
+of the [R](https://www.r-project.org/) and
+[GNU Octave](https://www.gnu.org/software/octave/index)
+languages.
 
-In a similar way uSysML relates to the full SysML v2 language
-feature set. Thus it would possible to create valid SysML v2
-models with the subset of the SysML v2 features defined by the
-uSysML spiral 1 (the keywords `package`, `part`, `part def`).
-And furthermore, by using just the SysMLv2 subset
-defined by the spiral 1 it would possible to create complex
-SysML v2 models.
+uSysML relates to the full SysML v2 language feature set in
+a similar way. For example, it would possible to create valid
+SysML v2 models with the subset of the SysML v2 features defined
+by the uSysML spiral 1 (the keywords `package`, `part`, `part def`).
+And furthermore, by using such subset it would possible to
+create quite complex SysML v2 models.
 
 The scope of uSysML for each version (or spiral) is fixed for
 the purpose of exploring practical issues relevant to the SysML
