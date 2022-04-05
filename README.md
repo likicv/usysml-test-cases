@@ -59,47 +59,44 @@ in the table below:
 
 The key idea behind uSysML is that SysML v2 behaviors corresponding
 to different spirals are fully decomposable, and uSysML focuses only
-on a small subset of the full SysML v2 language. This idea could
-be explained by using a simple calculator language. Let's assume
-a simple calculator language that implements only addition and
-multiplication of two positive integers. Complex computing
-environments, for example [R](https://www.r-project.org/),
+on a small subset of the full SysML v2 language. This idea could be
+explained by using a simple calculator language. Let's assume a
+calculator language that implements only addition and multiplication
+of two positive integers. Complex computing environments, for example
+[R](https://www.r-project.org/) and
 [GNU Octave](https://www.gnu.org/software/octave/index), implement
-a superset of such simple calculator language. In other words, the
-following concrete syntax would be supported by the simple calculator
-language, and would work in both [R](https://www.r-project.org/)
+a superset of such calculator language. In other words, the
+following concrete calculator syntax would work in both
+[R](https://www.r-project.org/)
 and [GNU Octave](https://www.gnu.org/software/octave/index):
 
 
 ```
-> a = 1
-1
-> b = 2
-2
-> a + b
-3
-> a * b
+> 2 + 2
+4
+> 1 * 2
 2
 ```
 
-In fact, every 'simple calculator' command could run in
+Every such 'simple calculator' command could run in
 [R](https://www.r-project.org/) or
-[GNU Octave](https://www.gnu.org/software/octave/index) with
-the predictable outcome. However the other way around doesn't
+[GNU Octave](https://www.gnu.org/software/octave/index) with the
+predictable outcome. However the other way around doesn't
 hold: [R](https://www.r-project.org/) and
 [GNU Octave](https://www.gnu.org/software/octave/index)
-can handle much more complex command input. It could be
-said that the 'simple calculator language' is small a subset
-of the [R](https://www.r-project.org/) and
+implement many additional features, and can handle much more
+complex command input. It could be said that the 'simple
+calculator language' is a small subset of the
+[R](https://www.r-project.org/) and
 [GNU Octave](https://www.gnu.org/software/octave/index)
-languages.
+languages. uSysML relates to the full SysML v2 language feature
+set in a similar way.
 
-uSysML relates to the full SysML v2 language feature set in
-a similar way. For example, it would possible to create valid
-SysML v2 models with the subset of the SysML v2 features defined
-by the uSysML spiral 1 (the keywords `package`, `part`, `part def`).
-And furthermore, by using such subset it would possible to
-create quite complex SysML v2 models.
+It would possible to create valid SysML v2 models with the
+subset of the SysML v2 features defined by the uSysML spiral 1
+(only the keywords `package`, `part`, and `part def`). And
+furthermore, by using such subset it would possible to create
+quite complex SysML v2 models.
 
 The scope of uSysML for each version (or spiral) is fixed for
 the purpose of exploring practical issues relevant to the SysML
@@ -107,14 +104,13 @@ v2 implementation. While the uSysML project is independent of
 any specific implementation, it is sometimes useful to think of
 uSysML as being a limited implementation of the SysML v2
 specification. Consider an implementation corresponding to
-uSysML v0.01. This would support only the SysML v2 behaviors
-associated with the keywords `package`, `part`, `part def` and
-nothing else (see the table above). Furthermore, every model
-specified by uSysML would be a valid SysML v2 model, and paresable
-by the full SysML v2 implementation. The reverse is not true:
-because uSysML implementations are limited general SysML v2
-models would not be necessarily parseable by an uSysML
-implementation.
+uSysML v0.01 that supports only the SysML v2 keywords `package`,
+`part`, `part def` and nothing else (see the table above).
+Every model specified by such implementation would be a valid
+SysML v2 model, and paresable by the full SysML v2 implementation.
+The reverse is not true: because uSysML implementations are
+limited general SysML v2 models would not be necessarily
+parseable by an uSysML implementation.
 
 
 # References
