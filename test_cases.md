@@ -1,4 +1,4 @@
-<!-- Generated on 2022-04-05 19:20:36.685206 from script `gendocs.py`
+<!-- Generated on 2022-04-05 19:21:40.470841 from script `gendocs.py`
      DO NOT EDIT MANUALY! -->
 
 # Test Case 01-001: Fully qualified element names (FQEN)
@@ -189,8 +189,8 @@ Library'. Every *PartDefintion* is a subclass, directly or indirectly, of
 
 *PartDefinition* is a SysML v2 *definition element* (as opposed to *part usage
 element*) and classifies a part usage kind. In contrast, *part usage*
-(declared with the keyword `part`) represents a usage of a definition.
-See [Test Case 01-003](#test-case-01-003-partdefinition-and-partusage-declarations). 
+(declared with the keyword `part`, see [Test Case 01-003](#test-case-01-003-partdefinition-and-partusage-declarations) )
+represents a usage of a definition.
 
 In the textual notation example, the following elements are *PartDefinition*:
 
