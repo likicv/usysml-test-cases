@@ -1,4 +1,4 @@
-<!-- Generated on 2022-04-05 18:39:47.595721 from script `gendocs.py`
+<!-- Generated on 2022-04-05 18:49:49.397537 from script `gendocs.py`
      DO NOT EDIT MANUALY! -->
 
 # Test Case 01-001: Fully qualified element names (FQEN)
@@ -179,12 +179,18 @@ Root.PackageVehicles [Package]
 
 ## Discussion
 
-The keyword `part def` declares a PartDefinition element.
+The keyword `part def` declares a PartDefinition element. The base type of every
+PartDefinition element is `Parts::Part` from 'Systems Library'.
+
+A `part def` element is a *part definition*. All all other SysML v2 defitions
+this classifes an element (as opposed to *part usage* declared with the keyword
+`part` which represents a usage of a definition in a certain context.
+See [Test Case 01-003](#test-case-01-003-partdefinition-and-partusage-declarations). 
 
 
 ## Notes
 
-
+None.
 
 # Test Case 01-003: PartDefinition and PartUsage declarations
 
