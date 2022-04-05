@@ -1,4 +1,4 @@
-<!-- Generated on 2022-04-05 15:14:21.812720 from script `gendocs.py`
+<!-- Generated on 2022-04-05 15:15:54.595421 from script `gendocs.py`
      DO NOT EDIT MANUALY! -->
 
 # Test Case 01-001: Fully qualified element names (FQEN)
@@ -12,8 +12,8 @@ starting with `Root`.
 
 ## Scope
 
-The scope of this Test Case is uSysML v0.01. Only the keywords
-`package`, `part def`, and `part` being applicable.
+The scope of this Test Case is uSysML v0.01, and only the keywords
+`package`, `part def`, and `part` are applicable.
 
 
 ## SysML v2 textual notation
