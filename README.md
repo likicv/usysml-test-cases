@@ -78,7 +78,7 @@ and [GNU Octave](https://www.gnu.org/software/octave/index):
 2
 ```
 
-Every such 'simple calculator' command could run in
+Every such simple calculator command could run in
 [R](https://www.r-project.org/) or
 [GNU Octave](https://www.gnu.org/software/octave/index) with the
 predictable outcome. However the other way around doesn't
