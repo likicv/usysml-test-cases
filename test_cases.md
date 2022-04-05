@@ -1,4 +1,4 @@
-<!-- Generated on 2022-04-05 21:53:09.654492 from script `gendocs.py`
+<!-- Generated on 2022-04-05 21:54:03.198206 from script `gendocs.py`
      DO NOT EDIT MANUALY! -->
 
 # Test Case 01-001: Fully qualified element names (FQEN)
@@ -118,11 +118,11 @@ the FQENs for the element `Root.Vehicle` will create a name clash.
 ## Notes
 
 
-*NOTE 1*: This test case assumes that `*.sysml` file defines the namespace
+**NOTE 1**: This test case assumes that `*.sysml` file defines the namespace
 for the elements it contains. The top level namespace bounded by the file
 is assigned to the element `Root`.
 
-*NOTE 2*: Currently, the Pilot implementation pocesses the last example
+**NOTE 2**: Currently, the Pilot implementation pocesses the last example
 above with no errors, but issues a warning:
 
 ```sysml
@@ -208,7 +208,7 @@ Thus in the above example `Wheel` is *PartDefinition* with one feature,
 
 ## Notes
 
-*Note 1*. There are other definition elements that have corresponding
+**Note 1**. There are other definition elements that have corresponding
 usage elemtns. For example, the keywords `attribute def` and `attribute`
 define *AttributeDefintion* and *AttributeUsage* elements.
 
