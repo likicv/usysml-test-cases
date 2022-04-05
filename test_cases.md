@@ -1,4 +1,4 @@
-<!-- Generated on 2022-04-05 15:36:13.504852 from script `gendocs.py`
+<!-- Generated on 2022-04-05 18:11:28.091129 from script `gendocs.py`
      DO NOT EDIT MANUALY! -->
 
 # Test Case 01-001: Fully qualified element names (FQEN)
@@ -118,11 +118,11 @@ the FQENs for the element `Root.Vehicle` will create a name clash.
 ## Notes
 
 
-NOTE 1: It is is assumed that `*.sysml` file defines the namespace for
-the elements it contains. The top level namespace bounded by the file
+*NOTE 1*: This test case assumes that `*.sysml` file defines the namespace
+for the elements it contains. The top level namespace bounded by the file
 is assigned to the element `Root`.
 
-NOTE 2: Currently, the Pilot implementation pocesses the last example
+*NOTE 2*: Currently, the Pilot implementation pocesses the last example
 above with no errors, but issues a warning:
 
 ```sysml
