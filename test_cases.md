@@ -1,4 +1,4 @@
-<!-- Generated on 2022-04-04 22:12:31.901457 from script `gendocs.py`
+<!-- Generated on 2022-04-05 15:14:21.812720 from script `gendocs.py`
      DO NOT EDIT MANUALY! -->
 
 # Test Case 01-001: Fully qualified element names (FQEN)
@@ -6,8 +6,14 @@
 
 ## Description
 
-Parsing a `*.sysml` file will generate a FQEN for each element, starting
-with `Root`.
+Parsing a `*.sysml` file will generate a FQEN for each element,
+starting with `Root`.
+
+
+## Scope
+
+The scope of this Test Case is uSysML v0.01. Only the keywords
+`package`, `part def`, and `part` being applicable.
 
 
 ## SysML v2 textual notation
@@ -40,9 +46,11 @@ Root.PackageVehicles [Package]
 
 ## Discussion and notes
 
-This Test Case focuses on the requirement for uniqueness of each
-FQENs within a sysml file. The following example should generate
-an error:
+Within a sysml file all fully qualified element names (FQENs)
+must be uniqe. The following example should generate an error,
+because both `part def Wheel` and `part Wheel` have the same
+FQEN `PackageVehicles.Wheel`:
+
 
 ```sysml
 package PackageVehicles {
@@ -57,88 +65,22 @@ package PackageVehicles {
 }
 ```
 
-In this case both `part def Wheel` and `part Wheel` have the same
-FQEN `PackageVehicles.Wheel`. Currently, the Pilot implementation
-pocesses the above with no errors but issues a warning:
+
+NOTE 1: It is is assumed that `*.sysml` file defines the namespace for
+the elements it contains. The top level namespace bounded by the file
+is assigned to the element `Root`.
+
+NOTE 2: Currently, the Pilot implementation pocesses the above example
+with no errors, but issues a warning:
 
 ```sysml
 WARNING:Duplicate owned member name (1.sysml line : 4 column : 14)
 ```
 
+NOTE 3: A potential issue arises when multiple `*.sysml` files are
+processed. Let’s assume two files, `Vehicles1.sysml` and `Vehicles2.sysml`
+with the following content:
 
-## Rules/constraints
-
-1. A `*.sysml` file defines the namespace for the elements it contains.
-The top level namespace bounded by the file is assigned to the element
-`Root`.
-2. Each curly braces segment defines a namespace.
-3. Within a `*.sysml` file each FQEN must be unique.
-
-
-> "Any humanIds of the ownedElements of a Namespace must be unique"
-
-This can be restated as follows: no two model elements can have the
-same FQEN.
-
-
-
-# Test Case 01-002: Fully qualified element names (FQEN)
-
-
-## Description
-
-Parsing of the `*.sysml` file will generate a FQEN for each element, starting
-with `Root`.
-
-
-## SysML v2 textual notation
-
-```sysml
-package PackageVehicles {
-
-    part def Vehicle;
-    part def Wheel;
-
-    part vehicle:Vehicle {
-        part w:Wheel;
-    }
-}
-
-package PackageStations {
-    part def VehicleStation;
-}
-```
-
-
-## Expected output
-
-```
-Root.PackageVehicles [Package]
- Root.PackageVehicles.Vehicle [PartDef]
- Root.PackageVehicles.Wheel [PartDef]
- Root.PackageVehicles.vehicle [PartUsage]
-    typed by=Root.PackageVehicles.Vehicle
-  Root.PackageVehicles.vehicle.w [PartUsage]
-      typed by=Root.PackageVehicles.Wheel
-Root.PackageStations [Package]
- Root.PackageStations.VehicleStation [PartDef]
-```
-
-
-## Rules/constraints
-
-1. A \*.sysml file defines the namespace for the elements it contains.
-The top level namespace bounded by the file is assigned to the
-element “Root”
-2. Any valid element can be nested under the “Root” element (in this
-example there are two Package elements)
-
-
-## Issues
-
-A potential issue arises when multiple `*.sysml` files are processed.
-Let’s assume two files, `Vehicles1.sysml` and `Vehicles2.sysml` with
-the following content:
 
 *--file Vehicles1.sysml--*
 ```
@@ -151,9 +93,11 @@ part def Wheel;
 part def Vehicle;
 ```
 
+
 Let’s assume a SysMLv2 processor `sysmlv2` which can take one or more
 `*.sysml` files on the input. Then processing the first file will
 result in:
+
 
 ```
 $ sysmlv2 Vehicles1.sysml
@@ -161,21 +105,25 @@ Root.Vehicle [PartDef]
 Root.Wheel [PartDef]
 ```
 
+
 And processing the second file will result in:
+
 
 ```
 $ sysmlv2 Vehicles2.sysml
 Root.Vehicle [PartDef]
 ```
 
+
 When the two files are processed together:
+
 
 ```
 $ sysmlv2 Vehicles1.sysml Vehicles2.sysml
 ```
 
-the FQENs for the element `Root.Vehicle` will create a name clash.
 
+the FQENs for the element `Root.Vehicle` will create a name clash.
 
 # Test Case 01-003: Element Classifiers
 
