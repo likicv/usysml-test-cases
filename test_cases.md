@@ -1,4 +1,4 @@
-<!-- Generated on 2022-04-06 09:14:35.908355 from script `gendocs.py`
+<!-- Generated on 2022-04-06 09:15:45.836725 from script `gendocs.py`
      DO NOT EDIT MANUALY! -->
 
 # Test Case 01-001: Fully qualified element names (FQEN)
@@ -180,10 +180,11 @@ Root.PackageVehicles [Package]
 ## Discussion
 
 The keyword `part def` declares a part definition element. A part defintion
-element is called *PartDefinition* in the Sysml v2 abstract syntax diagrams.
-The base type of every *PartDefinition* is `Parts::Part` from the Systems
-Library. This means that every *PartDefintion*, directly or indirectly, 
-is a subclass of `Parts::Part` from the Systems Library.
+element is called *PartDefinition* in the Sysml v2 abstract syntax diagrams,
+and is denoted as '[PartDef]' in the uSysML expected output. The base type
+of every *PartDefinition* is `Parts::Part` from the Systems Library. This
+means that every *PartDefintion*, directly or indirectly, is a subclass of
+`Parts::Part` from the Systems Library.
 
 The purpose of definition elements is to type appropriate usage elements.
 The usage element that can be typed by *PartDefinition* is *PartUsage*,
