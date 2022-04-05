@@ -1,4 +1,4 @@
-<!-- Generated on 2022-04-06 09:11:51.117581 from script `gendocs.py`
+<!-- Generated on 2022-04-06 09:13:12.861487 from script `gendocs.py`
      DO NOT EDIT MANUALY! -->
 
 # Test Case 01-001: Fully qualified element names (FQEN)
@@ -185,11 +185,10 @@ The base type of every *PartDefinition* is `Parts::Part` from the Systems
 Library. This means that every *PartDefintion*, directly or indirectly, 
 is a subclass of `Parts::Part` from the Systems Library.
 
-An element declared with the keyword `part def` is *PartDefinition*. This
-is a *definition element*. The purpose of definition elements is to type
-appropriate usage elements. The usage element that can be typed by
-*PartDefinition* is *PartUsage*, declared with the keyword `part`.
-*PartUsage* is a usage element that represent usage of a part definition.
+The purpose of definition elements is to type appropriate usage elements.
+The usage element that can be typed by *PartDefinition* is *PartUsage*,
+declared with the keyword `part`. *PartUsage* is a usage element that
+represent usage of a part definition.
 See [Test Case 01-003](#test-case-01-003-partusage-element) ).
 
 In the textual notation example given above, the following elements are
