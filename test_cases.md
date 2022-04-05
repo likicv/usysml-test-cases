@@ -1,4 +1,4 @@
-<!-- Generated on 2022-04-05 18:11:28.091129 from script `gendocs.py`
+<!-- Generated on 2022-04-05 18:39:47.595721 from script `gendocs.py`
      DO NOT EDIT MANUALY! -->
 
 # Test Case 01-001: Fully qualified element names (FQEN)
@@ -12,7 +12,7 @@ starting with `Root`.
 
 ## Scope
 
-The scope of this Test Case is uSysML v0.01. The applicable
+The scope of this Test Case is uSysML v0.01, the applicable
 keywords are: `package`, `part def`, and `part`.
 
 
@@ -131,17 +131,17 @@ WARNING:Duplicate owned member name (1.sysml line : 4 column : 14)
 
 
 
-# Test Case 01-002: PartDefinition declaration
+# Test Case 01-002: PartDefinition element
 
 
 ## Description
 
-The keyword `part def` declares a PartDefinition element.
+Explores basic properties of a PartDefinition element.
 
 
 ## Scope
 
-The scope of this Test Case is uSysML v0.01. The applicable keywords
+The scope of this Test Case is uSysML v0.01, the applicable keywords
 are: `package`, `part def`, and `part`.
 
 
@@ -178,6 +178,8 @@ Root.PackageVehicles [Package]
 
 
 ## Discussion
+
+The keyword `part def` declares a PartDefinition element.
 
 
 ## Notes
