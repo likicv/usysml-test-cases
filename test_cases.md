@@ -1,4 +1,4 @@
-<!-- Generated on 2022-04-05 19:23:51.870077 from script `gendocs.py`
+<!-- Generated on 2022-04-05 19:27:18.720452 from script `gendocs.py`
      DO NOT EDIT MANUALY! -->
 
 # Test Case 01-001: Fully qualified element names (FQEN)
@@ -189,7 +189,7 @@ Library'. Every *PartDefintion* is a subclass, directly or indirectly, of
 
 *PartDefinition* is a SysML v2 *definition element* (as opposed to *part usage
 element*) and classifies a part usage kind. In contrast, *part usage*
-(declared with the keyword `part`, see [Test Case 01-003](#test-case-01-003-partdefinition-and-partusage-declarations) )
+(declared with the keyword `part`, see [Test Case 01-003](#test-case-01-003-partusage-element) )
 represents a usage of a definition.
 
 In the textual notation example, the following elements are *PartDefinition*:
@@ -204,18 +204,17 @@ does include a body which defines its namespace, and declares another
 
 None.
 
-# Test Case 01-003: PartDefinition and PartUsage declarations
+# Test Case 01-003: PartUsage element
 
 
 ## Description
 
-The keywords `part def` and `part` declare PartDefinition and PartUsage
-elements, respectively.
+Explores basic properties of a PartUsage element.
 
 
 ## Scope
 
-The scope of this Test Case is uSysML v0.01. The applicable keywords
+The scope of this Test Case is uSysML v0.01, the applicable keywords
 are: `package`, `part def`, and `part`.
 
 
@@ -256,13 +255,6 @@ Root.PackageStations [Package]
 ## Discussion and notes
 
 
-In output above the element Cassifiers are shown in square brackets
-(`Package`, `PartDef`, and `Part`).
-
-NOTE: The following development in
-notation is adoped: instead of saying the element `Root.PackageVehicles`
-is associated with a Classifer `Package`, it can be said the element
-'Root.PackageVehicles' is `Package`.
 
 # Test Case 01-004: ‘Part’ element type specification
 
