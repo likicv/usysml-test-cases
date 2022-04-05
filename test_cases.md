@@ -1,4 +1,4 @@
-<!-- Generated on 2022-04-05 21:51:37.871976 from script `gendocs.py`
+<!-- Generated on 2022-04-05 21:53:09.654492 from script `gendocs.py`
      DO NOT EDIT MANUALY! -->
 
 # Test Case 01-001: Fully qualified element names (FQEN)
@@ -193,9 +193,6 @@ appropriate usage elements. The usage element that can be typed by
 *PartUsage* is a usage element that represent usage of a part definition.
 See [Test Case 01-003](#test-case-01-003-partusage-element) ).
 
-There are other definition elements. For example, the keywords `attribute def`
-and `attribute` define *AttributeDefintion* and *AttributeUsage* elements.
-
 In the textual notation example given above, the following elements are
 *PartDefinition*:
 * `part def Vehicle;` -- 'Vehicle' is *PartDefinition* without the body
@@ -211,7 +208,10 @@ Thus in the above example `Wheel` is *PartDefinition* with one feature,
 
 ## Notes
 
-None.
+*Note 1*. There are other definition elements that have corresponding
+usage elemtns. For example, the keywords `attribute def` and `attribute`
+define *AttributeDefintion* and *AttributeUsage* elements.
+
 
 # Test Case 01-003: PartUsage element
 
