@@ -1,4 +1,4 @@
-<!-- Generated on 2022-04-05 19:21:40.470841 from script `gendocs.py`
+<!-- Generated on 2022-04-05 19:22:38.931769 from script `gendocs.py`
      DO NOT EDIT MANUALY! -->
 
 # Test Case 01-001: Fully qualified element names (FQEN)
@@ -195,9 +195,9 @@ represents a usage of a definition.
 In the textual notation example, the following elements are *PartDefinition*:
 
 * `part def Vehicle;` -- 'Vehicle' is *PartDefinition* without the body
-* `part def Wheel { part def Lugbolt; }` -- 'Wheel" is *PartDefinition* that
-contains body. The body defines the namespace, and declares another
-*PartDefinition* 'Lugbolt'
+* `part def Wheel { part def Lugbolt; }` -- 'Wheel' is *PartDefinition* that
+does include a body; the body defines the namespace, and declares another
+*PartDefinition* 'Lugbolt'.
 
 
 ## Notes
