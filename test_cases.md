@@ -1,4 +1,4 @@
-<!-- Generated on 2022-04-06 09:13:12.861487 from script `gendocs.py`
+<!-- Generated on 2022-04-06 09:13:42.309905 from script `gendocs.py`
      DO NOT EDIT MANUALY! -->
 
 # Test Case 01-001: Fully qualified element names (FQEN)
@@ -207,8 +207,8 @@ Thus in the above example `Wheel` is *PartDefinition* with one feature,
 ## Notes
 
 **Note 1**. There are other definition elements that have corresponding
-usage elemtns. For example, the keywords `attribute def` and `attribute`
-define *AttributeDefintion* and *AttributeUsage* elements.
+usage elements. For example, the keywords `attribute def` and `attribute`
+define *AttributeDefintion* and *AttributeUsage* elements, respectively.
 
 
 # Test Case 01-003: PartUsage element
