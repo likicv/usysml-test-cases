@@ -1,4 +1,4 @@
-<!-- Generated on 2022-04-06 14:56:21.003371 from script `gendocs.py`
+<!-- Generated on 2022-04-06 16:28:25.249857 from script `gendocs.py`
      DO NOT EDIT MANUALY! -->
 
 # Test Case 01-001: Fully qualified element names (FQEN)
@@ -350,64 +350,6 @@ In the above example `Part c` doesn’t have a type specified, while
 1. A `Part` element may optionally have a type specified
 2. If `Part` element has type specified, the type must be an existing
 `PartDef` element
-
-# Test Case 01-005: A `Part` element with no type specified
-
-
-## Description
-
-A `Part` element may have no type specified.
-
-
-## SysML v2 textual notation
-
-```sysml
-package PackageVehicles {
-
-    part def Vehicle;
-    part def Wheel;
-    part partnotype1;
-
-    part vehicle:Vehicle {
-        part w:Wheel[4];
-        part partnotype2;
-    }
-}
-```
-
-
-## Expected output
-
-```
-Root.PackageVehicles [Package]
- Root.PackageVehicles.Vehicle [PartDef]
- Root.PackageVehicles.Wheel [PartDef]
- Root.PackageVehicles.partnotype1 [PartUsage]
-    typed by=None
- Root.PackageVehicles.vehicle [PartUsage]
-    typed by=Root.PackageVehicles.Vehicle
-  Root.PackageVehicles.vehicle.w [PartUsage]
-      multiplicity=4
-      typed by=Root.PackageVehicles.Wheel
-  Root.PackageVehicles.vehicle.partnotype2 [PartUsage]
-      typed by=None
-```
-
-
-## Comments
-
-A `Part` element may have no type specified, as shown above for the
-elements `partnotype1` and `partnotype2`.
-
-
-## Rules/constraints
-
-None.
-
-
-## Discussion
-
-None.
 
 # Test Case 01-006: Namespace search rules
 
