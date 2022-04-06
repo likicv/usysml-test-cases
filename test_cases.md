@@ -1,13 +1,13 @@
-<!-- Generated on 2022-04-07 07:12:42.680822 from script `gendocs.py`
+<!-- Generated on 2022-04-07 08:20:23.273605 from script `gendocs.py`
      DO NOT EDIT MANUALY! -->
 
-# Test Case 01-001: Fully qualified element names (FQEN)
+# Test Case 01-001: Fully qualified element name (FQEN)
 
 
 ## Description
 
-Parsing a `*.sysml` file will generate a FQEN for each element,
-starting with `Root`.
+Parsing a `*.sysml` file will generate a fully qualified element name
+(FQEN) for each element, starting with `Root`.
 
 
 ## Scope
