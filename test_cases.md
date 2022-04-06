@@ -1,4 +1,4 @@
-<!-- Generated on 2022-04-06 09:16:12.859741 from script `gendocs.py`
+<!-- Generated on 2022-04-06 10:29:33.020056 from script `gendocs.py`
      DO NOT EDIT MANUALY! -->
 
 # Test Case 01-001: Fully qualified element names (FQEN)
@@ -181,10 +181,10 @@ Root.PackageVehicles [Package]
 
 The keyword `part def` declares a part definition element. A part defintion
 element is called *PartDefinition* in the Sysml v2 abstract syntax diagrams,
-and is denoted as '[PartDef]' in the uSysML expected output. The base type
-of every *PartDefinition* is `Parts::Part` from the Systems Library. This
-means that every *PartDefintion*, directly or indirectly, is a subclass of
-`Parts::Part` from the Systems Library.
+and is denoted as '[PartDef]' in the uSysML output. The base type of every
+*PartDefinition* is `Parts::Part` from the Systems Library. This means that
+every *PartDefintion*, directly or indirectly, is a subclass of `Parts::Part`
+from the Systems Library.
 
 The purpose of definition elements is to type appropriate usage elements.
 The usage element that can be typed by *PartDefinition* is *PartUsage*,
@@ -217,7 +217,7 @@ define *AttributeDefintion* and *AttributeUsage* elements, respectively.
 
 ## Description
 
-Explores basic properties of a PartUsage element.
+This Test Case explores basic characterists of a PartUsage element.
 
 
 ## Scope
@@ -262,11 +262,29 @@ Root.PackageStations [Package]
 
 ## Discussion and notes
 
-TBA
+The keyword `part` declares a part usage element. A part usage element
+is called *PartUsage* in the Sysml v2 abstract syntax diagrams, and is
+denoted as '[PartUsage]' in the uSysML output.
+
+The base Element for *PartUsage* is `Parts::parts` from the Systems
+Library. *PartUsage* is always typed by *PartDefinition*, either
+explicitly or implicitly. If *PartUsage* is not typed explicitly
+its type is determined by its base element. This is `Parts::parts`
+from the Systems Library which itself is typed by the base
+*PartDefinition*.
+
 
 ## Notes
 
-None.
+**Note 1**. There are other possible base types for *PartUsage*:
+* `RequirementCheck::stakeholders` from the Requirements library model
+* `RequirementCheck::actors` from the Requirements library model
+* `Case::actors` from the Cases library model
+* `Item::subpartsi` from the Items library model
+
+However, these are outside of the scope of uSysML v0.01. Furthermore,
+each of the above base Element is typed by *PartDefinition*, and
+therefore *PartUsage* is always typed by *PartDefinition*.
 
 # Test Case 01-004: ‘Part’ element type specification
 
