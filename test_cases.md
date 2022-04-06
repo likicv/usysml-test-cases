@@ -1,4 +1,4 @@
-<!-- Generated on 2022-04-06 16:28:25.249857 from script `gendocs.py`
+<!-- Generated on 2022-04-07 07:07:15.987996 from script `gendocs.py`
      DO NOT EDIT MANUALY! -->
 
 # Test Case 01-001: Fully qualified element names (FQEN)
@@ -118,9 +118,9 @@ the FQENs for the element `Root.Vehicle` will create a name clash.
 ## Notes
 
 
-**NOTE 1**: This test case assumes that `*.sysml` file defines the namespace
-for the elements it contains. The top level namespace bounded by the file
-is assigned to the element `Root`.
+**NOTE 1**: This test case assumes that each `*.sysml` file defines the
+namespace for the elements it contains. The top level namespace bounded
+by the file is assigned to the element `Root`.
 
 **NOTE 2**: Currently, the Pilot implementation pocesses the last example
 above with no errors, but issues a warning:
@@ -128,7 +128,6 @@ above with no errors, but issues a warning:
 ```sysml
 WARNING:Duplicate owned member name (1.sysml line : 4 column : 14)
 ```
-
 
 
 # Test Case 01-002: PartDefinition element
