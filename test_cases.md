@@ -1,4 +1,4 @@
-<!-- Generated on 2022-04-06 14:53:17.695863 from script `gendocs.py`
+<!-- Generated on 2022-04-06 14:53:56.288277 from script `gendocs.py`
      DO NOT EDIT MANUALY! -->
 
 # Test Case 01-001: Fully qualified element names (FQEN)
@@ -291,9 +291,10 @@ by `part def Wheel`.
 * `Case::actors` from the Cases library model
 * `Item::subparts` from the Items library model
 
-However, these are outside of the scope of uSysML v0.01. Furthermore,
-each of the above base Element is typed by *PartDefinition*, and
-therefore *PartUsage* is always typed by *PartDefinition*.
+These are outside of the scope of uSysML v0.01 hence not discussion in
+this test case. Furthermore, each of the above base Element is typed
+by *PartDefinition*, and therefore *PartUsage* is always typed by
+*PartDefinition*.
 
 # Test Case 01-004: ‘Part’ element type specification
 
