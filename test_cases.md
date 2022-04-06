@@ -1,4 +1,4 @@
-<!-- Generated on 2022-04-06 10:30:35.946147 from script `gendocs.py`
+<!-- Generated on 2022-04-06 14:38:56.088010 from script `gendocs.py`
      DO NOT EDIT MANUALY! -->
 
 # Test Case 01-001: Fully qualified element names (FQEN)
@@ -230,17 +230,16 @@ are: `package`, `part def`, and `part`.
 
 ```sysml
 package PackageVehicles {
-
+  
     part def Vehicle;
-    part def Wheel;
+
+    part def Wheel {
+        part def Lugbolt;
+    }
 
     part vehicle:Vehicle {
         part w:Wheel;
     }
-}
-
-package PackageStations {
-    part def VehicleStation;
 }
 ```
 
@@ -251,12 +250,11 @@ package PackageStations {
 Root.PackageVehicles [Package]
  Root.PackageVehicles.Vehicle [PartDef]
  Root.PackageVehicles.Wheel [PartDef]
+  Root.PackageVehicles.Wheel.Lugbolt [PartDef]
  Root.PackageVehicles.vehicle [PartUsage]
     typed by=Root.PackageVehicles.Vehicle
   Root.PackageVehicles.vehicle.w [PartUsage]
       typed by=Root.PackageVehicles.Wheel
-Root.PackageStations [Package]
- Root.PackageStations.VehicleStation [PartDef]
 ```
 
 
