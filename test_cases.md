@@ -1,4 +1,4 @@
-<!-- Generated on 2022-04-06 14:52:47.957805 from script `gendocs.py`
+<!-- Generated on 2022-04-06 14:53:17.695863 from script `gendocs.py`
      DO NOT EDIT MANUALY! -->
 
 # Test Case 01-001: Fully qualified element names (FQEN)
@@ -281,7 +281,7 @@ explicitly (and thus is typed by `Parts::Part` from the Systems
 Library)
 * `part vehicle` is typed explicitly by `part def Wheel`
 * `part w` is a feature of `part vehicle`, and is typed explicitly
-by the `part def Wheel`.
+by `part def Wheel`.
 
 ## Notes
 
