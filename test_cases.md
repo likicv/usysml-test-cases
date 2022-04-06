@@ -1,4 +1,4 @@
-<!-- Generated on 2022-04-06 14:49:46.142001 from script `gendocs.py`
+<!-- Generated on 2022-04-06 14:52:47.957805 from script `gendocs.py`
      DO NOT EDIT MANUALY! -->
 
 # Test Case 01-001: Fully qualified element names (FQEN)
@@ -273,9 +273,14 @@ is typed by `Parts::Part` (the base definition for *PartDefinition*).
 
 In this test case example, the following holds:
 * `part def Vehicle` is not typed explicitly (and thus is typed by
-`Parts::Part` from the Systems Library
+`Parts::Part` from the Systems Library)
+* `part def Wheel` is not typed explicitly (and thus is typed by
+`Parts::Part` from the Systems Library)
+* `part def Lugbolt` is a feature of `part def Wheel` is not typed
+explicitly (and thus is typed by `Parts::Part` from the Systems
+Library)
 * `part vehicle` is typed explicitly by `part def Wheel`
-* `part w` is the feature of `part vehicle`, and is typed explicitly
+* `part w` is a feature of `part vehicle`, and is typed explicitly
 by the `part def Wheel`.
 
 ## Notes
