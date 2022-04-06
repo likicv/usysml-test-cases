@@ -157,7 +157,7 @@ Each test case is structured according to the following sections:
 identifier
 - Description -- a description of the test case
 - SysML v2 textual notation -- shows SysML v2 textual notation
-- Expected output -- shows the expected output of after the parsing of the
+- uSysML output -- shows the expected output of after the parsing of the
 SysML v2 textual notation. **Note: what is listed as "output" is not a
 SysML v2 notation, but a special notation developed for uSysML Test Cases**.
 See the explanations below
@@ -168,13 +168,13 @@ test case considerations
 test case if needed
  
 
-## The notation used in the “Expected output” section
+## The notation used in the “uSysML output” section
 
-The Test Case "Expected output" section is not SysML v2 notation, rather
-this uses a special notation development only for this purpose. The
-purpose of the notation is to specify namespaces and possibly additional
-features of the parsed elements. The examples are given below with the
-explanations.
+In each Test Case the "uSysML output" section is not SysML v2 notation,
+rather this uses a special notation development only for the purpose
+of uSysML. The purpose of the notation is to specify namespaces and
+possibly additional features of the parsed elements. The examples are
+given below with the explanations.
 
 
 ### Example 1
