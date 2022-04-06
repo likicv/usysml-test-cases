@@ -1,4 +1,4 @@
-<!-- Generated on 2022-04-06 14:38:56.088010 from script `gendocs.py`
+<!-- Generated on 2022-04-06 14:49:46.142001 from script `gendocs.py`
      DO NOT EDIT MANUALY! -->
 
 # Test Case 01-001: Fully qualified element names (FQEN)
@@ -267,10 +267,16 @@ denoted as '[PartUsage]' in the uSysML output.
 The base Element for *PartUsage* is `Parts::parts` from the Systems
 Library. *PartUsage* is always typed by *PartDefinition*, either
 explicitly or implicitly. If *PartUsage* is not typed explicitly
-its type is determined by its base element. This is `Parts::parts`
-from the Systems Library which itself is typed by the base
-*PartDefinition*.
+its type is determined by its base element. The base element for
+*PartUsage* is `Parts::parts` from the Systems Library, which itself
+is typed by `Parts::Part` (the base definition for *PartDefinition*).
 
+In this test case example, the following holds:
+* `part def Vehicle` is not typed explicitly (and thus is typed by
+`Parts::Part` from the Systems Library
+* `part vehicle` is typed explicitly by `part def Wheel`
+* `part w` is the feature of `part vehicle`, and is typed explicitly
+by the `part def Wheel`.
 
 ## Notes
 
