@@ -1,4 +1,4 @@
-<!-- Generated on 2022-04-06 10:29:33.020056 from script `gendocs.py`
+<!-- Generated on 2022-04-06 10:30:35.946147 from script `gendocs.py`
      DO NOT EDIT MANUALY! -->
 
 # Test Case 01-001: Fully qualified element names (FQEN)
@@ -280,7 +280,7 @@ from the Systems Library which itself is typed by the base
 * `RequirementCheck::stakeholders` from the Requirements library model
 * `RequirementCheck::actors` from the Requirements library model
 * `Case::actors` from the Cases library model
-* `Item::subpartsi` from the Items library model
+* `Item::subparts` from the Items library model
 
 However, these are outside of the scope of uSysML v0.01. Furthermore,
 each of the above base Element is typed by *PartDefinition*, and
