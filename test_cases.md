@@ -1,4 +1,4 @@
-<!-- Generated on 2022-04-08 16:15:59.699139 from script `gendocs.py`
+<!-- Generated on 2022-04-08 16:17:08.055659 from script `gendocs.py`
      DO NOT EDIT MANUALY! -->
 
 # Test Case 01-001: Fully qualified element name (FQEN)
@@ -296,12 +296,12 @@ this test case. Furthermore, each of the above base Element is typed
 by *PartDefinition*, and therefore *PartUsage* is always typed by
 *PartDefinition*.
 
-# Test Case 01-004: `Part` element syntactical forms
+# Test Case 01-004: PartUsage element syntactical forms
 
 
 ## Description
 
-Syntactically, `Part` element may appear in several different forms.
+Syntactically, PartUsage element may appear in several different forms.
 
 
 ## Scope
@@ -374,22 +374,22 @@ Root.SupportComponents [Package]
 
 ## Comments
 
-Several syntactical forms of Part element are illustrated in the above
+Several syntactical forms of PartUsage element are illustrated in the above
 example:
 
-1. `part parking_space;` — Part without multiplicity, without body,
+1. `part parking_space;` — PartUsage without multiplicity, without body,
 and not explicitely typed
-2. `part vehicle_shed[4];` — Part with multiplicity, without body,
+2. `part vehicle_shed[4];` — PartUsage with multiplicity, without body,
 and not explicitely typed
-3. `part repair_shop[2] { ... }` — Part with multiplicity, with body,
+3. `part repair_shop[2] { ... }` — PartUsage with multiplicity, with body,
 and not explicitely typed
-4. `part test_vehicle:Vehicle;` — Part without multiplicity, without
+4. `part test_vehicle:Vehicle;` — PartUsage without multiplicity, without
 body, and typed explicitly
-5. `part vehicle:Vehicle { ... }` — Part without multiplicity, with
+5. `part vehicle:Vehicle { ... }` — PartUsage without multiplicity, with
 body, and typed explicitly
-6. `part a:WheelAxle[2];` — Part with multiplicity, without body,
+6. `part a:WheelAxle[2];` — PartUsage with multiplicity, without body,
 and typed explicitly
-7. `part w:Wheel[4] { ... }` — Part with multiplicity, with body,
+7. `part w:Wheel[4] { ... }` — PartUsage with multiplicity, with body,
 and typed explicitly
 
 
