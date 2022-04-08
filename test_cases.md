@@ -1,4 +1,4 @@
-<!-- Generated on 2022-04-08 16:13:51.721691 from script `gendocs.py`
+<!-- Generated on 2022-04-08 16:15:59.699139 from script `gendocs.py`
      DO NOT EDIT MANUALY! -->
 
 # Test Case 01-001: Fully qualified element name (FQEN)
@@ -378,20 +378,19 @@ Several syntactical forms of Part element are illustrated in the above
 example:
 
 1. `part parking_space;` — Part without multiplicity, without body,
-and without type specified.
+and not explicitely typed
 2. `part vehicle_shed[4];` — Part with multiplicity, without body,
-and without type specified.
+and not explicitely typed
 3. `part repair_shop[2] { ... }` — Part with multiplicity, with body,
-and without type specified.
+and not explicitely typed
 4. `part test_vehicle:Vehicle;` — Part without multiplicity, without
-body, and type specified.
+body, and typed explicitly
 5. `part vehicle:Vehicle { ... }` — Part without multiplicity, with
-body, and with type specified.
+body, and typed explicitly
 6. `part a:WheelAxle[2];` — Part with multiplicity, without body,
-and with type specified.
+and typed explicitly
 7. `part w:Wheel[4] { ... }` — Part with multiplicity, with body,
-and with type specified.
-
+and typed explicitly
 
 
 ## Discussion
