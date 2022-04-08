@@ -1,4 +1,4 @@
-<!-- Generated on 2022-04-08 16:17:08.055659 from script `gendocs.py`
+<!-- Generated on 2022-04-08 16:26:15.255714 from script `gendocs.py`
      DO NOT EDIT MANUALY! -->
 
 # Test Case 01-001: Fully qualified element name (FQEN)
@@ -372,7 +372,7 @@ Root.SupportComponents [Package]
 ```
 
 
-## Comments
+## Discussion
 
 Several syntactical forms of PartUsage element are illustrated in the above
 example:
@@ -393,14 +393,67 @@ and typed explicitly
 and typed explicitly
 
 
-## Discussion
-
-None
-
-
 ## Notes
 
 None
+
+
+# Test Case 01-005: Namespace search rules
+
+
+## Description
+
+Illustrates the namespace search rules.
+
+
+## Scope
+
+The scope of this Test Case is uSysML v0.01, the applicable keywords
+are: `package`, `part def`, and `part`.
+
+
+## SysML v2 textual notation
+
+```sysml
+package PackageVehicles {
+
+    part def Vehicle;
+    part def Wheel;
+
+    part vehicle:Vehicle {
+        part def Wheel;
+        part w:Wheel[4];
+    }
+}
+```
+
+
+## uSysML output
+
+```
+Root.PackageVehicles [Package]
+ Root.PackageVehicles.Vehicle [PartDef]
+ Root.PackageVehicles.Wheel [PartDef]
+ Root.PackageVehicles.vehicle [PartUsage]
+    typed by=Root.PackageVehicles.Vehicle
+  Root.PackageVehicles.vehicle.Wheel [PartDef]
+  Root.PackageVehicles.vehicle.w [PartUsage]
+      multiplicity=4
+      typed by=Root.PackageVehicles.vehicle.Wheel
+```
+
+
+## Discussion
+
+The namespace search starts from its own namespace, then proceeds into the
+parent namespaces in the order until the Root namespace is reached.
+
+In this example PartDefintion `Wheel` exists both within the package
+`PackageVehicles` and PartUsage `vehicle` namespaces (and furthermore,
+PartUsage `vehicle` namespace is nested within the package
+`PackageVehicles` namespace). In this case, PartUsage `w` id typed by
+PartDefinition that is within the inner PartUsage `vehicle` namespace.
+
 
 
 # Test Case 01-006: Namespace search rules
