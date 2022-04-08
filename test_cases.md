@@ -1,4 +1,4 @@
-<!-- Generated on 2022-04-09 09:49:24.161844 from script `gendocs.py`
+<!-- Generated on 2022-04-09 09:56:19.646552 from script `gendocs.py`
      DO NOT EDIT MANUALY! -->
 
 # Test Case 01-001: Fully qualified element name (FQEN)
@@ -484,7 +484,13 @@ Using FQENs, the following is true:
 
 ## Description
 
-This use case addresses //-type comment
+This Test Case shows use of //-type comment
+
+
+## Scope
+
+The scope of this Test Case is uSysML v0.02, the applicable keywords
+are: `package`, `part def`, and `part`.
 
 
 ## SysML v2 textual notation
@@ -518,7 +524,7 @@ Root.PackageVehicles [Package]
 ```
 
 
-## Comments
+## Discussion
 
 A comment embedded within the SysML v2 textual notation is used to
 annotate the textual notation. There are multiple types of comments
@@ -535,9 +541,9 @@ kind of notes (*singe line note* and *multiline note*) addressed
 only a single-line note.
 
 
-## Rules/constraints
+## Notes
 
-As per KerML 7.1.2.3:
+**Note 1**. As per KerML 7.1.2.3:
 
 >"A single-line note includes all the text from the initial
 >characters '//' up to the next line terminator or the end
@@ -549,7 +555,15 @@ As per KerML 7.1.2.3:
 
 ## Description
 
-Element names can contain spaces when enclosed by single quotes.
+
+This Test Case shows use of unrestricted element names, and specifically
+how names can contain spaces when enclosed by single quotes.
+
+
+## Scope
+
+The scope of this Test Case is uSysML v0.02, the applicable keywords
+are: `package`, `part def`, and `part`.
 
 
 ## SysML v2 textual notation
@@ -581,7 +595,7 @@ Root.'My PackageVehicles' [Package]
 ```
 
 
-## References
+## Discussion
 
 The spiral 1 test cases use basic names. This test case tests use of
 unrestricted names, but only in the basic form without the use of escape
@@ -607,11 +621,12 @@ As per KerML p20, there are two kinds of names:
 > or the backslash character may only be included by using an escape sequence.
 
 
-## Issues
+## Notes
 
+**Note 1**.
 The SysML v2 example shown in [Test Case 02-002](#test-case-02-002-unrestricted-names-basic-form)
 works in the SysMl v2 Pilot implementation, however the visualisation
-with `%viz` is unable to handle unrestricted names:
+with `%viz` appears unable to handle unrestricted names:
 
 
 ```jupyter
@@ -620,17 +635,15 @@ with `%viz` is unable to handle unrestricted names:
 ERROR:Couldn't resolve reference to Element ''My'
 ```
 
-
-## Rules/constraints
-
-None.
-
-# Test Case 03-001: `attribute def` example use
+# Test Case 03-001: *AttributeDefinition* element
 
 
 ## Description
 
-Shows possible placement of the `attribute def` statement.
+This Test Case explores basic characterists of *AttributeDefinition* element.
+
+The scope of this Test Case is uSysML v0.03, the applicable keywords are:
+`package`, `part def`, and `part`, `attribute def`, and `attribute`.
 
 
 ## SysML v2 textual notation
@@ -693,19 +706,11 @@ Root.PackageVehicles [Package]
 ```
 
 
-## Comments
+## Discussion
 
-This Test Case shows `attribute def` when placed:
-1. Within the sysml file scope, outside any packages
-2. Top level `package`
-3. Within a nested package
-4. Within a second nested package
-5. Within `part def`
-6. Within `part`
+Placeholder.
 
+## Notes
 
-## Rules/constraints
-
-Within the scope of uSysML v0.03 there are no constraints where `attribute def`
-can be used.
+Placeholder.
 
