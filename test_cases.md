@@ -1,4 +1,4 @@
-<!-- Generated on 2022-04-08 16:26:15.255714 from script `gendocs.py`
+<!-- Generated on 2022-04-08 16:54:11.439835 from script `gendocs.py`
      DO NOT EDIT MANUALY! -->
 
 # Test Case 01-001: Fully qualified element name (FQEN)
@@ -415,7 +415,16 @@ are: `package`, `part def`, and `part`.
 ## SysML v2 textual notation
 
 ```sysml
-package PackageVehicles {
+package PackageVehicles1 {
+  
+    part def Vehicle;
+    part def Wheel;
+
+    part vehicle:Vehicle {
+        part w:Wheel[4];
+    }
+}
+package PackageVehicles2 {
 
     part def Vehicle;
     part def Wheel;
@@ -431,29 +440,42 @@ package PackageVehicles {
 ## uSysML output
 
 ```
-Root.PackageVehicles [Package]
- Root.PackageVehicles.Vehicle [PartDef]
- Root.PackageVehicles.Wheel [PartDef]
- Root.PackageVehicles.vehicle [PartUsage]
-    typed by=Root.PackageVehicles.Vehicle
-  Root.PackageVehicles.vehicle.Wheel [PartDef]
-  Root.PackageVehicles.vehicle.w [PartUsage]
+Root.PackageVehicles1 [Package]
+ Root.PackageVehicles1.Vehicle [PartDef]
+ Root.PackageVehicles1.Wheel [PartDef]
+ Root.PackageVehicles1.vehicle [PartUsage]
+    typed by=Root.PackageVehicles1.Vehicle
+  Root.PackageVehicles1.vehicle.w [PartUsage]
       multiplicity=4
-      typed by=Root.PackageVehicles.vehicle.Wheel
+      typed by=Root.PackageVehicles1.Wheel
+Root.PackageVehicles2 [Package]
+ Root.PackageVehicles2.Vehicle [PartDef]
+ Root.PackageVehicles2.Wheel [PartDef]
+ Root.PackageVehicles2.vehicle [PartUsage]
+    typed by=Root.PackageVehicles2.Vehicle
+  Root.PackageVehicles2.vehicle.Wheel [PartDef]
+  Root.PackageVehicles2.vehicle.w [PartUsage]
+      multiplicity=4
+      typed by=Root.PackageVehicles2.vehicle.Wheel
 ```
 
 
 ## Discussion
 
-The namespace search starts from its own namespace, then proceeds into the
-parent namespaces in the order until the Root namespace is reached.
+The namespace search starts from its own namespace, then proceeds into
+the parent namespaces in the order until the Root namespace is reached.
 
-In this example PartDefintion `Wheel` exists both within the package
-`PackageVehicles` and PartUsage `vehicle` namespaces (and furthermore,
-PartUsage `vehicle` namespace is nested within the package
-`PackageVehicles` namespace). In this case, PartUsage `w` id typed by
-PartDefinition that is within the inner PartUsage `vehicle` namespace.
+In package `PackageVehicles2`, PartDefintion `Wheel` exists both within
+the package `PackageVehicles2` and PartUsage `vehicle` namespaces (and
+furthermore, PartUsage `vehicle` namespace is nested within the package
+`PackageVehicles2` namespace). In this case, PartUsage `w` is typed by
+PartDefinition `Wheel` that is within the PartUsage `vehicle` namespace.
 
+Using FQENs, the following is true:
+
+* `PackageVehicles1.vehicle.w` is typed by `PackageVehicles1.Wheel`
+* `PackageVehicles2.vehicle.w` is typed by `PackageVehicles2.vehicle.Wheel`
+* `PackageVehicles2.Wheel` isn't used
 
 
 # Test Case 01-006: Namespace search rules
