@@ -1,4 +1,4 @@
-<!-- Generated on 2022-04-07 08:20:23.273605 from script `gendocs.py`
+<!-- Generated on 2022-04-08 16:13:51.721691 from script `gendocs.py`
      DO NOT EDIT MANUALY! -->
 
 # Test Case 01-001: Fully qualified element name (FQEN)
@@ -46,10 +46,10 @@ Root.PackageVehicles [Package]
 
 ## Discussion
 
-Within a sysml file all fully qualified element names (FQENs)
-must be uniqe. The following example should generate an error,
-because both `part def Wheel` and `part Wheel` have the same
-FQEN `PackageVehicles.Wheel`:
+Within a sysml file all fully qualified element names (FQENs) must be
+uniqe. The following example should generate an error, because both
+`part def Wheel` and `part Wheel` have the same FQEN
+`PackageVehicles.Wheel`:
 
 
 ```sysml
@@ -296,12 +296,18 @@ this test case. Furthermore, each of the above base Element is typed
 by *PartDefinition*, and therefore *PartUsage* is always typed by
 *PartDefinition*.
 
-# Test Case 01-004: ‘Part’ element type specification
+# Test Case 01-004: `Part` element syntactical forms
 
 
 ## Description
 
-A `Part` element may have type specified.
+Syntactically, `Part` element may appear in several different forms.
+
+
+## Scope
+
+The scope of this Test Case is uSysML v0.01, the applicable keywords
+are: `package`, `part def`, and `part`.
 
 
 ## SysML v2 textual notation
@@ -311,10 +317,25 @@ package PackageVehicles {
 
     part def Vehicle;
     part def Wheel;
+    part def WheelAxle;
+
+    part test_vehicle:Vehicle;
 
     part vehicle:Vehicle {
-        part c;
-        part w:Wheel;
+        part a:WheelAxle[2];
+        part w:Wheel[4] {
+            part def LugBolt;
+        }
+    }
+}
+
+package SupportComponents {
+
+    part parking_space;
+    part vehicle_shed[4];
+
+    part repair_shop[2] {
+        part def VehicleLift;
     }
 }
 ```
@@ -326,29 +347,62 @@ package PackageVehicles {
 Root.PackageVehicles [Package]
  Root.PackageVehicles.Vehicle [PartDef]
  Root.PackageVehicles.Wheel [PartDef]
+ Root.PackageVehicles.WheelAxle [PartDef]
+ Root.PackageVehicles.test_vehicle [PartUsage]
+    typed by=Root.PackageVehicles.Vehicle
  Root.PackageVehicles.vehicle [PartUsage]
     typed by=Root.PackageVehicles.Vehicle
-  Root.PackageVehicles.vehicle.c [PartUsage]
-      typed by=None
+  Root.PackageVehicles.vehicle.a [PartUsage]
+      multiplicity=2
+      typed by=Root.PackageVehicles.WheelAxle
   Root.PackageVehicles.vehicle.w [PartUsage]
+      multiplicity=4
       typed by=Root.PackageVehicles.Wheel
+   Root.PackageVehicles.vehicle.w.LugBolt [PartDef]
+Root.SupportComponents [Package]
+ Root.SupportComponents.parking_space [PartUsage]
+    typed by=None
+ Root.SupportComponents.vehicle_shed [PartUsage]
+    multiplicity=4
+    typed by=None
+ Root.SupportComponents.repair_shop [PartUsage]
+    multiplicity=2
+    typed by=None
+  Root.SupportComponents.repair_shop.VehicleLift [PartDef]
 ```
 
 
 ## Comments
 
-In the expected outpout types of `Part` elements are shown with
-`type= ...`.
+Several syntactical forms of Part element are illustrated in the above
+example:
 
-In the above example `Part c` doesn’t have a type specified, while
-`Part w` is of type `Wheel`, which itself is `PartDef`.
+1. `part parking_space;` — Part without multiplicity, without body,
+and without type specified.
+2. `part vehicle_shed[4];` — Part with multiplicity, without body,
+and without type specified.
+3. `part repair_shop[2] { ... }` — Part with multiplicity, with body,
+and without type specified.
+4. `part test_vehicle:Vehicle;` — Part without multiplicity, without
+body, and type specified.
+5. `part vehicle:Vehicle { ... }` — Part without multiplicity, with
+body, and with type specified.
+6. `part a:WheelAxle[2];` — Part with multiplicity, without body,
+and with type specified.
+7. `part w:Wheel[4] { ... }` — Part with multiplicity, with body,
+and with type specified.
 
 
-## Rules/constraints
 
-1. A `Part` element may optionally have a type specified
-2. If `Part` element has type specified, the type must be an existing
-`PartDef` element
+## Discussion
+
+None
+
+
+## Notes
+
+None
+
 
 # Test Case 01-006: Namespace search rules
 
@@ -454,106 +508,6 @@ The namespace search starts from its own namespace, then proceeds into
 the parent namespaces in the order until the Root namespace is reached.
 
 Compare to [Test Case 01-006](#test-case-01-006-namespace-search-rules).
-
-
-# Test Case 01-008: `Part` element syntactical forms
-
-
-## Description
-
-Syntactically, `Part` element may appear in several different forms.
-
-
-## SysML v2 textual notation
-
-```sysml
-package PackageVehicles {
-
-    part def Vehicle;
-    part def Wheel;
-    part def WheelAxle;
-
-    part test_vehicle:Vehicle;
-
-    part vehicle:Vehicle {
-        part a:WheelAxle[2];
-        part w:Wheel[4] {
-            part def LugBolt;
-        }
-    }
-}
-
-package SupportComponents {
-
-    part parking_space;
-    part vehicle_shed[4];
-
-    part repair_shop[2] {
-        part def VehicleLift;
-    }
-}
-```
-
-
-## uSysML output
-
-```
-Root.PackageVehicles [Package]
- Root.PackageVehicles.Vehicle [PartDef]
- Root.PackageVehicles.Wheel [PartDef]
- Root.PackageVehicles.WheelAxle [PartDef]
- Root.PackageVehicles.test_vehicle [PartUsage]
-    typed by=Root.PackageVehicles.Vehicle
- Root.PackageVehicles.vehicle [PartUsage]
-    typed by=Root.PackageVehicles.Vehicle
-  Root.PackageVehicles.vehicle.a [PartUsage]
-      multiplicity=2
-      typed by=Root.PackageVehicles.WheelAxle
-  Root.PackageVehicles.vehicle.w [PartUsage]
-      multiplicity=4
-      typed by=Root.PackageVehicles.Wheel
-   Root.PackageVehicles.vehicle.w.LugBolt [PartDef]
-Root.SupportComponents [Package]
- Root.SupportComponents.parking_space [PartUsage]
-    typed by=None
- Root.SupportComponents.vehicle_shed [PartUsage]
-    multiplicity=4
-    typed by=None
- Root.SupportComponents.repair_shop [PartUsage]
-    multiplicity=2
-    typed by=None
-  Root.SupportComponents.repair_shop.VehicleLift [PartDef]
-```
-
-
-## Comments
-
-Several syntactical forms of Part element are illustrated in the above
-example:
-
-1. `part parking_space;` — Part without multiplicity, without body,
-and without type specified.
-2. `part vehicle_shed[4];` — Part with multiplicity, without body,
-and without type specified.
-3. `part repair_shop[2] { ... }` — Part with multiplicity, with body,
-and without type specified.
-4. `part test_vehicle:Vehicle;` — Part without multiplicity, without
-body, and type specified.
-5. `part vehicle:Vehicle { ... }` — Part without multiplicity, with
-body, and with type specified.
-6. `part a:WheelAxle[2];` — Part with multiplicity, without body,
-and with type specified.
-7. `part w:Wheel[4] { ... }` — Part with multiplicity, with body,
-and with type specified.
-
-When a `Part` element has a specified type, the type must be a defined
-`PartDef` element as per [Test Case 01-004](#test-case-01-004-part-element-type-specification).
-
-
-## Rules/constraints
-
-An implementation of `part` and `part def` SysMLv2 keywords must support
-all seven syntactical forms shown in this Test Case.
 
 
 # Test Case 02-001: A single line note ("//"-type comment)
