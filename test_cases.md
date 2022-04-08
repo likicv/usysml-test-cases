@@ -1,4 +1,4 @@
-<!-- Generated on 2022-04-08 16:55:42.815477 from script `gendocs.py`
+<!-- Generated on 2022-04-09 09:34:15.760180 from script `gendocs.py`
      DO NOT EDIT MANUALY! -->
 
 # Test Case 01-001: Fully qualified element name (FQEN)
@@ -130,12 +130,12 @@ WARNING:Duplicate owned member name (1.sysml line : 4 column : 14)
 ```
 
 
-# Test Case 01-002: PartDefinition element
+# Test Case 01-002: *PartDefinition* element
 
 
 ## Description
 
-This Test Case explores basic characterists of a PartDefinition element.
+This Test Case explores basic characterists of a *PartDefinition* element.
 
 
 ## Scope
