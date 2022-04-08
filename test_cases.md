@@ -1,4 +1,4 @@
-<!-- Generated on 2022-04-09 09:44:48.260503 from script `gendocs.py`
+<!-- Generated on 2022-04-09 09:49:24.161844 from script `gendocs.py`
      DO NOT EDIT MANUALY! -->
 
 # Test Case 01-001: Fully qualified element name (FQEN)
@@ -472,9 +472,11 @@ PartDefinition `Wheel` that is within the PartUsage `vehicle` namespace.
 
 Using FQENs, the following is true:
 
-* `PackageVehicles1.vehicle.w` is typed by `PackageVehicles1.Wheel`
-* `PackageVehicles2.vehicle.w` is typed by `PackageVehicles2.vehicle.Wheel`
-* `PackageVehicles2.Wheel` isn't used
+* `PackageVehicles1.vehicle.w` is *PartUsage* typed by *PartDefintion*
+`PackageVehicles1.Wheel`
+* `PackageVehicles2.vehicle.w` is *PartUsage* typed by *PartDefintion*
+`PackageVehicles2.vehicle.Wheel`
+* `PackageVehicles2.Wheel` is *PartDefintion* that isn't used
 
 
 # Test Case 02-001: A single line note ("//"-type comment)
