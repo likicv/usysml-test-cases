@@ -1,4 +1,4 @@
-<!-- Generated on 2022-04-09 09:34:42.000103 from script `gendocs.py`
+<!-- Generated on 2022-04-09 09:38:14.644343 from script `gendocs.py`
      DO NOT EDIT MANUALY! -->
 
 # Test Case 01-001: Fully qualified element name (FQEN)
@@ -211,12 +211,12 @@ usage elements. For example, the keywords `attribute def` and `attribute`
 define *AttributeDefintion* and *AttributeUsage* elements, respectively.
 
 
-# Test Case 01-003: PartUsage element
+# Test Case 01-003: *PartUsage* element
 
 
 ## Description
 
-This Test Case explores basic characterists of a PartUsage element.
+This Test Case explores basic characterists of PartUsage element.
 
 
 ## Scope
@@ -271,16 +271,8 @@ its type is determined by its base element. The base element for
 is typed by `Parts::Part` (the base definition for *PartDefinition*).
 
 In this test case example, the following holds:
-* `part def Vehicle` is not typed explicitly (and thus is typed by
-`Parts::Part` from the Systems Library)
-* `part def Wheel` is not typed explicitly (and thus is typed by
-`Parts::Part` from the Systems Library)
-* `part def Lugbolt` is a feature of `part def Wheel`, and is not
-typed explicitly (it is typed by `Parts::Part` from the Systems
-Library)
-* `part vehicle` is typed explicitly by `part def Wheel`
-* `part w` is a feature of `part vehicle`, and is typed explicitly
-by `part def Wheel`
+* `part vehicle` *PartUsage* that is typed explicitly by *PartDefinition* `Vehicle`
+* `part w` is *PartUsage*, and is typed explicitly by *PartDefinition* `Wheel`
 
 
 ## Notes
