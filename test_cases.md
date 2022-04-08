@@ -1,4 +1,4 @@
-<!-- Generated on 2022-04-08 16:54:11.439835 from script `gendocs.py`
+<!-- Generated on 2022-04-08 16:55:42.815477 from script `gendocs.py`
      DO NOT EDIT MANUALY! -->
 
 # Test Case 01-001: Fully qualified element name (FQEN)
@@ -476,112 +476,6 @@ Using FQENs, the following is true:
 * `PackageVehicles1.vehicle.w` is typed by `PackageVehicles1.Wheel`
 * `PackageVehicles2.vehicle.w` is typed by `PackageVehicles2.vehicle.Wheel`
 * `PackageVehicles2.Wheel` isn't used
-
-
-# Test Case 01-006: Namespace search rules
-
-
-## Description
-
-Illustrates the namespace search rules.
-
-
-## SysML v2 textual notation
-
-```sysml
-package PackageVehicles {
-
-    part def Vehicle;
-    part def Wheel;
-
-    part vehicle:Vehicle {
-        part def Wheel;
-        part w:Wheel[4];
-    }
-}
-```
-
-
-## uSysML output
-
-```
-Root.PackageVehicles [Package]
- Root.PackageVehicles.Vehicle [PartDef]
- Root.PackageVehicles.Wheel [PartDef]
- Root.PackageVehicles.vehicle [PartUsage]
-    typed by=Root.PackageVehicles.Vehicle
-  Root.PackageVehicles.vehicle.Wheel [PartDef]
-  Root.PackageVehicles.vehicle.w [PartUsage]
-      multiplicity=4
-      typed by=Root.PackageVehicles.vehicle.Wheel
-```
-
-
-## Comments
-
-In this example `part def Wheel` exists both withing the `PackageVehicles`
-and `part vehicle` namespaces (and furthermore, `part vehicle` namespace
-is nested within the `PackageVehicles` namespace). In this case, Part
-`w` id typed by PartDef that is within the inner (`part vehicle`)
-namespace.
-
-
-## Rules/constraints
-
-The namespace search starts from its own namespace, then proceeds into
-the parent namespaces in the order until the Root namespace is reached.
-
-# Test Case 01-007: Namespace search rules
-
-
-## Description
-
-Illustrates the namespace search rules.
-
-
-## SysML v2 textual notation
-
-```sysml
-package PackageVehicles {
-  
-    part def Vehicle;
-    part def Wheel;
-
-    part vehicle:Vehicle {
-        part w:Wheel[4];
-    }
-}
-```
-
-
-## uSysML output
-
-```
-Root.PackageVehicles [Package]
- Root.PackageVehicles.Vehicle [PartDef]
- Root.PackageVehicles.Wheel [PartDef]
- Root.PackageVehicles.vehicle [PartUsage]
-    typed by=Root.PackageVehicles.Vehicle
-  Root.PackageVehicles.vehicle.w [PartUsage]
-      multiplicity=4
-      typed by=Root.PackageVehicles.Wheel
-```
-
-
-## Comments
-
-This example illustrates execution of the namespace search in the parent
-namespace. In this example `part def Wheel` doesn't exists within the `part
-vehicle` namespace, and the parent namespace (that of `PackageVehicles`)
-is being searched to find PartDef `Wheel`.
-
-
-## Rules/constraints
-
-The namespace search starts from its own namespace, then proceeds into
-the parent namespaces in the order until the Root namespace is reached.
-
-Compare to [Test Case 01-006](#test-case-01-006-namespace-search-rules).
 
 
 # Test Case 02-001: A single line note ("//"-type comment)
