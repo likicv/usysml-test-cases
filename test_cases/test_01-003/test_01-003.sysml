@@ -8,5 +8,6 @@ package PackageVehicles {
 
     part vehicle:Vehicle {
         part w:Wheel;
+        part q;
     }
 }

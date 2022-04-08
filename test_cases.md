@@ -1,4 +1,4 @@
-<!-- Generated on 2022-04-09 09:38:14.644343 from script `gendocs.py`
+<!-- Generated on 2022-04-09 09:42:22.919249 from script `gendocs.py`
      DO NOT EDIT MANUALY! -->
 
 # Test Case 01-001: Fully qualified element name (FQEN)
@@ -216,7 +216,7 @@ define *AttributeDefintion* and *AttributeUsage* elements, respectively.
 
 ## Description
 
-This Test Case explores basic characterists of PartUsage element.
+This Test Case explores basic characterists of *PartUsage* element.
 
 
 ## Scope
@@ -238,6 +238,7 @@ package PackageVehicles {
 
     part vehicle:Vehicle {
         part w:Wheel;
+        part q;
     }
 }
 ```
@@ -254,6 +255,8 @@ Root.PackageVehicles [Package]
     typed by=Root.PackageVehicles.Vehicle
   Root.PackageVehicles.vehicle.w [PartUsage]
       typed by=Root.PackageVehicles.Wheel
+  Root.PackageVehicles.vehicle.q [PartUsage]
+      typed by=None
 ```
 
 
@@ -271,8 +274,13 @@ its type is determined by its base element. The base element for
 is typed by `Parts::Part` (the base definition for *PartDefinition*).
 
 In this test case example, the following holds:
-* `part vehicle` *PartUsage* that is typed explicitly by *PartDefinition* `Vehicle`
-* `part w` is *PartUsage*, and is typed explicitly by *PartDefinition* `Wheel`
+* `vehicle` is *PartUsage* element that is typed explicitly by *PartDefinition*
+`Vehicle`
+* `w` is *PartUsage* element that is typed explicitly by *PartDefinition*
+`Wheel`
+* `q` is *PartUsage* not typed explicitly (and this is implicitly typed
+by `Parts::parts`)
+
 
 
 ## Notes
@@ -283,10 +291,9 @@ In this test case example, the following holds:
 * `Case::actors` from the Cases library model
 * `Item::subparts` from the Items library model
 
-These are outside of the scope of uSysML v0.01 hence not discussion in
-this test case. Furthermore, each of the above base Element is typed
-by *PartDefinition*, and therefore *PartUsage* is always typed by
-*PartDefinition*.
+These are outside of the scope of uSysML v0.01 hence not discussed.
+Furthermore, each of the above base Element is typed by *PartDefinition*,
+and therefore *PartUsage* is always typed by *PartDefinition*.
 
 # Test Case 01-004: PartUsage element syntactical forms
 
