@@ -50,7 +50,7 @@ in the table below:
 
 | uSysML version | Scope | Status |
 | --- | --- | --- |
-| v0.01 (spiral 1) | `package`, `part`, `part def` | 8 test cases |
+| v0.01 (spiral 1) | `package`, `part`, `part def` | 5 test cases |
 | v0.02 (spiral 2) | +//-type comments, +unrestricted element names | 2 test cases |
 | v0.03 (spiral 3) | +`attribute def`, +`attribute` | 1 test case |
 | v0.04 (spiral 4) | +`redefines`, +`subsets` | None yet |
