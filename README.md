@@ -156,16 +156,15 @@ Each test case is structured according to the following sections:
 - Title -- a short title of the test case together with the number
 identifier
 - Description -- a description of the test case
+- Scope -- give the explicit description fo the scope (note: the scope or
+uSysML version can be read from the test case name)
 - SysML v2 textual notation -- shows SysML v2 textual notation
 - uSysML output -- shows the expected output of after the parsing of the
 SysML v2 textual notation. **Note: what is listed as "output" is not a
 SysML v2 notation, but a special notation developed for uSysML Test Cases**.
 See the explanations below
-- Comments -- any additional comments
-- Rules/constraints -- any rules or constraints that we can derive from the
-test case considerations
-- Discussion -- This section is optional, and give a discussion of the
-test case if needed
+- Discussion -- any discussion and additional comments
+- Notes -- any notes
  
 
 ## The notation used in the “uSysML output” section
