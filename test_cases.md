@@ -1,4 +1,4 @@
-<!-- Generated on 2022-04-09 22:37:21.999508 from script `gendocs.py`
+<!-- Generated on 2022-06-03 22:12:08.884073 from script `gendocs.py`
      DO NOT EDIT MANUALY! -->
 
 # Test Case 01-001: Fully qualified element name (FQEN)
@@ -135,7 +135,8 @@ WARNING:Duplicate owned member name (1.sysml line : 4 column : 14)
 
 ## Description
 
-This Test Case explores basic characterists of *PartDefinition* element.
+This Test Case explores characterists of *PartDefinition* element within
+the scope of uSysML v0.01.
 
 
 ## Scope
@@ -180,10 +181,11 @@ Root.PackageVehicles [Package]
 
 The keyword `part def` declares a part definition element. A part defintion
 element is called *PartDefinition* in the Sysml v2 abstract syntax diagrams,
-and is denoted as '[PartDef]' in the uSysML output. The base type of every
-*PartDefinition* is `Parts::Part` from the Systems Library. This means that
-every *PartDefintion*, directly or indirectly, is a subclass of `Parts::Part`
-from the Systems Library.
+and is denoted as '[PartDef]' in the uSysML output.
+
+The base type of every *PartDefinition* is `Parts::Part` from the Systems
+Library. This means that every *PartDefintion*, directly or indirectly, is
+a subclass of `Parts::Part` from the Systems Library.
 
 The purpose of definition elements is to type appropriate usage elements.
 The usage element that can be typed by *PartDefinition* is *PartUsage*,
@@ -191,8 +193,7 @@ declared with the keyword `part`. *PartUsage* is a usage element that
 represent usage of a part definition.
 See [Test Case 01-003](#test-case-01-003-partusage-element).
 
-In the textual notation example given above, the following elements are
-*PartDefinition*:
+In the example given above, the following elements are *PartDefinition*:
 * `part def Vehicle;` -- 'Vehicle' is *PartDefinition* without the body
 specified
 * `part def Wheel { part def Lugbolt; }` -- 'Wheel' is *PartDefinition*
@@ -206,17 +207,15 @@ Thus in the above example `Wheel` is *PartDefinition* with one feature,
 
 ## Notes
 
-**Note 1**. There are other definition elements that have corresponding
-usage elements. For example, the keywords `attribute def` and `attribute`
-define *AttributeDefintion* and *AttributeUsage* elements, respectively.
-
+**None**
 
 # Test Case 01-003: *PartUsage* element
 
 
 ## Description
 
-This Test Case explores basic characterists of *PartUsage* element.
+This Test Case explores characterists of *PartUsage* element within
+the scope of uSysML v0.01.
 
 
 ## Scope
@@ -285,15 +284,15 @@ by `Parts::parts`)
 
 ## Notes
 
-**Note 1**. There are other possible base types for *PartUsage*:
+**Note 1**. There are other possible base types for *PartUsage*, outside
+of the scope of uSysML v0.01 (and hence not discussed):
 * `RequirementCheck::stakeholders` from the Requirements library model
 * `RequirementCheck::actors` from the Requirements library model
 * `Case::actors` from the Cases library model
 * `Item::subparts` from the Items library model
 
-These are outside of the scope of uSysML v0.01 hence not discussed.
-Furthermore, each of the above base Element is typed by *PartDefinition*,
-and therefore *PartUsage* is always typed by *PartDefinition*.
+Note that each of the above base Element is typed by *PartDefinition*, and
+therefore *PartUsage* is always typed by *PartDefinition*.
 
 # Test Case 01-004: *PartUsage* element syntactical forms
 
