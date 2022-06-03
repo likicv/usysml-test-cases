@@ -19,7 +19,7 @@ download the summary PDF file please click [here](/test_cases.pdf).
 
 # Background
 
-The uSysML (‘micro SysML’) project aims to develop test cases
+The uSysML project (‘micro SysML’) aims to develop test cases
 relevant for learning and implementation of the SysML v2
 specification. The objective of the uSysML project is two-fold:
 (1) to provide documented test cases that would be useful to
