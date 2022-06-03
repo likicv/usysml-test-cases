@@ -19,14 +19,12 @@ download the summary PDF file please click [here](/test_cases.pdf).
 
 # Background
 
-The objective of the OMG Systems Modeling Language v2 (SysML v2)
-is to enable more effective model-based systems engineering (MBSE).
 The uSysML (‘micro SysML’) project aims to develop test cases
-relevant for learning and implementation of the SysML v2 specification.
-The objective of the uSysML project is two-fold: (1) to provide
-documented test cases that would be useful to the MBSE community
-in implementations of the SysML v2 specification; and (2) to
-generate examples that cold be helpful for clarifying or
+relevant for learning and implementation of the SysML v2
+specification. The objective of the uSysML project is two-fold:
+(1) to provide documented test cases that would be useful to
+the MBSE community in implementations of the SysML v2 specification;
+and (2) to generate examples that cold be helpful for clarifying or
 strengthening of the SysML v2 specification.
 
 
@@ -37,15 +35,13 @@ for creating a SysML v2 implementation.**
 
 ## uSysML
 
-The uSysML project is an approach to the development of test cases
-for the SysML v2 textual notation. It refers to two things: in
-the narrow sense, 'uSysML' refers to a subset of SysML v2 keywords
-and behaviors; in the broader sense, 'uSysML' refers to the
-collection of test cases developed under this GitHub project.
-The purpose of uSysML versioning is to define a scope that will
-limit considerations required for the development of test cases.
-The currently planned uSysML versions and their scope are shown
-in the table below:
+uSysML refers to two things: in the narrow sense, to a subset of
+SysML v2 keywords and behaviors; in the broader sense, 'uSysML'
+refers to the collection of test cases developed under this GitHub
+project. The purpose of uSysML versioning is to define a scope
+that will limit considerations required for the development of
+test cases. The currently planned uSysML versions and their scope
+are shown in the table below:
 
 
 | uSysML version | Scope | Status |
