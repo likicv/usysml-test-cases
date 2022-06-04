@@ -1,4 +1,4 @@
-<!-- Generated on 2022-06-04 15:35:23.079066 from script `gendocs.py`
+<!-- Generated on 2022-06-04 15:46:18.862031 from script `gendocs.py`
      DO NOT EDIT MANUALY! -->
 
 # Test Case 01-001: Fully qualified element name (FQEN)
@@ -181,12 +181,12 @@ Root.PackageVehicles [Package]
 
 The keyword `part def` declares a part definition element. A part defintion
 element is called *PartDefinition* in the Sysml v2 abstract syntax diagrams,
-and is denoted as '[PartDef]' in the uSysML output.
+and is denoted '[PartDef]' in the uSysML output.
 
 The base type of every *PartDefinition* is `Parts::Part` from the Systems
-Library; thus every *PartDefintion*, directly or indirectly, is a subclass
-of `Parts::Part` from the Systems Library. `Parts::Part` from the Systems
-Library is given below:
+Library. Therefore every *PartDefintion* is a subclass of Systems Library
+`Parts::Part`, directly or indirectly. Systems Library `Parts::Part` is
+itself a *PartDefinition*, as given below:
 
 
 ```
@@ -219,7 +219,7 @@ declared with the keyword `part`. *PartUsage* is a usage element that
 represent usage of a part definition.
 See [Test Case 01-003](#test-case-01-003-partusage-element).
 
-In the example given above, the following elements are *PartDefinition*:
+In the example above, the following elements are *PartDefinition*:
 * `part def Vehicle;` -- 'Vehicle' is *PartDefinition* without the body
 specified
 * `part def Wheel { part def Lugbolt; }` -- 'Wheel' is *PartDefinition*
@@ -233,7 +233,7 @@ Thus in the above example `Wheel` is *PartDefinition* with one feature,
 
 ## Notes
 
-**None**
+*None*
 
 # Test Case 01-003: *PartUsage* element
 
