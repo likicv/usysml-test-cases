@@ -1,4 +1,4 @@
-<!-- Generated on 2022-06-04 15:46:18.862031 from script `gendocs.py`
+<!-- Generated on 2022-06-04 15:48:04.699032 from script `gendocs.py`
      DO NOT EDIT MANUALY! -->
 
 # Test Case 01-001: Fully qualified element name (FQEN)
@@ -181,7 +181,22 @@ Root.PackageVehicles [Package]
 
 The keyword `part def` declares a part definition element. A part defintion
 element is called *PartDefinition* in the Sysml v2 abstract syntax diagrams,
-and is denoted '[PartDef]' in the uSysML output.
+and is denoted '[PartDef]' in the uSysML output. The purpose of definition
+elements is to type appropriate usage elements. The usage element that can
+be typed by *PartDefinition* is *PartUsage*, declared with the keyword
+`part`. *PartUsage* is a usage element that represent usage of a part
+definition. See [Test Case 01-003](#test-case-01-003-partusage-element).
+
+In the example above, the following elements are *PartDefinition*:
+* `part def Vehicle;` -- 'Vehicle' is *PartDefinition* without the body
+specified
+* `part def Wheel { part def Lugbolt; }` -- 'Wheel' is *PartDefinition*
+with a body which defines its namespace, and declares another
+*PartDefinition* 'Lugbolt'.
+
+The nested elements within `part def` are referred to as its features.
+Thus in the above example `Wheel` is *PartDefinition* with one feature,
+`Lugbolt` (also *PartDefinition*).
 
 The base type of every *PartDefinition* is `Parts::Part` from the Systems
 Library. Therefore every *PartDefintion* is a subclass of Systems Library
@@ -211,25 +226,6 @@ package Parts {
     abstract part parts: Part[0..*] nonunique :> items;
 }
 ```
-
-
-The purpose of definition elements is to type appropriate usage elements.
-The usage element that can be typed by *PartDefinition* is *PartUsage*,
-declared with the keyword `part`. *PartUsage* is a usage element that
-represent usage of a part definition.
-See [Test Case 01-003](#test-case-01-003-partusage-element).
-
-In the example above, the following elements are *PartDefinition*:
-* `part def Vehicle;` -- 'Vehicle' is *PartDefinition* without the body
-specified
-* `part def Wheel { part def Lugbolt; }` -- 'Wheel' is *PartDefinition*
-with a body which defines its namespace, and declares another
-*PartDefinition* 'Lugbolt'.
-
-The nested elements within `part def` are referred to as its features.
-Thus in the above example `Wheel` is *PartDefinition* with one feature,
-`Lugbolt` (also *PartDefinition*).
-
 
 ## Notes
 
