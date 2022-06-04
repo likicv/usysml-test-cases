@@ -1,4 +1,4 @@
-<!-- Generated on 2022-06-04 07:48:46.269980 from script `gendocs.py`
+<!-- Generated on 2022-06-04 15:35:23.079066 from script `gendocs.py`
      DO NOT EDIT MANUALY! -->
 
 # Test Case 01-001: Fully qualified element name (FQEN)
@@ -184,8 +184,34 @@ element is called *PartDefinition* in the Sysml v2 abstract syntax diagrams,
 and is denoted as '[PartDef]' in the uSysML output.
 
 The base type of every *PartDefinition* is `Parts::Part` from the Systems
-Library. This means that every *PartDefintion*, directly or indirectly, is
-a subclass of `Parts::Part` from the Systems Library.
+Library; thus every *PartDefintion*, directly or indirectly, is a subclass
+of `Parts::Part` from the Systems Library. `Parts::Part` from the Systems
+Library is given below:
+
+
+```
+package Parts {
+	private import Objects::Object;
+	private import Objects::objects;
+	private import Items::Item;
+	private import Items::items;
+	private import Ports::Port;
+	private import Ports::ports;
+	private import Actions::Action;
+	private import States::StateAction;
+	
+	abstract part def Part :> Item {
+		ref self: Part :>> Item::self;
+		part start: Part :>> Item::start;
+		part done: Part :>> Item::done;
+		abstract port portsOnPart: Port[0..*] :> ports;
+		abstract ref action performedActions: Action[0..*] :> enactedPerformances;
+		abstract ref state exhibitedStates: StateAction[0..*] :> performedActions;
+	}
+    abstract part parts: Part[0..*] nonunique :> items;
+}
+```
+
 
 The purpose of definition elements is to type appropriate usage elements.
 The usage element that can be typed by *PartDefinition* is *PartUsage*,
