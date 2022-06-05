@@ -19,12 +19,10 @@ download the summary PDF file please click [here](/test_cases.pdf).
 
 # Background
 
-The uSysML project (‘micro SysML’) aims to develop test cases
-relevant for learning and implementation of the SysML v2
-specification. The objective of the uSysML project is two-fold:
-(1) to provide documented test cases that would be useful to
-the MBSE community in implementations of the SysML v2 specification;
-and (2) to generate examples that cold be helpful for clarifying or
+The objective of the uSysML project is two-fold: (1) to provide
+documented test cases that would be useful to the MBSE community
+in implementations of the SysML v2 specification; and (2) to
+generate examples that cold be helpful for clarifying or
 strengthening of the SysML v2 specification.
 
 
@@ -35,13 +33,17 @@ for creating a SysML v2 implementation.**
 
 ## uSysML
 
+The uSysML project (‘micro SysML’) aims to develop test cases relevant
+for learning and implementation of the SysML v2 specification.
 uSysML refers to two things: in the narrow sense, to a subset of
 SysML v2 keywords and behaviors; in the broader sense, 'uSysML'
 refers to the collection of test cases developed under this GitHub
-project. The purpose of uSysML versioning is to define a scope
-that will limit considerations required for the development of
-test cases. The currently planned uSysML versions and their scope
-are shown in the table below:
+project.
+
+The purpose of uSysML versioning is to define a scope that will limit
+considerations required for the development of test cases. The
+currently planned uSysML versions and their scope are shown in the
+table below:
 
 
 | uSysML version | Scope | Status |
@@ -85,14 +87,15 @@ complex command input. It could be said that the 'simple
 calculator language' is a small subset of the
 [R](https://www.r-project.org/) and
 [GNU Octave](https://www.gnu.org/software/octave/index)
-languages. uSysML relates to the full SysML v2 language feature
-set in a similar way.
+languages.
 
-It would possible to create valid SysML v2 models with the
-subset of the SysML v2 features defined by the uSysML spiral 1
-(only the keywords `package`, `part`, and `part def`). And
-furthermore, by using such subset it would possible to create
-quite complex SysML v2 models.
+uSysML relates to the full SysML v2 language feature set in
+a similar way. Furthermore, it would possible to create valid
+SysML v2 models with the subset of the SysML v2 features
+defined by the uSysML spiral 1 (only the keywords `package`,
+`part`, and `part def`). And furthermore, by using such
+subset it would possible to create quite complex SysML v2
+models.
 
 The scope of uSysML for each version (or spiral) is fixed for
 the purpose of exploring practical issues relevant to the SysML
@@ -103,9 +106,9 @@ specification. Consider an implementation corresponding to
 uSysML v0.01 that supports only the SysML v2 keywords `package`,
 `part`, `part def` and nothing else (see the table above).
 Every model specified by such implementation would be a valid
-SysML v2 model, and paresable by the full SysML v2 implementation.
-The reverse is not true: because uSysML implementations are
-limited general SysML v2 models would not be necessarily
+SysML v2 model, and paresable by the full SysML v2 implementation;
+the reverse however is not true: because uSysML implementations
+are limited general SysML v2 models would not be necessarily
 parseable by an uSysML implementation.
 
 
@@ -128,8 +131,8 @@ from this work will be referred to as “uSysML Test Cases”.
 # Understanding uSysML Test Cases
 
 The test cases are organised under the folder `test_cases`, one test
-case per folder named 'test_XY-ABC' (where 'XY-ABC' is the test case
-unique identifier). Within each test case there are several files,
+case per folder named 'test_XY-ABC', where 'XY-ABC' is the test case
+unique identifier. Within each test case there are several files,
 of which the following are particularly important:
 
 - \*.sysml -- contains the test case SysML v2 textual notation
@@ -160,7 +163,7 @@ SysML v2 textual notation. **Note: what is listed as "output" is not a
 SysML v2 notation, but a special notation developed for uSysML Test Cases**.
 See the explanations below
 - Discussion -- any discussion and additional comments
-- Notes -- any notes
+- Notes -- notes, if any
  
 
 ## The notation used in the “uSysML output” section
