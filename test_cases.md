@@ -1,4 +1,4 @@
-<!-- Generated on 2022-06-24 08:56:00.404814 from script `gendocs.py`
+<!-- Generated on 2022-06-24 08:57:17.218200 from script `gendocs.py`
      DO NOT EDIT MANUALY! -->
 
 # Test Case 01-001: Fully qualified element name (FQEN)
@@ -137,7 +137,7 @@ package PackageVehicles {
 }
 ```
 
-with no errors, but issues a warning:
+with no errors, and issues the following warning:
 
 
 ```sysml
