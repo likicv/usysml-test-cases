@@ -100,7 +100,7 @@ Every such simple calculator command could run in
 predictable outcome. However the other way around doesn't
 hold: [R](https://www.r-project.org/) and
 [GNU Octave](https://www.gnu.org/software/octave/index)
-implement many ahttps://ia802700.us.archive.org/8/items/byte-magazine-1981-08/1981_08_BYTE_06-08_Smalltalk.pdfdditional features, and can handle much more
+implement many additional features, and can handle much more
 complex command input. It could be said that the 'simple
 calculator language' is a small subset of the
 [R](https://www.r-project.org/) and
