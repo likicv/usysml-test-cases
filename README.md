@@ -71,7 +71,7 @@ maintained by the uSysML team. Henceforth the test cases derived
 from this work will be referred to as “uSysML Test Cases”. 
 
 
-## The guiding idea
+## The key idea
 
 The key idea behind uSysML is that SysML v2 behaviors corresponding
 to different spirals are fully decomposable, and each uSysML spiral
