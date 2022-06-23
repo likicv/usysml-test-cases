@@ -19,11 +19,10 @@ download the summary PDF file please click [here](/test_cases.pdf).
 
 # Background
 
-The objective of the uSysML project is two-fold: (1) to provide
-documented test cases that would be useful to the MBSE community
-in implementations of the SysML v2 specification; and (2) to
-generate examples that cold be helpful for clarifying or
-strengthening of the SysML v2 specification.
+The objective of this project is two-fold: (1) to provide test cases
+that would be useful to the MBSE community in implementations of the
+SysML v2 specification; and (2) to generate examples that cold be
+helpful for clarifying or strengthening of the SysML v2 specification.
 
 
 **NOTE: the uSysML project isn't a SysML v2 implementation, rather
@@ -33,17 +32,16 @@ for creating a SysML v2 implementation.**
 
 ## uSysML
 
-The uSysML project (‘micro SysML’) aims to develop test cases relevant
-for learning and implementation of the SysML v2 specification.
+The uSysML project (‘micro SysML’) aims to develop test cases useful
+for understanding and the implementation of the SysML v2 specification.
 uSysML refers to two things: in the narrow sense, to a subset of
-SysML v2 keywords and behaviors; in the broader sense, 'uSysML'
-refers to the collection of test cases developed under this GitHub
-project.
+SysML v2 keywords and behaviors; in the broader sense, to the
+collection of test cases developed under this GitHub project.
 
 The purpose of uSysML versioning is to define a scope that will limit
 considerations required for the development of test cases. The
-currently planned uSysML versions and their scope are shown in the
-table below:
+currently planned uSysML versions (or spirals) and their scope
+are shown in the table below:
 
 
 | uSysML version | Scope | Status |
@@ -54,14 +52,30 @@ table below:
 | v0.04 (spiral 4) | +`redefines`, +`subsets` | None yet |
 | v0.1  | defined by all versions <0.1 | N/A |
 
+The scope of uSysML for each version (or spiral) is fixed for
+the purpose of exploring practical issues relevant to the SysML
+v2 implementation. While the uSysML project is independent of
+any specific implementation, it is sometimes useful to think of
+uSysML as being a limited implementation of the SysML v2
+specification. Consider an implementation corresponding to
+uSysML v0.01 that supports only the SysML v2 keywords `package`,
+`part`, `part def` and nothing else (see the table above).
+Every model specified by such implementation would be a valid
+SysML v2 model, and paresable by the full SysML v2 implementation;
+the reverse however is not true: because uSysML implementations
+are limited general SysML v2 models would not be necessarily
+parseable by an uSysML implementation.
+
+
+## The guiding idea
 
 The key idea behind uSysML is that SysML v2 behaviors corresponding
-to different spirals are fully decomposable, and uSysML focuses only
-on a small subset of the full SysML v2 language. This idea could be
-explained by using a simple calculator language. Let's assume a
-calculator language that implements only addition and multiplication
-of two positive integers. Complex computing environments, for example
-[R](https://www.r-project.org/) and
+to different spirals are fully decomposable, and each uSysML spiral
+focuses only on a small subset of the full SysML v2 language. This
+idea could be explained by using a simple calculator language.
+Let's assume a calculator language that implements only addition and
+multiplication of two positive integers. Complex computing environments,
+for example [R](https://www.r-project.org/) and
 [GNU Octave](https://www.gnu.org/software/octave/index), implement
 a superset of such calculator language. In other words, the
 following concrete calculator syntax would work in both
@@ -82,7 +96,7 @@ Every such simple calculator command could run in
 predictable outcome. However the other way around doesn't
 hold: [R](https://www.r-project.org/) and
 [GNU Octave](https://www.gnu.org/software/octave/index)
-implement many additional features, and can handle much more
+implement many ahttps://ia802700.us.archive.org/8/items/byte-magazine-1981-08/1981_08_BYTE_06-08_Smalltalk.pdfdditional features, and can handle much more
 complex command input. It could be said that the 'simple
 calculator language' is a small subset of the
 [R](https://www.r-project.org/) and
@@ -97,36 +111,9 @@ defined by the uSysML spiral 1 (only the keywords `package`,
 subset it would possible to create quite complex SysML v2
 models.
 
-The scope of uSysML for each version (or spiral) is fixed for
-the purpose of exploring practical issues relevant to the SysML
-v2 implementation. While the uSysML project is independent of
-any specific implementation, it is sometimes useful to think of
-uSysML as being a limited implementation of the SysML v2
-specification. Consider an implementation corresponding to
-uSysML v0.01 that supports only the SysML v2 keywords `package`,
-`part`, `part def` and nothing else (see the table above).
-Every model specified by such implementation would be a valid
-SysML v2 model, and paresable by the full SysML v2 implementation;
-the reverse however is not true: because uSysML implementations
-are limited general SysML v2 models would not be necessarily
-parseable by an uSysML implementation.
-
-
-# References
-
-The following references are used in this work:
-- Kernel Modeling Language (KerML) (‘1-Kernel_Modeling_Language.pdf’)
-- OMG Systems Modeling Language (SysML) (‘2-OMG_Systems_Modeling_Language.pdf’)
-- [SysMLv2 Pilot Implementation Prototype](https://github.com/Systems-Modeling/SysML-v2-Pilot-Implementation)
-- Sanford Friedental, “Introduction to the SysML v2 Language Graphical
-Notation”, Release: 2021-05-21
-- Model Driven Solutions, Inc. “Introduction to the SysML v2 Language
-Textual Notation”, Release: 2021-05
-
 This document is a “living document” that is being developed and
 maintained by the uSysML team. Henceforth the test cases derived
 from this work will be referred to as “uSysML Test Cases”. 
-
 
 # Understanding uSysML Test Cases
 
@@ -309,3 +296,16 @@ This will process all the individual test cases and create a cumulative
 test case document `test_cases.md`, as well as the corresponding PDF file.
 Note that the PDF file creation requires `pandoc` to be installed on your 
 system.
+
+
+# References
+
+The following references are used in this work:
+- Kernel Modeling Language (KerML) (‘1-Kernel_Modeling_Language.pdf’)
+- OMG Systems Modeling Language (SysML) (‘2-OMG_Systems_Modeling_Language.pdf’)
+- [SysMLv2 Pilot Implementation Prototype](https://github.com/Systems-Modeling/SysML-v2-Pilot-Implementation)
+- Sanford Friedental, “Introduction to the SysML v2 Language Graphical
+Notation”, Release: 2021-05-21
+- Model Driven Solutions, Inc. “Introduction to the SysML v2 Language
+Textual Notation”, Release: 2021-05
+
