@@ -66,6 +66,10 @@ the reverse however is not true: because uSysML implementations
 are limited general SysML v2 models would not be necessarily
 parseable by an uSysML implementation.
 
+This document is a “living document” that is being developed and
+maintained by the uSysML team. Henceforth the test cases derived
+from this work will be referred to as “uSysML Test Cases”. 
+
 
 ## The guiding idea
 
@@ -110,10 +114,6 @@ defined by the uSysML spiral 1 (only the keywords `package`,
 `part`, and `part def`). And furthermore, by using such
 subset it would possible to create quite complex SysML v2
 models.
-
-This document is a “living document” that is being developed and
-maintained by the uSysML team. Henceforth the test cases derived
-from this work will be referred to as “uSysML Test Cases”. 
 
 # Understanding uSysML Test Cases
 
