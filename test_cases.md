@@ -1,4 +1,4 @@
-<!-- Generated on 2022-06-29 19:41:44.026019 from script `gendocs.py`
+<!-- Generated on 2022-06-29 19:42:59.427391 from script `gendocs.py`
      DO NOT EDIT MANUALY! -->
 
 # Test Case 01-001: Fully qualified element name (FQEN)
@@ -413,8 +413,8 @@ Root.SupportComponents [Package]
 
 ## Discussion
 
-Several syntactical forms of *PartUsage* element are illustrated in the above
-example:
+The following syntactical forms of *PartUsage* element are illustrated in
+the above example:
 
 1. `parking_space` — *PartUsage* without multiplicity, without body, and not
 explicitely typed
@@ -434,7 +434,7 @@ explicitly
 
 ## Notes
 
-None
+None.
 
 
 # Test Case 01-005: Namespace search rules
