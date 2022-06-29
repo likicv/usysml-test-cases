@@ -1,4 +1,4 @@
-<!-- Generated on 2022-06-24 09:58:40.700866 from script `gendocs.py`
+<!-- Generated on 2022-06-29 19:36:35.168380 from script `gendocs.py`
      DO NOT EDIT MANUALY! -->
 
 # Test Case 01-001: Fully qualified element name (FQEN)
@@ -195,7 +195,7 @@ Root.PackageVehicles [Package]
 ## Discussion
 
 The keyword `part def` declares a part definition element. A part defintion
-element is called *PartDefinition* in the Sysml v2 abstract syntax diagrams,
+element is called *PartDefinition* in Sysml v2 abstract syntax diagrams,
 and is denoted '[PartDef]' in the uSysML output. Speaking in general, the
 purpose of SysML v2 definition elements is to type appropriate usage elements.
 The usage element that can be typed by *PartDefinition* is *PartUsage*,
@@ -203,8 +203,9 @@ declared with the keyword `part`. *PartUsage* is a usage element that
 represent usage of a part definition. Also see
 [Test Case 01-003](#test-case-01-003-partusage-element).
 
-In the example above, the following elements are *PartDefinition*:
-* `part def Vehicle;` -- here 'Vehicle' is *PartDefinition* without the
+In the textual notation example above, the following elements
+are *PartDefinition*:
+* `part def Vehicle;` -- 'Vehicle' is *PartDefinition* without the
 body specified
 * `part def Wheel { part def Lugbolt; }` -- 'Wheel' is *PartDefinition*
 with a body which defines its namespace, and declares another
@@ -212,13 +213,14 @@ with a body which defines its namespace, and declares another
 
 The nested elements within `part def` are referred to as its features.
 Thus in the above example `Wheel` is *PartDefinition* with one feature,
-`Lugbolt` (which is also *PartDefinition*).
+`Lugbolt` (which itself is also *PartDefinition*).
+
 
 ## Notes
 
 In SysML v2 the base type of every *PartDefinition* is `Parts::Part` from
-the Systems Library. Therefore every *PartDefintion* is a subclass of
-Systems Library `Parts::Part`, directly or indirectly. Systems Library
+the Systems Library. Thie means that every *PartDefintion* is a subclass
+of Systems Library `Parts::Part`, directly or indirectly. Systems Library
 `Parts::Part` is itself a *PartDefinition*, as given below:
 
 
@@ -245,7 +247,7 @@ package Parts {
 }
 ```
 
-`Parts::Part` subsets `Items::Item` from the Systems Library.
+We note that `Parts::Part` subsets `Items::Item` from the Systems Library.
 
 
 # Test Case 01-003: *PartUsage* element
