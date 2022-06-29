@@ -1,4 +1,4 @@
-<!-- Generated on 2022-06-29 19:44:36.120860 from script `gendocs.py`
+<!-- Generated on 2022-06-29 19:54:32.590405 from script `gendocs.py`
      DO NOT EDIT MANUALY! -->
 
 # Test Case 01-001: Fully qualified element name (FQEN)
@@ -636,9 +636,9 @@ Root.'My PackageVehicles' [Package]
 
 ## Discussion
 
-The spiral 1 test cases use basic names. This test case tests use of
-unrestricted names, but only in the basic form without the use of escape
-sequences.
+The spiral 1 test cases use basic names. This test case shows use
+of unrestricted names, but only in the basic form without the use
+of escape sequences.
 
 As per KerML p20, there are two kinds of names:
 
@@ -662,7 +662,8 @@ As per KerML p20, there are two kinds of names:
 
 ## Notes
 
-**Note 1**.
+**Note 1**
+
 The SysML v2 example shown in this Test Case works in the SysMl v2 Pilot
 implementation, however the JupyterLab visualisation with `%viz` appears
 unable to handle unrestricted names:
