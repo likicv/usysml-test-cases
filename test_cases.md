@@ -1,4 +1,4 @@
-<!-- Generated on 2022-06-29 19:36:35.168380 from script `gendocs.py`
+<!-- Generated on 2022-06-29 19:41:44.026019 from script `gendocs.py`
      DO NOT EDIT MANUALY! -->
 
 # Test Case 01-001: Fully qualified element name (FQEN)
@@ -255,14 +255,13 @@ We note that `Parts::Part` subsets `Items::Item` from the Systems Library.
 
 ## Description
 
-This Test Case explores characterists of *PartUsage* element within
-the scope of uSysML v0.01.
+This Test Case explores characterists of *PartUsage* element.
 
 
 ## Scope
 
-The scope of this Test Case is uSysML v0.01, the applicable keywords
-are: `package`, `part def`, and `part`.
+The scope of this Test Case is uSysML v0.01, and the applicable
+keywords are: `package`, `part def`, and `part`.
 
 
 ## SysML v2 textual notation
@@ -318,22 +317,23 @@ In this test case example, the following holds:
 `Vehicle`
 * `w` is *PartUsage* element that is typed explicitly by *PartDefinition*
 `Wheel`
-* `q` is *PartUsage* not typed explicitly (and this is implicitly typed
-by `Parts::parts`)
-
+* `q` is *PartUsage* not typed explicitly (and thus it is implicitly typed
+with `Parts::parts`)
 
 
 ## Notes
 
-**Note 1**. There are other possible base types for *PartUsage*, outside
-of the scope of uSysML v0.01 (and hence not discussed):
+**Note 1**. There are other possible base types for *PartUsage*:
 * `RequirementCheck::stakeholders` from the Requirements library model
 * `RequirementCheck::actors` from the Requirements library model
 * `Case::actors` from the Cases library model
 * `Item::subparts` from the Items library model
 
-Note that each of the above base Element is typed by *PartDefinition*, and
-therefore *PartUsage* is always typed by *PartDefinition*.
+Note that for each of the above the base Element is typed by *PartDefinition*,
+and therefore *PartUsage* is always typed by *PartDefinition*.
+
+These base types are outside of the scop of uSysML v0.01 and hence not
+discussed as a part of this Test Case.
 
 # Test Case 01-004: *PartUsage* element syntactical forms
 
