@@ -1,4 +1,4 @@
-<!-- Generated on 2022-06-29 20:04:36.028293 from script `gendocs.py`
+<!-- Generated on 2022-07-03 10:28:47.094982 from script `gendocs.py`
      DO NOT EDIT MANUALY! -->
 
 # Test Case 01-001: Fully qualified element name (FQEN)
@@ -12,7 +12,7 @@ Parsing a `*.sysml` file will generate a fully qualified element name
 
 ## Scope
 
-The scope of this Test Case is uSysML v0.01, the applicable
+The scope of this Test Case is uSysML v0.01, and the applicable
 keywords are: `package`, `part def`, and `part`.
 
 
@@ -151,13 +151,13 @@ WARNING:Duplicate owned member name (1.sysml line : 5 column : 10)
 
 ## Description
 
-This Test Case explores characterists of *PartDefinition* element.
+Explores characterists of a *PartDefinition* element.
 
 
 ## Scope
 
-The scope of this Test Case is uSysML v0.01, the applicable keywords
-are: `package`, `part def`, and `part`.
+The scope of this Test Case is uSysML v0.01, and the applicable
+keywords are: `package`, `part def`, and `part`.
 
 
 ## SysML v2 textual notation
@@ -243,7 +243,7 @@ package Parts {
 		abstract ref action performedActions: Action[0..*] :> enactedPerformances;
 		abstract ref state exhibitedStates: StateAction[0..*] :> performedActions;
 	}
-    abstract part parts: Part[0..*] nonunique :> items;
+	abstract part parts: Part[0..*] nonunique :> items;
 }
 ```
 
@@ -255,7 +255,7 @@ We note that `Parts::Part` subsets `Items::Item` from the Systems Library.
 
 ## Description
 
-This Test Case explores characterists of *PartUsage* element.
+Explores characterists of a *PartUsage* element.
 
 
 ## Scope
@@ -299,7 +299,7 @@ Root.PackageVehicles [Package]
 ```
 
 
-## Discussion and notes
+## Discussion
 
 The keyword `part` declares a part usage element. A part usage element
 is called *PartUsage* in the Sysml v2 abstract syntax diagrams, and is
@@ -340,12 +340,12 @@ discussed as a part of this Test Case.
 
 ## Description
 
-Syntactically, *PartUsage* element may appear in several different forms.
+Explores syntactical form of a *PartUsage* element.
 
 
 ## Scope
 
-The scope of this Test Case is uSysML v0.01, the applicable keywords
+The scope of this Test Case is uSysML v0.01, and the applicable keywords
 are: `package`, `part def`, and `part`.
 
 
@@ -523,7 +523,7 @@ Using FQENs, the following is true:
 
 ## Description
 
-This Test Case shows use of //-type comment
+Shows the use of //-type comment.
 
 
 ## Scope
@@ -594,15 +594,14 @@ only a single-line note.
 
 ## Description
 
-
-This Test Case shows use of unrestricted element names, and specifically
+Shows the use of unrestricted element names, and specifically
 how names can contain spaces when enclosed by single quotes.
 
 
 ## Scope
 
-The scope of this Test Case is uSysML v0.02, the applicable keywords
-are: `package`, `part def`, and `part`.
+The scope of this Test Case is uSysML v0.02, and the applicable
+keywords are: `package`, `part def`, and `part`.
 
 
 ## SysML v2 textual notation
@@ -680,13 +679,13 @@ ERROR:Couldn't resolve reference to Element ''My'
 
 ## Description
 
-This Test Case explores basic characterists of *AttributeDefinition* element.
+Explores characterists of an *AttributeDefinition* element.
 
 
 ## Scope
 
-The scope of this Test Case is uSysML v0.03, the applicable keywords are:
-`package`, `part def`, and `part`, `attribute def`, and `attribute`.
+The scope of this Test Case is uSysML v0.03, and the applicable keywords
+are: `package`, `part def`, and `part`, `attribute def`, and `attribute`.
 
 
 ## SysML v2 textual notation
