@@ -1,4 +1,4 @@
-<!-- Generated on 2022-07-03 10:28:47.094982 from script `gendocs.py`
+<!-- Generated on 2022-07-13 19:45:49.448208 from script `gendocs.py`
      DO NOT EDIT MANUALY! -->
 
 # Test Case 01-001: Fully qualified element name (FQEN)
@@ -332,7 +332,7 @@ with `Parts::parts`)
 Note that for each of the above the base Element is typed by *PartDefinition*,
 and therefore *PartUsage* is always typed by *PartDefinition*.
 
-These base types are outside of the scop of uSysML v0.01 and hence not
+These base types are outside of the scope of uSysML v0.01 and hence not
 discussed as a part of this Test Case.
 
 # Test Case 01-004: *PartUsage* element syntactical forms
