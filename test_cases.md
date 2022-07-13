@@ -1,4 +1,4 @@
-<!-- Generated on 2022-07-13 19:46:51.417083 from script `gendocs.py`
+<!-- Generated on 2022-07-13 19:48:25.358247 from script `gendocs.py`
      DO NOT EDIT MANUALY! -->
 
 # Test Case 01-001: Fully qualified element name (FQEN)
@@ -151,7 +151,7 @@ WARNING:Duplicate owned member name (1.sysml line : 5 column : 10)
 
 ## Description
 
-Explores characterists of a *PartDefinition* element.
+Explores characterists of *PartDefinition* element.
 
 
 ## Scope
@@ -255,7 +255,7 @@ We note that `Parts::Part` subsets `Items::Item` from the Systems Library.
 
 ## Description
 
-Explores characterists of a *PartUsage* element.
+Explores characterists of *PartUsage* element.
 
 
 ## Scope
@@ -679,7 +679,7 @@ ERROR:Couldn't resolve reference to Element ''My'
 
 ## Description
 
-Explores characterists of an *AttributeDefinition* element.
+Explores characterists of *AttributeDefinition* element.
 
 
 ## Scope
