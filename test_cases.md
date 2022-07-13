@@ -1,4 +1,4 @@
-<!-- Generated on 2022-07-13 19:45:49.448208 from script `gendocs.py`
+<!-- Generated on 2022-07-13 19:46:51.417083 from script `gendocs.py`
      DO NOT EDIT MANUALY! -->
 
 # Test Case 01-001: Fully qualified element name (FQEN)
@@ -340,7 +340,7 @@ discussed as a part of this Test Case.
 
 ## Description
 
-Explores syntactical form of a *PartUsage* element.
+Explores syntactical forms of *PartUsage* element.
 
 
 ## Scope
