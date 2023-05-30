@@ -1,0 +1,6 @@
+__pycache__/
+usysml_test_cases.egg-info/
+venv/
+*.py[cod]
+*.odt#
+.ipynb_*

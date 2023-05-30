@@ -1,0 +1,17 @@
+Root.PackageVehicles1 [Package]
+ Root.PackageVehicles1.Vehicle [PartDef]
+ Root.PackageVehicles1.Wheel [PartDef]
+ Root.PackageVehicles1.vehicle [PartUsage]
+    typed by=Root.PackageVehicles1.Vehicle
+  Root.PackageVehicles1.vehicle.w [PartUsage]
+      multiplicity=4
+      typed by=Root.PackageVehicles1.Wheel
+Root.PackageVehicles2 [Package]
+ Root.PackageVehicles2.Vehicle [PartDef]
+ Root.PackageVehicles2.Wheel [PartDef]
+ Root.PackageVehicles2.vehicle [PartUsage]
+    typed by=Root.PackageVehicles2.Vehicle
+  Root.PackageVehicles2.vehicle.Wheel [PartDef]
+  Root.PackageVehicles2.vehicle.w [PartUsage]
+      multiplicity=4
+      typed by=Root.PackageVehicles2.vehicle.Wheel

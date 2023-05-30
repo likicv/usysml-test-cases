@@ -1,0 +1,16 @@
+Root.ModuleId [AttributeDef]
+Root.PackageVehicles [Package]
+ Root.PackageVehicles.PackageVehiclesID [AttributeDef]
+ Root.PackageVehicles.VehicleAccessories [Package]
+  Root.PackageVehicles.VehicleAccessories.AccessoryID [AttributeDef]
+  Root.PackageVehicles.VehicleAccessories.SeatCover [Package]
+   Root.PackageVehicles.VehicleAccessories.SeatCover.SeatCoverColor [AttributeDef]
+ Root.PackageVehicles.Vehicle [PartDef]
+  Root.PackageVehicles.Vehicle.Color [AttributeDef]
+ Root.PackageVehicles.Wheel [PartDef]
+ Root.PackageVehicles.vehicle [PartUsage]
+    typed by=Root.PackageVehicles.Vehicle
+  Root.PackageVehicles.vehicle.RegistrationNumber [AttributeDef]
+  Root.PackageVehicles.vehicle.w [PartUsage]
+      multiplicity=4
+      typed by=Root.PackageVehicles.Wheel

@@ -1,0 +1,8 @@
+Root.'My PackageVehicles' [Package]
+ Root.'My PackageVehicles'.Vehicle [PartDef]
+ Root.'My PackageVehicles'.Wheel [PartDef]
+ Root.'My PackageVehicles'.vehicle [PartUsage]
+    typed by=Root.'My PackageVehicles'.Vehicle
+  Root.'My PackageVehicles'.vehicle.w [PartUsage]
+      multiplicity=4
+      typed by=Root.'My PackageVehicles'.Wheel

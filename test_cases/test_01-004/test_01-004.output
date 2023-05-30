@@ -1,0 +1,25 @@
+Root.PackageVehicles [Package]
+ Root.PackageVehicles.Vehicle [PartDef]
+ Root.PackageVehicles.Wheel [PartDef]
+ Root.PackageVehicles.WheelAxle [PartDef]
+ Root.PackageVehicles.test_vehicle [PartUsage]
+    typed by=Root.PackageVehicles.Vehicle
+ Root.PackageVehicles.vehicle [PartUsage]
+    typed by=Root.PackageVehicles.Vehicle
+  Root.PackageVehicles.vehicle.a [PartUsage]
+      multiplicity=2
+      typed by=Root.PackageVehicles.WheelAxle
+  Root.PackageVehicles.vehicle.w [PartUsage]
+      multiplicity=4
+      typed by=Root.PackageVehicles.Wheel
+   Root.PackageVehicles.vehicle.w.LugBolt [PartDef]
+Root.SupportComponents [Package]
+ Root.SupportComponents.parking_space [PartUsage]
+    typed by=None
+ Root.SupportComponents.vehicle_shed [PartUsage]
+    multiplicity=4
+    typed by=None
+ Root.SupportComponents.repair_shop [PartUsage]
+    multiplicity=2
+    typed by=None
+  Root.SupportComponents.repair_shop.VehicleLift [PartDef]
